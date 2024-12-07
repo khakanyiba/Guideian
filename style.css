@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */ 
+
+    --white: #FFF;
+    --link-color: #808080;
+    --active-link: #1c1c1c;
+    --linear-blue: #069494;
+    --heading-color: #0554F2;
+}
+
+body {
+    background-color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+}
+ 
+/* header and navigation */
+
+header {
+    display: flex;
+    align-items: center;
+    height: 6.8125rem;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header img {
+    width: 100%;
+}
+
+.header-img-container {
+    display: inline-block;
+    width: 200px;
+    margin-left: 2rem;
+}
+
+.nav-ul, .nav-ul li {
+    display: inline-block;
+}
+
+.nav-ul {
+    list-style: none;
+    margin-left: 20rem;
+}
+
+.nav-ul li {
+    margin-right: 1.5rem;
+}
+
+a:link, a {
+    text-decoration: none;
+    color: var(--link-color);
+    padding: 14px 25px;
+}
+
+a:active, a:hover {
+    font-weight: 700;
+    color: var(--active-link);
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    font-weight: 700;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+}
+
+
+.sign-in-btn {
+    background-color: var(--white);
+}
+
+.sign-in-btn:hover {
+    color: var(--linear-blue);
+}
+
+.sign-up-btn {
+    background-color: var(--linear-blue);
+    text-align: center;
+    color: var(--white);
+    margin-left: 3rem;
+    border-radius: 0.81rem;
+}
+
+.sign-up-btn:hover {
+    color: var(--active-link);
+    opacity: 0.8;
+}
+
+/* header and nav end */
+
+
+
+/* hero section */
+
+#hero-section {
+    width: 100%;
+    height: 44.5rem;
+    margin: 2rem 0;
+}
+
+.hero-container {
+    display: flex;
+    
+}
+
+.headline {
+    width: 28rem;
+    margin-left: 12rem;
+}
+
+.headline h1 {
+    font-size: 3.63rem;
+    font-weight: 700;
+}
+
+.headline-span {
+    color: var(--heading-color);
+}
+
+
+.headline-description {
+    margin-top: 1.5rem;
+}
+
+
+
+
