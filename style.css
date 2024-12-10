@@ -12,12 +12,14 @@
     --active-link: #1c1c1c;
     --linear-blue: #069494;
     --heading-color: #0554F2;
+    --light-mustard: #F2CB05;
 }
 
 body {
     background-color: var(--white);
-    font-weight: 400;
     font-size: 1rem;
+    position: relative;
+    overflow-x: hidden;
 }
  
 /* header and navigation */
@@ -52,6 +54,7 @@ header img {
 .nav-ul {
     list-style: none;
     margin-left: 20rem;
+    font-weight: 700;
 }
 
 .nav-ul li {
@@ -118,6 +121,7 @@ a:active, a:hover {
 
 .headline {
     width: 28rem;
+    margin-top: 5.5rem;
     margin-left: 12rem;
 }
 
@@ -134,6 +138,109 @@ a:active, a:hover {
 .headline-description {
     margin-top: 1.5rem;
 }
+
+.hero-btn-container {
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+.hero-btn-container .btn {
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.get-started-btn {
+    background-color: var(--light-mustard);
+    text-align: center;
+    color: var(--white);
+}
+
+.get-started-btn:hover {
+    color: var(--active-link);
+    opacity: 0.85;
+}
+
+.how-it-works-btn {
+    background-color: var(--white);
+    border: 2px solid var(--heading-color);
+    color: var(--heading-color);
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.how-it-works-btn img {
+    padding-left: 0.4rem;
+    width: 1.5rem;
+}
+
+.how-it-works-btn:hover, .how-it-works-btn img:hover {
+    opacity: 0.8;
+}
+
+
+.hero-img-container img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.hero-img-container {
+    margin-left: 5.5rem;
+    width: 31.75rem;
+    height: 35rem;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.by-124 {
+    width: 124px;
+    height: 124px;
+}
+
+.one {
+    background-color: var(--heading-color);
+    top: 350px;
+    left: 1276px;
+}
+
+.two {
+    background-color: var(--linear-blue);
+    top: 550px;
+    left: 1440px;
+}
+
+.three {
+    background-color: var(--light-mustard);
+    top: 650px;
+    left: -50px;
+}
+
+.four {
+    background-color: var(--heading-color);
+    width: 189px;
+    height: 189px;
+    top: 500px;
+    left: 641px;
+}
+
+.five {
+    background-color: var(--linear-blue);
+    width: 308px;
+    height: 308px;
+    top: 160px;
+    left: 700px;
+}
+
+
+
+
+
+
 
 
 
