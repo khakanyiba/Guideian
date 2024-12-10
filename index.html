@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Guideian</title>
 </head>
 <body>
+    <!--Header and Navigation section-->
     <header>
        <div class="header-img-container">
+        <!--Logo image-->
         <a href="#"><img src="./assets/logo.png" alt="logo"></a> 
        </div> 
         <nav>
-            
+            <!--navigation links-->
             <ul class="nav-ul">
                 <li><a href="./index.html">Home</a</li>
                 <li><a href="#">Apply</a></li>
@@ -26,17 +31,18 @@
     </header>
 
     <main>
+        <!--Hero Section-->
         <section id="hero-section">
             <div class="hero-container">
                 <div class="headline">
-                    <h1>Online Applications, <span class="headline-span">Personalized For Your Success</span></h1>
+                    <h1>Online Applications, <span class="blue-span">Personalized For Your Success</span></h1>
                     <p class="headline-description">Guideian Helps Students Navigate The Path To University With Confidence, 
                         We Provide Personalized Course Recommendations, streamline the application process, 
                         and offer guidance based on current job market trends. <em>Whether You are choosing stream, 
                         selecting a course or submitting an application, we make The Process Simple. </em> </p>
                     <div class="hero-btn-container">
                         <button class="btn get-started-btn">Get Started</button>
-                        <button class="btn how-it-works-btn">How it works <img src="./assets/play_circle.svg" alt="play_circle"></button>
+                        <button class="btn how-it-works-btn">How it works <img src="./assets/play_circle.png" alt="play_circle"></button>
                     </div>
                 </div>
 
@@ -44,7 +50,8 @@
                     <img src="./assets/Hero image.png" alt="girl with a smile and books">
                 </div>
             </div>
-
+            
+            <!--hero section background ellipses -->
             <div class="circles-container">
                 <div class="circle by-124 one"></div>
                 <div class="circle by-124 two"></div>
@@ -56,6 +63,83 @@
                 <div class="circle eight"></div>
             </div>
         </section>
+
+        <!--Services Section-->
+        <section id="services">
+            <h2><span class="blue-span">Why You Should be Using</span> Guideian.</h2>
+            <div class="services-container">
+                <div class="services-img-container">
+                    <img src="./assets/service image.png" alt="thumbs up student wearing a smile">
+                </div>
+
+                <div class="circles-container">
+                    <div class="circle service-circle-one"></div>
+                    <div class="circle by-189 service-circle-two"></div>
+                    <div class="circle by-189 service-circle-three"></div>
+                    <div class="circle service-circle-four">
+                        <img src="./assets/emoji.png" alt="heart-emoji">
+                    </div>
+                </div>
+
+                <div class="services-grid-container">
+                    <div class="grid personalized-picks">
+                        <div class="grid-img-container">
+                            <img src="./assets/selective.png" alt="selecting item image">
+                        </div>
+                        <h3>Personalized Picks</h3>
+                        <p>Receive Course and stream suggestions tailored to your interests and career goals.</p>
+                    </div>
+                    <div class="grid quick-application">
+                        <div class="grid-img-container">
+                            <img src="./assets/quick-response.png" alt="timer watch image">
+                        </div>
+                        <h3>Quick Application</h3>
+                        <p>Apply To Universities with just a few clicks-no complex forms or confusions.</p>
+                    </div>
+
+                    <div class="grid career-guidance">
+                        <div class="grid-img-container">
+                            <img src="./assets/career guidance.png" alt="rising bar chart">
+                        </div>
+                        <h3>Career Guidance</h3>
+                        <p>Choose courses based on job market demand, ensuring your degree aligns with future opportunities.</p>
+                    </div>
+
+                    <div class="grid time-efficient"> 
+                        <div class="grid-img-container">
+                            <img src="./assets/time-management.png" alt="gears image">
+                        </div>
+                        <h3>Time Efficient</h3>
+                        <p>Skip The Hassle Of Researching Universities and programs-get all the information you need in one place.</p>
+                    </div>
+
+                    <div class="grid expert-help">
+                        <div class="grid-img-container">
+                            <img src="./assets/Expert-help.png" alt="helpdesk image">
+                        </div>
+                        <h3>Expert Help</h3>
+                        <p>Benefit from guidance at every step, from choosing the right course to submitting your application. </p>
+                    </div>
+
+                    <div class="grid easy-to-use">
+                        <div class="grid-img-container">
+                            <img src="./assets/Easy-to-use.png" alt="thumbs up easy image">
+                        </div>
+                        <h3>Easy To Use</h3>
+                        <p>The website is designed to be intuitive, making your entire university application process quick and easy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="info general-info"> 
+            </div>
+            <div class="info home-footer"></div>
+            <div class="info About-footer"></div>
+            <div class="info social-media-footer"></div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+/* font */
+
+
 :root {
     /* colors */ 
 
@@ -16,6 +19,7 @@
 }
 
 body {
+    font-family: "Poppins", serif;
     background-color: var(--white);
     font-size: 1rem;
     position: relative;
@@ -27,8 +31,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    height: 6.8125rem;
-    
+    height: 6.8125rem; 
 }
 
 nav {
@@ -55,6 +58,7 @@ header img {
     list-style: none;
     margin-left: 20rem;
     font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .nav-ul li {
@@ -68,7 +72,6 @@ a:link, a {
 }
 
 a:active, a:hover {
-    font-weight: 700;
     color: var(--active-link);
     cursor: pointer;
 }
@@ -111,12 +114,11 @@ a:active, a:hover {
 #hero-section {
     width: 100%;
     height: 44.5rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .hero-container {
-    display: flex;
-    
+    display: flex;   
 }
 
 .headline {
@@ -126,11 +128,11 @@ a:active, a:hover {
 }
 
 .headline h1 {
-    font-size: 3.63rem;
+    font-size: 3.25rem;
     font-weight: 700;
 }
 
-.headline-span {
+.blue-span {
     color: var(--heading-color);
 }
 
@@ -186,6 +188,7 @@ a:active, a:hover {
 }
 
 .hero-img-container {
+    margin-top: 1.5rem;
     margin-left: 5.5rem;
     width: 31.75rem;
     height: 35rem;
@@ -234,6 +237,100 @@ a:active, a:hover {
     height: 308px;
     top: 160px;
     left: 700px;
+}
+
+/* hero section end */
+
+
+/* services section */
+
+#services {
+    margin: 1rem 0;
+    position: relative;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.services-container {
+    display: flex;
+}
+
+.services-img-container img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.services-img-container {
+    width: 31.75rem;
+    height: 40rem;
+    margin-left: 2rem;
+}
+
+.services-grid-container {
+    display: grid;
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: 13rem 13rem 13rem;
+    gap: 1rem;
+    margin: 2rem 5rem;
+}
+
+.grid {
+    box-shadow: 0 0.5px 5px #313131;
+    border-radius: 10px;
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.875rem;
+}
+
+
+.grid p {
+    margin: 0.5rem 0;
+    font-size: 14px;
+}
+
+.grid-img-container img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.grid-img-container {
+    width: 6rem;
+    height: 4.75rem;
+}
+
+.service-circle-one {
+    width: 16rem;
+    height: 16rem;
+    top: 5rem;
+    left: 7.5rem;
+    background-color: var(--heading-color);
+}
+
+.by-189 {
+    width: 10rem;
+    height: 10rem;
+}
+
+.service-circle-two {
+    top: 20rem;
+    left: 19.5rem;
+    background-color: var(--linear-blue);
+}
+
+.service-circle-three {
+    top: 28.5rem;
+    background-color: var(--light-mustard);
+    left: 3.5rem;
+}
+
+.service-circle-four {
+    top: 10.5rem;
+    left: 3.25rem;
 }
 
 
