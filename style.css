@@ -729,6 +729,19 @@ footer {
     color: var(--link-color);
     font-size: 14px;
 }
+/* Add this to the existing CSS file */
+
+/* Responsive styles for buttons */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .sign-up-btn {
+        margin-left: 0;
+    }
+}
 
 
 }
