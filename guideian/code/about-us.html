@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guideian - About Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom Styles */
+        :root {
+            --primary: #4338CA;
+            --primary-dark: #3730A3;
+            --secondary: #F3F4F6;
+            --light-purple: #EDE9FE;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .benefit-card {
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+        }
+        
+        .check-icon {
+            background-color: var(--light-purple);
+        }
+        
+        .testimonial-slider {
+            position: relative;
+        }
+        
+        .slide-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .slide-btn:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .testimonial {
+            display: none;
+            transition: opacity 0.5s ease;
+        }
+        
+        .testimonial.active {
+            display: block;
+        }
+        
+        /* About Page Specific Styles */
+        .hero-about {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quote-mark {
+            font-size: 5rem;
+            color: var(--light-purple);
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <!-- Logo with G icon -->
+                        <div class="mr-2">
+                            <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 5C11.716 5 5 11.716 5 20C5 28.284 11.716 35 20 35C28.284 35 35 28.284 35 20C35 11.716 28.284 5 20 5ZM20 8C21.657 8 23 9.343 23 11C23 12.657 21.657 14 20 14C18.343 14 17 12.657 17 11C17 9.343 18.343 8 20 8ZM28 20C28 24.418 24.418 28 20 28C15.582 28 12 24.418 12 20C12 15.582 15.582 12 20 12C21.657 12 23 13.343 23 15C23 16.657 21.657 18 20 18C18.343 18 17 16.657 17 15C17 13.343 18.343 12 20 12" fill="#4338CA"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-gray-900">Guideian</h1>
+                            <p class="text-xs text-gray-600">Future Ready</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="homepage.html" class="px-3 py-2 text-gray-700 hover:text-indigo-600">Home</a>
+                    <a href="services.html" class="px-3 py-2 text-gray-700 hover:text-indigo-600">Services</a>
+                    <a href="about-us.html" class="px-3 py-2 text-indigo-600 font-medium border-b-2 border-indigo-600">About Us</a>
+                    <a href="contact-us.html" class="px-3 py-2 text-gray-700 hover:text-indigo-600">Contact us</a>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <a href="log-in.html" class="px-4 py-2 text-indigo-600 hover:text-indigo-800 font-medium">Log In</a>
+                    <a href="sign-up.html" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300 font-medium">Sign Up</a>
+                </div>
+				<label class="flex items-center cursor-pointer ml-4">
+    <div class="relative">
+        <input type="checkbox" id="theme-toggle" class="sr-only">
+        <div class="block bg-gray-600 w-10 h-6 rounded-full"></div>
+        <div class="dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition"></div>
+    </div>
+    <div class="ml-3 text-gray-700 dark:text-gray-300">
+        <i class="fas fa-moon"></i>
+    </div>
+</label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-about">
+        <div class="max-w-4xl mx-auto px-4">
+            <span class="inline-block bg-white text-indigo-600 px-4 py-2 rounded-full mb-4 font-medium">About Us</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Re-writing the Reality of South Africa Through Knowledge and Opportunity</h1>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="about-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Students learning" class="w-full">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        At Guideian, we're on a mission to change the story for South African high school students. Too many finish school but never step into university—not because they lack potential, but because they lack the knowledge and tools to apply. We're here to bridge that gap with personalized guidance, expert support, and a seamless application process, ensuring every student can unlock their future.
+                    </p>
+                    <a href="#" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & What We Offer Section -->
+    <section class="about-section bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Vision</h2>
+                    <p class="text-lg text-gray-600">
+                        We dream of a South Africa where every child who completes high school moves confidently to university and, ultimately, into a career they're passionate about. By helping students choose the right subjects, maintain strong marks, and apply to institutions that match their goals, we aim to build a nation where education leads to employment and where potential isn't wasted but transformed into purpose. Guideian isn't just a tool; it's a step toward a brighter, more empowered future for our youth.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">What We Offer</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Guideian starts with grade 9 subject selection, showing students how their choices open university doors, and continues through high school with motivation to excel and clear career paths. Our automated application system takes the confusion out of applying, submitting to students' desired universities for courses they love, while our insights into job trends ensure their education leads to real opportunities.
+                    </p>
+                    <a href="#" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Quote Section -->
+    <section class="about-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="about-image">
+                    <img src="images/sonwabise.jpeg" alt="Founder" class="w-full">
+                </div>
+                <div>
+                    <div class="quote-mark">"</div>
+                    <blockquote class="text-xl text-gray-700 mb-6">
+                        I grew up in a community where finishing high school was a win, but university felt like a distant dream. My peers were bright and talented, but most never pursued higher education, not because they didn't want to, but because they didn't know how. I watched their potential fade into dead end jobs or unemployment, and it drove me to create Guideian, a tool to ensure no South African student misses out on their chance to shine.
+                    </blockquote>
+                    <div class="text-lg font-bold text-gray-900">Sonwabise Gcolotela</div>
+                    <div class="text-gray-600">Founder</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working with Institutions Section -->
+    <section class="about-section bg-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Working with Institutions Nationwide</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We've partnered with all 26 universities and 50 TVET colleges nationwide to drive our mission of advancing education and skills.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl text-center shadow-sm">
+                    <div class="text-4xl font-bold text-indigo-600 mb-2">26</div>
+                    <div class="text-lg text-gray-700">Public Universities</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center shadow-sm">
+                    <div class="text-4xl font-bold text-indigo-600 mb-2">76</div>
+                    <div class="text-lg text-gray-700">TVET Colleges</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center shadow-sm">
+                    <div class="text-4xl font-bold text-indigo-600 mb-2">8K+</div>
+                    <div class="text-lg text-gray-700">Total Courses</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center shadow-sm">
+                    <div class="text-4xl font-bold text-indigo-600 mb-2">40</div>
+                    <div class="text-lg text-gray-700">Bursaries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-10 h-10 mr-2" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5C11.716 5 5 11.716 5 20C5 28.284 11.716 35 20 35C28.284 35 35 28.284 35 20C35 11.716 28.284 5 20 5ZM20 8C21.657 8 23 9.343 23 11C23 12.657 21.657 14 20 14C18.343 14 17 12.657 17 11C17 9.343 18.343 8 20 8ZM28 20C28 24.418 24.418 28 20 28C15.582 28 12 24.418 12 20C12 15.582 15.582 12 20 12C21.657 12 23 13.343 23 15C23 16.657 21.657 18 20 18C18.343 18 17 16.657 17 15C17 13.343 18.343 12 20 12" fill="white"/>
+                        </svg>
+                        <div>
+                            <h1 class="text-2xl font-bold">Guideian</h1>
+                            <p class="text-xs text-gray-400">Future Ready</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">Your roadmap to a bright future. We help South African students navigate their educational journey from high school to university.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z" fill-rule="evenodd" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-span-1">
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="about-us.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sign Up</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-span-1">
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span class="text-gray-400">Cape Town, South Africa</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="text-gray-400">guideian.help@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span class="text-gray-400">+27 81 487 5688</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="col-span-1">
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe to our newsletter for the latest updates and tips.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="flex-1 py-2 px-3 rounded-l-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <button type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded-r-md hover:bg-indigo-700 transition duration-300">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+                <p class="text-gray-400 text-sm">Copyright &copy; 2025 Guideian. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for interactive elements -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+	<script src="guideian.js"></script>
+</body>
+</html>
