@@ -1,3 +1,5 @@
+# Updated Grade 9 Subject Selection Assistant (Guideian Prototype)
+
 import random
 
 # Fixed compulsory subjects
@@ -7,7 +9,7 @@ compulsory_subjects = {
     "Life Orientation": "Life Orientation"
 }
 
-# Elective subjects mapped by interest keywords (excluding Mathematics)
+# Elective subjects mapped by interest keywords (excluding Mathematics/Maths Literacy)
 electives_by_interest = {
     "technology": ["Information Technology", "Computer Applications Technology"],
     "engineering": ["Physical Sciences", "Engineering Graphics & Design"],
@@ -26,17 +28,15 @@ print("🎓 Welcome to the Grade 9 Subject Selection Assistant (Guideian Prototy
 interest_input = input("Enter your interests (e.g. medicine, engineering, environment): ").lower().strip()
 home_lang = input("Choose your Home Language (e.g. English HL, IsiZulu HL, etc.): ")
 first_add_lang = input("Choose your First Additional Language (e.g. Afrikaans FAL, IsiXhosa FAL, etc.): ")
-math_choice = input("Choose one: Mathematics or Mathematical Literacy: ").strip()
-
-# Validate math input
-if math_choice.lower() not in ["mathematics", "mathematical literacy"]:
-    print("⚠️ Invalid choice. Defaulting to Mathematics.")
-    math_choice = "Mathematics"
-else:
-    math_choice = math_choice.title()
-
+math_choice = input("Choose one: Mathematics or Mathematical Literacy: ").strip().title()
 num_electives = input("Would you like 3 or 4 electives? ")
 
+# Validate math input
+if math_choice not in ["Mathematics", "Mathematical Literacy"]:
+    print("⚠️ Invalid math choice. Defaulting to Mathematics.")
+    math_choice = "Mathematics"
+
+# Validate elective number input
 try:
     num_electives = int(num_electives)
     if num_electives not in [3, 4]:
@@ -51,25 +51,25 @@ for keyword, subjects in electives_by_interest.items():
     if keyword in interest_input:
         matched_subjects.extend(subjects)
 
-# Remove duplicates and limit
-matched_subjects = list(set(matched_subjects))
-if math_choice in matched_subjects:
-    matched_subjects.remove(math_choice)
+# Remove duplicates and allow full set
+recommended_electives = list(set(matched_subjects))
 
-recommended_electives = matched_subjects[:num_electives]
+# If too few subjects matched, pad with random electives from the global pool
+if len(recommended_electives) < num_electives:
+    all_electives = list(set(subject for subjects in electives_by_interest.values() for subject in subjects))
+    remaining = num_electives - len(recommended_electives)
+    # Ensure no duplicates
+    extras = [subj for subj in all_electives if subj not in recommended_electives]
+    recommended_electives += random.sample(extras, remaining)
 
-# Fallback if nothing matched
-if not recommended_electives:
-    all_electives = [subject for subjects in electives_by_interest.values() for subject in subjects]
-    recommended_electives = random.sample(list(set(all_electives)), num_electives)
-
-# Final Subject Package
+# Final Subject Package Output
 print("\n📘 Based on your interests, here’s your recommended subject selection:\n")
 print(f"✅ Home Language: {home_lang}")
 print(f"✅ First Additional Language: {first_add_lang}")
 print(f"✅ Compulsory: Life Orientation")
 print(f"✅ Compulsory: {math_choice}")
-for i, subject in enumerate(recommended_electives, start=1):
+for i, subject in enumerate(recommended_electives[:num_electives], start=1):
     print(f"✅ Elective {i}: {subject}")
 
 print("\n👍 You’re all set! These subjects align with your future aspirations.")
+
