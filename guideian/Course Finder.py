@@ -77,8 +77,8 @@ degrees = [
     }
 ]
 
-# 🎯 Gather input from user
-print("🎓 Welcome to the Guideian Degree Matcher!")
+# Gather input from user
+print("Welcome to the Guideian Degree Matcher!")
 try:
     avg = int(input("Enter your average mark (%): "))
     interests = input("Enter your academic interests (comma separated, e.g. Technology,Engineering): ")
@@ -108,7 +108,7 @@ try:
     recommend_pool = affordable or loc_matched or demanded or eligible
 
     if not recommend_pool:
-        print("⚠️ No degrees available for your criteria. Please broaden your input.")
+        print("No degrees available for your criteria. Please broaden your input.")
     else:
         student_profile = " ".join(student["interests"])
         corpus = [deg["description"] for deg in recommend_pool] + [student_profile]
@@ -117,15 +117,15 @@ try:
         tfidf_matrix = vectorizer.fit_transform(corpus)
 
         if tfidf_matrix.shape[0] < 2:
-            print("⚠️ Not enough data to compute similarity.")
+            print("Not enough data to compute similarity.")
         else:
             similarities = cosine_similarity(tfidf_matrix[-1:], tfidf_matrix[:-1]).flatten()
             top_indices = similarities.argsort()[::-1]
             recommended = [recommend_pool[i] for i in top_indices[:3]]
 
-            print("\n🎓 Recommended Degrees Based on Your Inputs:")
+            print("\n Recommended Degrees Based on Your Inputs:")
             for deg in recommended:
                 print(f" - {deg['name']} ({deg['field']}) in {deg['location']} [{deg['affordability']} Tier]")
 
 except Exception as e:
-    print(f"❌ An error occurred: {e}")
+    print(f" An error occurred: {e}")
