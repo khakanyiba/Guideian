@@ -981,6 +981,7 @@
         // Import Firebase modules
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
         import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
 
         // Your Firebase configuration
         const firebaseConfig = {
@@ -997,17 +998,35 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
+        const database = getDatabase(app);
 
         // Handle signup form submission
         document.getElementById('signupForm').addEventListener('submit', (e) => {
             e.preventDefault();
+
+            const fullName = document.getElementById('fullName').value;
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
 
+            // Create user with email and password
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
-                    console.log("User signed up:", userCredential.user);
-                    alert("Signup successful!");
+                    const user = userCredential.user;
+
+                    // Save user data to Firebase Realtime Database
+                    set(ref(database, 'users/' + user.uid), {
+                        fullName: fullName,
+                        email: email,
+                        createdAt: new Date().toISOString()
+                    })
+                    .then(() => {
+                        console.log("User data saved successfully!");
+                        alert("Signup successful! User data saved.");
+                    })
+                    .catch((error) => {
+                        console.error("Error saving user data:", error.message);
+                        alert("Signup successful, but failed to save user data: " + error.message);
+                    });
                 })
                 .catch((error) => {
                     console.error("Error signing up:", error.message);
