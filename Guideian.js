@@ -5,6 +5,7 @@
 // Import Firebase modules
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -21,6 +22,41 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+// ======================
+// Firebase Database Operations
+// ======================
+
+// Function to save user data
+function saveUserData(userId, name, email) {
+    set(ref(getDatabase(app), 'users/' + userId), {
+        username: name,
+        email: email
+    }).then(() => {
+        console.log("User data saved successfully!");
+        utils.showAlert("User data saved successfully!", "success");
+    }).catch((error) => {
+        console.error("Error saving user data:", error);
+        utils.showAlert("Error saving user data: " + error.message, "error");
+    });
+}
+
+// Function to retrieve user data
+function getUserData(userId) {
+    const dbRef = ref(getDatabase(app));
+    get(child(dbRef, `users/${userId}`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log("User data:", snapshot.val());
+            utils.showAlert("User data retrieved successfully!", "success");
+        } else {
+            console.log("No data available for this user.");
+            utils.showAlert("No data available for this user.", "error");
+        }
+    }).catch((error) => {
+        console.error("Error retrieving user data:", error);
+        utils.showAlert("Error retrieving user data: " + error.message, "error");
+    });
+}
 
 // ======================
 // 1. Core Utilities
