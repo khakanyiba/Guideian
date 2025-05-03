@@ -1,22 +1,26 @@
 // guideian.js - Main functionality for all pages
+// ======================
+// Firebase Integration
+// ======================
+// Import Firebase modules
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
 
-// ======================
-// Firebase Configuration
-// ======================
+// Firebase configuration
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    databaseURL: "YOUR_DATABASE_URL",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyB41Go0wudzjur1xcPO4t-_gk9fGYccgg4",
+    authDomain: "guideian-b5eb4.firebaseapp.com",
+    databaseURL: "https://guideian-b5eb4-default-rtdb.firebaseio.com",
+    projectId: "guideian-b5eb4",
+    storageBucket: "guideian-b5eb4.firebasestorage.app",
+    messagingSenderId: "723263641111",
+    appId: "1:723263641111:web:e9a4b24c08e0dee71e6e52",
+    measurementId: "G-2B96N983EH"
 };
 
 // Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
-const database = firebase.database();
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // ======================
 // 1. Core Utilities
