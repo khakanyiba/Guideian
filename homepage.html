@@ -7,10 +7,35 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Add this CSS in the style section -->
-	<style>
-		/* Base styles from your existing CSS */
+  <style>
+    /* Base styles from your existing CSS */
 .tab-pane {
     display: none;
+}
+
+/* Default light theme */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1f2937;
+  --primary-color: #4f46e5;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-color: #1f2937;
+  --text-color: #f9fafb;
+  --primary-color: #818cf8;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
 .tab-pane.active {
     display: block;
@@ -7400,8 +7425,30 @@ document.addEventListener('DOMContentLoaded', function() {
 				</div>
 			</div>
 		</footer>
-		<script src="subject-selection-algorithm.js"></script>
-		<script src="guideian.js"></script>
+    <script src="subject-selection-algorithm.js"></script>
+    <script src="guideian.js"></script>
+    <script>
+    // Select the theme toggle checkbox
+    const themeToggle = document.getElementById('theme-toggle');
+
+    // Check for saved theme in localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      themeToggle.checked = savedTheme === 'dark';
+    }
+
+    // Add event listener to toggle theme
+    themeToggle.addEventListener('change', () => {
+      if (themeToggle.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+    </script>
 		<!-- Add this modal HTML right before the closing </body> tag in your profile page -->
 <!-- Profile Setup Modal -->
 <div id="profile-setup-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center hidden z-50">
