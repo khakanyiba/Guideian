@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subject Selection | Guideian</title>
+  <link rel="stylesheet" href="subject-selection.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="subject-selection-page">
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <img src="images/LOGO.png" alt="Guideian Logo" class="logo-image">
+          <div class="logo-text">
+            <h1 class="logo-title">Guideian</h1>
+            <p class="logo-subtitle">Future Ready</p>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact us</a>
+        </nav>
+        <div class="auth-buttons">
+          <a href="#" class="login-link">Log In</a>
+          <a href="#" class="signup-button">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="selection-container">
+      <div class="selection-header">
+        <h1>Assisted Subject Selection</h1>
+        <p class="subtitle">Let's find the perfect subjects tailored specifically for you</p>
+        <div class="progress-bar">
+          <div class="progress-step active" data-step="1">Academic Info</div>
+          <div class="progress-step" data-step="2">Interests</div>
+          <div class="progress-step" data-step="3">Preferences</div>
+          <div class="progress-step" data-step="4">Results</div>
+        </div>
+      </div>
+
+      <form id="subjectSelectionForm" class="selection-form">
+        <!-- Step 1: Academic Information -->
+        <div class="form-step active" data-step="1">
+          <h2>Your Academic Profile</h2>
+          <p>Enter your current or predicted marks. Add all subjects you're taking.</p>
+          
+          <div class="subject-inputs" id="subjectInputsContainer">
+            <!-- Default subjects will be added here by JavaScript -->
+          </div>
+          
+          <div class="subject-management">
+            <div class="subject-selector-container">
+              <select id="subjectSelector" class="subject-selector">
+                <option value="">Select a subject to add</option>
+                <!-- Subjects will be populated by JavaScript -->
+              </select>
+              <button type="button" class="add-subject-btn" id="addSubjectBtn">
+                <i class="fas fa-plus"></i> Add Subject
+              </button>
+            </div>
+            <p class="help-text">Add all subjects you're currently taking or plan to take</p>
+          </div>
+          
+          <div class="form-navigation">
+            <button type="button" class="next-btn">Next: Interests <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 2: Interests -->
+        <div class="form-step" data-step="2">
+          <h2>Your Interests & Strengths</h2>
+          <p>Select areas that excite you and match your natural abilities</p>
+          
+          <div class="interest-grid">
+            <!-- Interests will be populated by JavaScript -->
+          </div>
+          
+          <div class="interest-help">
+            <i class="fas fa-info-circle"></i>
+            <p>Select 3-5 areas that best match your interests and strengths</p>
+          </div>
+          
+          <div class="form-navigation">
+            <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Back</button>
+            <button type="button" class="next-btn">Next: Preferences <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 3: Preferences -->
+        <div class="form-step" data-step="3">
+          <h2>Your Personal Preferences</h2>
+          <p>Tell us more about what matters to you in your education</p>
+          
+          <div class="preferences-help">
+            <i class="fas fa-lightbulb"></i>
+            <p>These preferences help us tailor recommendations to your personal situation and goals</p>
+          </div>
+          
+          <div class="preferences-container">
+            <div class="preference-section">
+              <h3><i class="fas fa-wallet"></i> Financial Considerations</h3>
+              <div class="preference-options">
+                <label class="preference-option">
+                  <input type="radio" name="affordability" value="affordable" checked>
+                  <span class="option-title">Budget Conscious</span>
+                  <span class="option-description">Looking for most affordable options (Under R40,000/year)</span>
+                </label>
+                <label class="preference-option">
+                  <input type="radio" name="affordability" value="moderate">
+                  <span class="option-title">Balanced Choice</span>
+                  <span class="option-description">Willing to invest moderately (R40,000 - R80,000/year)</span>
+                </label>
+                <label class="preference-option">
+                  <input type="radio" name="affordability" value="premium">
+                  <span class="option-title">Premium Investment</span>
+                  <span class="option-description">Prioritizing best education regardless of cost (Over R80,000/year)</span>
+                </label>
+              </div>
+            </div>
+            
+            <div class="preference-section">
+              <h3><i class="fas fa-universal-access"></i> Accessibility Needs</h3>
+              <div class="preference-options multiple-options">
+                <label class="preference-option">
+                  <input type="checkbox" name="accessibility" value="wheelchair">
+                  <span class="option-title">Wheelchair Access</span>
+                </label>
+                <label class="preference-option">
+                  <input type="checkbox" name="accessibility" value="hearing">
+                  <span class="option-title">Hearing Assistance</span>
+                </label>
+                <label class="preference-option">
+                  <input type="checkbox" name="accessibility" value="vision">
+                  <span class="option-title">Vision Assistance</span>
+                </label>
+                <label class="preference-option">
+                  <input type="checkbox" name="accessibility" value="learning">
+                  <span class="option-title">Learning Support</span>
+                </label>
+                <label class="preference-option">
+                  <input type="checkbox" name="accessibility" value="mental-health">
+                  <span class="option-title">Mental Health Services</span>
+                </label>
+              </div>
+            </div>
+            
+            <div class="preference-section">
+              <h3><i class="fas fa-map-marker-alt"></i> Location Preferences</h3>
+              <div class="preference-options multiple-options">
+                <label class="preference-option">
+                  <input type="radio" name="location" value="any" checked>
+                  <span class="option-title">Anywhere in South Africa</span>
+                </label>
+                <label class="preference-option">
+                  <input type="radio" name="location" value="western-cape">
+                  <span class="option-title">Western Cape</span>
+                </label>
+                <label class="preference-option">
+                  <input type="radio" name="location" value="gauteng">
+                  <span class="option-title">Gauteng</span>
+                </label>
+                <label class="preference-option">
+                  <input type="radio" name="location" value="kzn">
+                  <span class="option-title">KwaZulu-Natal</span>
+                </label>
+                <label class="preference-option">
+                  <input type="radio" name="location" value="other">
+                  <span class="option-title">Other Provinces</span>
+                </label>
+              </div>
+            </div>
+            
+            <div class="preference-section">
+              <h3><i class="fas fa-graduation-cap"></i> Learning Style</h3>
+              <div class="preference-options">
+                <label class="preference-option">
+                  <input type="radio" name="learning-style" value="structured">
+                  <span class="option-title">Structured Learning</span>
+                  <span class="option-description">Prefer clear schedules and deadlines</span>
+                </label>
+                <label class="preference-option">
+                  <input type="radio" name="learning-style" value="flexible">
+                  <span class="option-title">Flexible Learning</span>
+                  <span class="option-description">Prefer self-paced, online options</span>
+                </label>
+                <label class="preference-option">
+                  <input type="radio" name="learning-style" value="hands-on">
+                  <span class="option-title">Hands-on Practical</span>
+                  <span class="option-description">Learn best by doing</span>
+                </label>
+              </div>
+            </div>
+            
+            <div class="preference-section">
+              <h3><i class="fas fa-briefcase"></i> Career Goals</h3>
+              <div class="preference-options">
+                <label class="preference-option">
+                  <input type="radio" name="career-goal" value="quick-employment">
+                  <span class="option-title">Quick Employment</span>
+                  <span class="option-description">Want to start working as soon as possible</span>
+                </label>
+                <label class="preference-option">
+                  <input type="radio" name="career-goal" value="long-term-growth">
+                  <span class="option-title">Long-term Growth</span>
+                  <span class="option-description">Willing to study longer for better prospects</span>
+                </label>
+                <label class="preference-option">
+                  <input type="radio" name="career-goal" value="entrepreneurial">
+                  <span class="option-title">Entrepreneurial</span>
+                  <span class="option-description">Planning to start my own business</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-navigation">
+            <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Back</button>
+            <button type="button" class="next-btn">Get Recommendations <i class="fas fa-chart-line"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 4: Results -->
+        <div class="form-step" data-step="4">
+          <h2>Your Personalized Recommendations</h2>
+          <p>Carefully curated based on your unique profile</p>
+          
+          <div class="results-summary">
+            <div class="summary-card">
+              <h3><i class="fas fa-user-graduate"></i> Academic Fit</h3>
+              <div class="fit-meter">
+                <div class="meter-bar" style="width: 85%"></div>
+                <span>85% Match</span>
+              </div>
+              <p>Your marks qualify you for 92% of our recommended programs</p>
+            </div>
+            <div class="summary-card">
+              <h3><i class="fas fa-heart"></i> Interest Alignment</h3>
+              <div class="fit-meter">
+                <div class="meter-bar" style="width: 78%"></div>
+                <span>78% Match</span>
+              </div>
+              <p>Strong alignment with technology and problem-solving careers</p>
+            </div>
+            <div class="summary-card">
+              <h3><i class="fas fa-bullseye"></i> Opportunity Score</h3>
+              <div class="fit-meter">
+                <div class="meter-bar" style="width: 91%"></div>
+                <span>91% Match</span>
+              </div>
+              <p>Excellent employment prospects in your selected fields</p>
+            </div>
+          </div>
+          
+          <div class="results-filter">
+            <div class="filter-group">
+              <label for="career-filter">Filter by:</label>
+              <select id="career-filter">
+                <option value="all">All Recommendations</option>
+                <option value="best-fit">Best Academic Fit</option>
+                <option value="high-demand">High Demand Careers</option>
+                <option value="affordable">Most Affordable</option>
+                <option value="local">Local Options</option>
+              </select>
+            </div>
+            <div class="sort-group">
+              <label for="career-sort">Sort by:</label>
+              <select id="career-sort">
+                <option value="match">Best Match</option>
+                <option value="salary">Potential Salary</option>
+                <option value="employment">Employment Rate</option>
+                <option value="duration">Program Duration</option>
+              </select>
+            </div>
+          </div>
+          
+         
+            
+            <div class="result-cards" id="recommendationsContainer">
+              <!-- Recommendations will be loaded here by JavaScript -->
+            </div>
+          </div>
+          
+          <div class="form-navigation">
+            <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Back</button>
+            <button type="button" class="save-all-btn"><i class="fas fa-download"></i> Download All Recommendations</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-column brand-column">
+            <div class="footer-brand">
+              <h2 class="footer-logo">Guideian</h2>
+              <p class="footer-tagline">Future Ready</p>
+              <p class="footer-description">
+                Your roadmap to a bright future. We help
+                South African students navigate their
+                educational journey from high school to
+                university.
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-column links-column">
+            <div class="footer-links-container">
+              <div class="quick-links-column">
+                <div class="links-content">
+                  <h3 class="links-title">Quick Links</h3>
+                  <div class="link-item">
+                    <a href="index.html">Home</a>
+                    <span class="bullet">•</span>
+                  </div>
+                  <div class="link-item">
+                    <a href="services.html">Services</a>
+                    <span class="bullet">•</span>
+                  </div>
+                  <div class="link-item">
+                    <a href="about.html">About Us</a>
+                    <span class="bullet">•</span>
+                  </div>
+                  <a href="contact.html" class="footer-link">Contact Us</a>
+                  <a href="#" class="footer-link">Sign Up</a>
+                </div>
+              </div>
+              <div class="contact-column">
+                <div class="contact-content">
+                  <h3 class="contact-title">Contact Us</h3>
+                  <p class="contact-info"><i class="fas fa-map-marker-alt"></i> Cape Town, South Africa</p>
+                  <p class="contact-info"><i class="fas fa-envelope"></i> guideian.help@gmail.com</p>
+                  <p class="contact-info"><i class="fas fa-phone"></i> +27 81 487 5688</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-column cta-column">
+            <div class="footer-cta">
+              <h2 class="cta-title">Let's start your journey now!</h2>
+              <a href="#" class="cta-button">Sign Up</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="copyright">
+          Copyright @ 2025 Guideian, All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="subject-selection.js"></script>
+</body>
+</html>
