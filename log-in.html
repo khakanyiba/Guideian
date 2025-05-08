@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #4A29FF;
+            --primary-color: #3328bf;
             --secondary-color: #f8f9fa;
             --text-color: #212529;
             --light-gray: #f1f1f1;
@@ -37,103 +37,122 @@
         }
         
         /* Header and Navigation */
-        header {
+        .main-header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             padding: 20px 0;
             border-bottom: 1px solid var(--light-gray);
-            background-color: white;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
-        
-        .navbar {
+
+        .navbar-container {
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
         }
-        
-        .logo {
+
+        .logo-container {
             display: flex;
             align-items: center;
-            text-decoration: none;
-            color: var(--text-color);
+            margin-left: 32px;
         }
-        
-        .logo img {
-            height: 40px;
-            margin-right: 10px;
-        }
-        
-        .logo-text {
+
+        .main-nav {
+            flex: 1;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            gap: 32px;
         }
-        
-        .logo-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        
-        .logo-subtitle {
-            font-size: 0.8rem;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li {
-            margin-left: 30px;
-        }
-        
-        .nav-links a {
+
+        .nav-link {
             text-decoration: none;
-            color: var(--text-color);
-            transition: color 0.3s;
+            font-family: 'Inter', sans-serif;
             font-weight: 500;
+            font-size: 16px;
+            color: var(--text-color);
+            transition: color 0.2s;
+            padding: 8px 0;
         }
-        
-        .nav-links a:hover {
+
+        .nav-link.active,
+        .nav-link:hover {
             color: var(--primary-color);
+            font-weight: 600;
         }
-        
+
         .auth-buttons {
             display: flex;
-            align-items: center;
+            gap: 12px;
+            margin-right: 32px;
         }
-        
-        .btn {
-            padding: 10px 20px;
-            border-radius: var(--border-radius);
-            cursor: pointer;
+
+        .login-btn, .signup-btn {
+            font-family: 'Inter', sans-serif;
             font-weight: 500;
+            font-size: 14px;
+            padding: 8px 22px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
             text-decoration: none;
-            transition: all 0.3s;
             display: inline-block;
         }
+
+        .login-btn {
+            background: transparent;
+            color: var(--primary-color);
+            border: 1.5px solid var(--primary-color);
+        }
+
+        .login-btn:hover {
+            background: rgba(74, 41, 255, 0.1);
+        }
+
+        .signup-btn {
+            background: var(--primary-color);
+            color: #fff;
+        }
+
+        .signup-btn:hover {
+            background: #3a1fd9;
+        }
         
+        /* Button Styles */
+        .btn {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 8px 22px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: #fff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #3a1fd9;
+        }
+
         .btn-outline {
             background: transparent;
             color: var(--primary-color);
-            border: 1px solid var(--primary-color);
+            border: 1.5px solid var(--primary-color);
         }
-        
+
         .btn-outline:hover {
-            background-color: rgba(74, 41, 255, 0.1);
-        }
-        
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: white;
-            margin-left: 10px;
-            border: none;
-        }
-        
-        .btn-primary:hover {
-            background-color: #3a1fd9;
-            transform: translateY(-1px);
+            background: rgba(74, 41, 255, 0.1);
         }
         
         /* Main Content */
@@ -818,40 +837,36 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <div class="logo-img">
-                        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 0C22.4 0 0 22.4 0 50C0 77.6 22.4 100 50 100C77.6 100 100 77.6 100 50C100 22.4 77.6 0 50 0ZM50 15C69.3 15 85 30.7 85 50C85 69.3 69.3 85 50 85C30.7 85 15 69.3 15 50C15 30.7 30.7 15 50 15Z" fill="var(--primary-color)"/>
-                            <path d="M50 25C36.2 25 25 36.2 25 50C25 63.8 36.2 75 50 75C63.8 75 75 63.8 75 50C75 36.2 63.8 25 50 25ZM50 40C56.1 40 61 44.9 61 51C61 57.1 56.1 62 50 62C43.9 62 39 57.1 39 51C39 44.9 43.9 40 50 40Z" fill="var(--primary-color)"/>
-                        </svg>
-                    </div>
-                    <div class="logo-text">
-                        <span class="logo-title">Guideian</span>
-                        <span class="logo-subtitle">Future Ready</span>
-                    </div>
-                </a>
-                
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-                
-                <div class="auth-buttons">
-                    <button class="btn btn-outline" id="loginBtn">Log In</button>
-                    <button class="btn btn-primary" id="signupBtn">Sign Up</button>
-                </div>
-                
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
-        </div>
-    </header>
+<header class="main-header">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <svg class="logo-svg" width="217" height="55" viewBox="0 0 217 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Tenor Sans" font-size="26" letter-spacing="0em">
+            <tspan x="63" y="25.71">Guideian</tspan>
+          </text>
+          <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Tenor Sans" font-size="13" letter-spacing="0em">
+            <tspan x="64" y="45.855">Future Ready</tspan>
+          </text>
+          <path d="M55.0188 1C55.0188 1 40.0187 1 25.0188 1C10.0189 1 0.518789 17 1.01882 28C1.51886 39 9.01882 52.7638 25.0188 53C41.0188 53.2362 54.0188 53 54.0188 53V28" stroke="black" stroke-width="1.5"></path>
+          <path d="M55.0188 5C55.0188 5 38.0188 5 26.5188 5C15.0188 5 5.0188 14.3256 5.0188 28C5.0188 41.6744 16.0323 49 27.0188 49C38.0053 49 50.0188 49 50.0188 49V40V28" stroke="black" stroke-width="1.5"></path>
+          <path d="M55.0188 9C55.0188 9 33.473 9 25.9207 9C18.3683 9 9.0188 17.1554 9.0188 28C9.0188 38.8446 17.2723 45.5 26.0188 45.5C34.7653 45.5 46.0188 45.5 46.0188 45.5V37.5V28" stroke="black" stroke-width="1.5"></path>
+          <path d="M55.0188 13C55.0188 13 32.2727 13 26.2633 13C20.2539 13 13.0188 18.9385 13.0188 27.5C13.0188 36.0615 20.0188 41 26.5188 41.5C33.0188 42 42.0188 41.5 42.0188 41.5V28" stroke="black" stroke-width="1.5"></path>
+          <path d="M55.0189 17C55.0189 17 35.6287 17 28.0738 17C20.5189 17 16.5189 21.5 17.0189 28C17.5189 34.5 23.1612 37.5 28.0738 37.5C32.9865 37.5 38.0189 37.5 38.0189 37.5V28" stroke="black" stroke-width="1.5"></path>
+          <path d="M55.0188 21C55.0188 21 29.7875 21 27.1858 21C24.5841 21 21.0188 23.4418 21.0188 27.1518C21.0188 30.8618 23.5188 34 27.1858 34C30.8529 34 34.0188 34 34.0188 34V28" stroke="black" stroke-width="1.5"></path>
+        </svg>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact us</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="log-in.html" class="login-btn">Log In</a>
+        <a href="sign-up.html" class="signup-btn">Sign Up</a>
+      </div>
+    </div>
+  </header>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu">
@@ -943,12 +958,12 @@
                             <a href="#" id="forgotPassword">Forgot password?</a>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary auth-btn">Log In</button>
+                        <button type="submit" class="btn btn-primary auth-btn" style="width: 100%; padding: 12px; font-size: 16px;">Log In</button>
                     </form>
                     
                     <div class="demo-login">
                         <p>Want to try it out?</p>
-                        <button class="btn btn-outline demo-btn" style="width: 100%;">
+                        <button class="btn btn-outline demo-btn" style="width: 100%; padding: 12px; font-size: 16px;">
                             Use Demo Account
                         </button>
                     </div>
@@ -1644,52 +1659,20 @@
         if (loginForm) {
             loginForm.addEventListener('submit', function(e) {
                 e.preventDefault();
-                
-                handleFormSubmit(this, () => {
-                    const email = document.getElementById('email').value;
-                    const password = document.getElementById('password').value;
-                    const rememberMe = document.getElementById('rememberMe').checked;
-                    
-                    // Validate fields
-                    if (!email || !password) {
-                        showFlashMessage('Please fill in all required fields', 'error');
-                        return;
-                    }
-                    
-                    if (!isValidEmail(email)) {
-                        showFlashMessage('Please enter a valid email address', 'error');
-                        return;
-                    }
-                    
-                    // Check credentials
-                    const user = findUserByEmail(email);
-                    if (!user || user.password !== password) {
-                        showFlashMessage('Invalid email or password', 'error');
-                        return;
-                    }
-                    
-                    // Set current user
-                    currentUser = user;
-                    
-                    // Remember me functionality
-                    if (rememberMe) {
-                        localStorage.setItem('rememberMe', 'true');
-                        localStorage.setItem('savedEmail', email);
-                        localStorage.setItem('savedPassword', password);
-                    } else {
-                        localStorage.removeItem('rememberMe');
-                        localStorage.removeItem('savedEmail');
-                        localStorage.removeItem('savedPassword');
-                    }
-                    
-                    // Show success message
-                    showFlashMessage('Login successful! Redirecting to dashboard...');
-                    
-                    // Redirect to dashboard after delay
-                    setTimeout(() => {
-                        redirectToDashboard();
-                    }, 500);
-                });
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                signInWithEmailAndPassword(auth, email, password)
+                    .then(() => {
+                        // Set a flag to show a notification on index.html (optional)
+                        localStorage.setItem('loginSuccess', 'true');
+                        // Redirect to index.html
+                        window.location.href = 'index.html';
+                    })
+                    .catch((error) => {
+                        console.error("Error logging in:", error.message);
+                        alert("Login failed: " + error.message);
+                    });
             });
         }
         
@@ -1934,12 +1917,28 @@
             });
         }
     });
+
+    function showDashboard(userData) {
+        // Hide main-section and show dashboard content
+        const mainSection = document.querySelector('.main-section');
+        if (mainSection) {
+            mainSection.innerHTML = `
+                <div style="width: 100%; background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2 style="margin-bottom: 20px;">Welcome, ${userData.fullName}</h2>
+                    <p>Your email: ${userData.email}</p>
+                    <!-- Add more dashboard content here -->
+                </div>
+            `;
+        }
+    }
     </script>
 
     <script type="module">
         // Import Firebase modules
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
         import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+        import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
 
         // Your Firebase configuration
         const firebaseConfig = {
@@ -1956,6 +1955,7 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
+        const database = getDatabase(app);
 
         // Handle login form submission
         document.getElementById('login-form').addEventListener('submit', (e) => {
@@ -1964,13 +1964,73 @@
             const password = document.getElementById('password').value;
 
             signInWithEmailAndPassword(auth, email, password)
-                .then((userCredential) => {
-                    console.log("User logged in:", userCredential.user);
-                    alert("Login successful!");
+                .then(() => {
+                    // Set a flag to show a notification on index.html (optional)
+                    localStorage.setItem('loginSuccess', 'true');
+                    // Redirect to index.html
+                    window.location.href = 'index.html';
                 })
                 .catch((error) => {
                     console.error("Error logging in:", error.message);
                     alert("Login failed: " + error.message);
+                });
+        });
+
+        // Handle floating modal sign up form submission
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const agreeTerms = document.getElementById('agreeTerms').checked;
+
+            if (!fullName || !email || !password || !confirmPassword) {
+                    alert("Login failed: " + error.message);
+                });
+        });
+
+        // Handle floating modal sign up form submission
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const agreeTerms = document.getElementById('agreeTerms').checked;
+
+            if (!fullName || !email || !password || !confirmPassword) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            if (password !== confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
+            if (!agreeTerms) {
+                alert('You must agree to the terms and conditions');
+                return;
+            }
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    // Save user info to Realtime Database
+                    return set(ref(database, 'users/' + user.uid), {
+                        fullName: fullName,
+                        email: email,
+                        createdAt: new Date().toISOString()
+                    });
+                })
+                .then(() => {
+                    alert('Account created successfully! You can now log in.');
+                    // Optionally close the modal here
+                    // document.getElementById('signupModal').classList.remove('active');
+                })
+                .catch((error) => {
+                    alert('Sign up failed: ' + error.message);
                 });
         });
     </script>

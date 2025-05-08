@@ -7,7 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary: #4338ca;
+            --primary: #3328bf;
             --primary-dark: #3730a3;
             --primary-light: #a5b4fc;
             --white: #ffffff;
@@ -38,98 +38,92 @@
         }
         
         /* Header */
-        header {
+        .main-header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             padding: 20px 0;
             border-bottom: 1px solid var(--gray);
-            background-color: var(--white);
-            position: sticky;
-            top: 0;
-            z-index: 100;
         }
-        
-        nav {
+
+        .navbar-container {
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
         }
-        
-        .logo {
+
+        .logo-container {
             display: flex;
             align-items: center;
+            margin-left: 32px;
+        }
+
+        .main-nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .nav-link {
             text-decoration: none;
-            color: var(--black);
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--dark-gray);
+            transition: color 0.2s;
+            padding: 8px 0;
         }
-        
-        .logo img {
-            height: 40px;
-            margin-right: 10px;
-        }
-        
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .logo-text h1 {
-            font-size: 24px;
+
+        .nav-link.active,
+        .nav-link:hover {
+            color: var(--primary);
             font-weight: 600;
         }
-        
-        .logo-text span {
+
+        .auth-buttons {
+            display: flex;
+            gap: 12px;
+            margin-right: 32px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .login-btn, .signup-btn {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
             font-size: 14px;
-            color: var(--dark-gray);
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-        
-        .nav-links a {
+            padding: 8px 22px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
             text-decoration: none;
-            color: var(--dark-gray);
-            font-size: 16px;
-            transition: color 0.3s ease;
-            font-weight: 500;
+            display: inline-block;
         }
-        
-        .nav-links a:hover {
+
+        .login-btn {
+            background: transparent;
             color: var(--primary);
+            border: 1.5px solid var(--primary);
         }
-        
-        .auth-links {
-            display: flex;
-            gap: 15px;
-            align-items: center;
+
+        .login-btn:hover {
+            background: rgba(74, 41, 255, 0.1);
         }
-        
-        .auth-links a {
-            text-decoration: none;
+
+        .signup-btn {
+            background: var(--primary);
+            color: #fff;
         }
-        
-        .log-in {
-            color: var(--primary);
-            font-weight: 500;
-            padding: 8px 16px;
-            border-radius: 6px;
-            transition: background-color 0.3s ease;
-        }
-        
-        .log-in:hover {
-            background-color: rgba(67, 56, 202, 0.1);
-        }
-        
-        .sign-up {
-            background-color: var(--primary);
-            color: var(--white);
-            padding: 10px 20px;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
-        
-        .sign-up:hover {
-            background-color: var(--primary-dark);
+
+        .signup-btn:hover {
+            background: var(--primary-dark);
         }
         
         /* Main Content */
@@ -485,32 +479,38 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="homepage.html" class="logo">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0ZM20 5C28.284 5 35 11.716 35 20C35 28.284 28.284 35 20 35C11.716 35 5 28.284 5 20C5 11.716 11.716 5 20 5Z" fill="#4338ca"/>
-                        <path d="M20 10C14.477 10 10 14.477 10 20C10 25.523 14.477 30 20 30C25.523 30 30 25.523 30 20C30 14.477 25.523 10 20 10ZM20 15C22.761 15 25 17.239 25 20C25 22.761 22.761 25 20 25C17.239 25 15 22.761 15 20C15 17.239 17.239 15 20 15Z" fill="#4338ca"/>
-                    </svg>
-                    <div class="logo-text">
-                        <h1>Guideian</h1>
-                        <span>Future Ready</span>
-                    </div>
-                </a>
-                <div class="nav-links">
-                    <a href="homepage.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="about-us.html">About Us</a>
-                    <a href="contact-us.html">Contact us</a>
-                </div>
-                <div class="auth-links">
-                    <a href="log-in.html" class="log-in">Log In</a>
-                    <a href="sign-up.html" class="sign-up">Sign Up</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+<!-- Replace your current <header>...</header> with the following for a header matching index.html -->
+
+<header class="main-header">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <svg class="logo-svg" width="217" height="55" viewBox="0 0 217 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Tenor Sans" font-size="26" letter-spacing="0em">
+            <tspan x="63" y="25.71">Guideian</tspan>
+          </text>
+          <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Tenor Sans" font-size="13" letter-spacing="0em">
+            <tspan x="64" y="45.855">Future Ready</tspan>
+          </text>
+          <path d="M55.0188 1C55.0188 1 40.0187 1 25.0188 1C10.0189 1 0.518789 17 1.01882 28C1.51886 39 9.01882 52.7638 25.0188 53C41.0188 53.2362 54.0188 53 54.0188 53V28" stroke="black" stroke-width="1.5"></path>
+          <path d="M55.0188 5C55.0188 5 38.0188 5 26.5188 5C15.0188 5 5.0188 14.3256 5.0188 28C5.0188 41.6744 16.0323 49 27.0188 49C38.0053 49 50.0188 49 50.0188 49V40V28" stroke="black" stroke-width="1.5"></path>
+          <path d="M55.0188 9C55.0188 9 33.473 9 25.9207 9C18.3683 9 9.0188 17.1554 9.0188 28C9.0188 38.8446 17.2723 45.5 26.0188 45.5C34.7653 45.5 46.0188 45.5 46.0188 45.5V37.5V28" stroke="black" stroke-width="1.5"></path>
+          <path d="M55.0188 13C55.0188 13 32.2727 13 26.2633 13C20.2539 13 13.0188 18.9385 13.0188 27.5C13.0188 36.0615 20.0188 41 26.5188 41.5C33.0188 42 42.0188 41.5 42.0188 41.5V28" stroke="black" stroke-width="1.5"></path>
+          <path d="M55.0189 17C55.0189 17 35.6287 17 28.0738 17C20.5189 17 16.5189 21.5 17.0189 28C17.5189 34.5 23.1612 37.5 28.0738 37.5C32.9865 37.5 38.0189 37.5 38.0189 37.5V28" stroke="black" stroke-width="1.5"></path>
+          <path d="M55.0188 21C55.0188 21 29.7875 21 27.1858 21C24.5841 21 21.0188 23.4418 21.0188 27.1518C21.0188 30.8618 23.5188 34 27.1858 34C30.8529 34 34.0188 34 34.0188 34V28" stroke="black" stroke-width="1.5"></path>
+        </svg>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact us</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="log-in.html" class="login-btn">Log In</a>
+        <a href="sign-up.html" class="signup-btn">Sign Up</a>
+      </div>
+    </div>
+  </header>
 
     <main class="container">
         <div class="main-content">
@@ -1008,20 +1008,19 @@
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
 
-            // Create user with email and password
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     const user = userCredential.user;
 
-                    // Save user data to Firebase Realtime Database
                     set(ref(database, 'users/' + user.uid), {
                         fullName: fullName,
                         email: email,
                         createdAt: new Date().toISOString()
                     })
                     .then(() => {
-                        console.log("User data saved successfully!");
-                        alert("Signup successful! User data saved.");
+                        // Show success message, hide form (no redirect)
+                        document.getElementById('signupForm').style.display = 'none';
+                        document.getElementById('successMessage').style.display = 'block';
                     })
                     .catch((error) => {
                         console.error("Error saving user data:", error.message);

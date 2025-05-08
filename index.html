@@ -6,6 +6,14 @@
   <title>Guideian - Your roadmap to a bright future</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (localStorage.getItem('loginSuccess') === 'true') {
+            alert('You have been signed in!');
+            localStorage.removeItem('loginSuccess');
+        }
+    });
+  </script>
 </head>
 <body>
   <div class="landing-page">
@@ -53,8 +61,8 @@
         </p>
       </div>
       <div class="hero-buttons">
-        <a href="#" class="primary-button">Get Started</a>
-        <a href="#" class="secondary-button">
+        <a href="log-in.html" class="primary-button">Get Started</a>
+        <a href="about.html" class="secondary-button">
           <span>Learn More</span>
           <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/956ec864ccf54705076ceab6ed761d9104fc5752?placeholderIfAbsent=true&apiKey=f23ba570a18b45479194cf824b4200ba" alt="Learn more icon" class="button-icon">
         </a>

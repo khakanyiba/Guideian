@@ -71,12 +71,12 @@ body, h1, p, a, ul, li, button {
   }
   
   .nav-link.active {
-    color: #4A29FF;
+    color: #3328bf;
     font-weight: 600;
   }
   
   .nav-link:hover {
-    color: #4A29FF;
+    color: #3328bf;
   }
   
   .auth-buttons {
@@ -98,22 +98,22 @@ body, h1, p, a, ul, li, button {
   
   .login-btn {
     background: transparent;
-    color: #4A29FF;
-    border: 1.5px solid #4A29FF;
+    color: #3328bf;
+    border: 1.5px solid #3328bf;
   }
   
   .login-btn:hover {
-    background: #4A29FF;
+    background: #3328bf;
     color: #fff;
   }
   
   .signup-btn {
-    background: #4A29FF;
+    background: #3328bf;
     color: #fff;
   }
   
   .signup-btn:hover {
-    background: #3A1FCC;
+    background: #3328bf;
   }
   
   /* Page Title */
