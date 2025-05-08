@@ -1,3 +1,10 @@
+/* General Reset */
+body, h1, p, a, ul, li, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .contact-us {
     background-color: #fff;
     display: flex;
@@ -7,110 +14,106 @@
     font-family: 'Plus Jakarta Sans', -apple-system, Roboto, Helvetica, sans-serif;
   }
   
-  /* Navbar Styles */
-  .navbar {
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
+  /* Header Styles */
+  .main-header, .navbar {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.06);
+    padding: 0;
     width: 100%;
-    padding-left: 70px;
-    padding-right: 70px;
-    flex-direction: column;
-    overflow: hidden;
-    align-items: end;
   }
   
   .navbar-container {
     display: flex;
-    width: 100%;
-    max-width: 1155px;
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 70px;
+    position: relative;
   }
   
-  .logo {
-    align-self: stretch;
+  .logo-container {
     display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
-    flex-direction: column;
-    align-items: stretch;
-    font-family: 'Tenor Sans', -apple-system, Roboto, Helvetica, sans-serif;
-    color: #000;
-    font-weight: 400;
+    align-items: center;
+    margin-left: 32px;
   }
   
   .brand-name {
-    font-size: 26px;
-    margin: 0;
-  }
-  
-  .brand-tagline {
-    font-size: 13px;
-    align-self: start;
-    margin-top: 13px;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 24px;
+    color: #222;
     margin-bottom: 0;
   }
   
+  .brand-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #666;
+    margin-top: -4px;
+  }
+  
   .main-nav {
-    align-self: stretch;
     display: flex;
-    min-height: 96px;
-    align-items: center;
-    font-family: 'Plus Jakarta Sans', -apple-system, Roboto, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #808080;
-    font-weight: 600;
-    line-height: 1;
     justify-content: center;
+    flex: 1;
+    gap: 32px;
   }
   
   .nav-link {
-    align-self: stretch;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: #808080;
     text-decoration: none;
-    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+    transition: color 0.2s;
+    padding: 8px 0;
   }
   
   .nav-link.active {
-    color: #3328bf;
+    color: #4A29FF;
+    font-weight: 600;
+  }
+  
+  .nav-link:hover {
+    color: #4A29FF;
   }
   
   .auth-buttons {
-    align-self: stretch;
     display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
-    align-items: stretch;
-    gap: 22px;
-    font-family: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
+    gap: 12px;
+    margin-right: 32px;
+  }
+  
+  .login-btn, .signup-btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 2;
+    padding: 8px 22px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
   }
   
   .login-btn {
-    color: #3328bf;
-    font-weight: 500;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-decoration: none;
+    background: transparent;
+    color: #4A29FF;
+    border: 1.5px solid #4A29FF;
+  }
+  
+  .login-btn:hover {
+    background: #4A29FF;
+    color: #fff;
   }
   
   .signup-btn {
-    border-radius: 6px;
-    background-color: #3328bf;
-    padding: 14px 16px;
+    background: #4A29FF;
     color: #fff;
-    font-weight: 400;
-    text-decoration: none;
+  }
+  
+  .signup-btn:hover {
+    background: #3A1FCC;
   }
   
   /* Page Title */
