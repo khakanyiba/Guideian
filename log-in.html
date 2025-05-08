@@ -1976,20 +1976,6 @@
                 });
         });
 
-        // Handle floating modal sign up form submission
-        document.getElementById('signupForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const fullName = document.getElementById('fullName').value;
-            const email = document.getElementById('signupEmail').value;
-            const password = document.getElementById('signupPassword').value;
-            const confirmPassword = document.getElementById('confirmPassword').value;
-            const agreeTerms = document.getElementById('agreeTerms').checked;
-
-            if (!fullName || !email || !password || !confirmPassword) {
-                    alert("Login failed: " + error.message);
-                });
-        });
 
         // Handle floating modal sign up form submission
         document.getElementById('signupForm').addEventListener('submit', function(e) {
