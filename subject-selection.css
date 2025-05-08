@@ -77,29 +77,62 @@ body {
   color: #3328bf;
 }
 
+/* Auth buttons in the header - match index.html style */
 .auth-buttons {
   display: flex;
-  gap: 15px;
+  gap: 16px;
+  align-items: center;
 }
 
-.login-link {
+.login-btn,
+.signup-btn {
+  font-family: 'Plus Jakarta Sans', 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 8px; /* Less rounded, more rectangular */
+  border: 2px solid #3328bf;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(51, 40, 191, 0.04);
+}
+
+.login-btn {
+  background: #fff;
   color: #3328bf;
-  text-decoration: none;
-  font-weight: 500;
+  border: 2px solid #3328bf;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(51, 40, 191, 0.04);
 }
 
-.signup-button {
-  background-color: #3328bf;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s;
+.login-btn:focus,
+.login-btn:active {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(51, 40, 191, 0.04);
+  background: #f3f3ff;
+  color: #241a8f;
+  border-color: #241a8f;
 }
 
-.signup-button:hover {
-  background-color: #2a1fa0;
+.signup-btn {
+  background: #3328bf;
+  color: #fff;
+}
+
+.signup-btn:hover,
+.signup-btn:focus {
+  background: #241a8f;
+  border-color: #241a8f;
+  color: #fff;
+}
+
+.login-btn:focus,
+.login-btn:active,
+.signup-btn:focus,
+.signup-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* Main Content Styles */

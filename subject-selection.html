@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subject Selection | Guideian</title>
   <link rel="stylesheet" href="subject-selection.css">
-  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <div class="subject-selection-page">
-    <header class="navbar">
-      <div class="navbar-container">
-        <div class="logo-container">
-          <img src="images/LOGO.png" alt="Guideian Logo" class="logo-image">
-          <div class="logo-text">
-            <h1 class="logo-title">Guideian</h1>
-            <p class="logo-subtitle">Future Ready</p>
-          </div>
-        </div>
-        <nav class="main-nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="services.html" class="nav-link">Services</a>
-          <a href="about.html" class="nav-link">About Us</a>
-          <a href="contact.html" class="nav-link">Contact us</a>
-        </nav>
-        <div class="auth-buttons">
-          <a href="#" class="login-link">Log In</a>
-          <a href="#" class="signup-button">Sign Up</a>
-        </div>
-      </div>
-    </header>
+<!-- Replace your current header (from <header class="navbar">...</header>) with the following code: -->
+
+<header class="navbar">
+  <div class="navbar-container">
+    <div class="logo-container">
+      <svg class="logo-svg" width="217" height="55" viewBox="0 0 217 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Tenor Sans" font-size="26" letter-spacing="0em">
+          <tspan x="63" y="25.71">Guideian</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Tenor Sans" font-size="13" letter-spacing="0em">
+          <tspan x="64" y="45.855">Future Ready</tspan>
+        </text>
+        <path d="M55.0188 1C55.0188 1 40.0187 1 25.0188 1C10.0189 1 0.518789 17 1.01882 28C1.51886 39 9.01882 52.7638 25.0188 53C41.0188 53.2362 54.0188 53 54.0188 53V28" stroke="black" stroke-width="1.5"></path>
+        <path d="M55.0188 5C55.0188 5 38.0188 5 26.5188 5C15.0188 5 5.0188 14.3256 5.0188 28C5.0188 41.6744 16.0323 49 27.0188 49C38.0053 49 50.0188 49 50.0188 49V40V28" stroke="black" stroke-width="1.5"></path>
+        <path d="M55.0188 9C55.0188 9 33.473 9 25.9207 9C18.3683 9 9.0188 17.1554 9.0188 28C9.0188 38.8446 17.2723 45.5 26.0188 45.5C34.7653 45.5 46.0188 45.5 46.0188 45.5V37.5V28" stroke="black" stroke-width="1.5"></path>
+        <path d="M55.0188 13C55.0188 13 32.2727 13 26.2633 13C20.2539 13 13.0188 18.9385 13.0188 27.5C13.0188 36.0615 20.0188 41 26.5188 41.5C33.0188 42 42.0188 41.5 42.0188 41.5V28" stroke="black" stroke-width="1.5"></path>
+        <path d="M55.0189 17C55.0189 17 35.6287 17 28.0738 17C20.5189 17 16.5189 21.5 17.0189 28C17.5189 34.5 23.1612 37.5 28.0738 37.5C32.9865 37.5 38.0189 37.5 38.0189 37.5V28" stroke="black" stroke-width="1.5"></path>
+        <path d="M55.0188 21C55.0188 21 29.7875 21 27.1858 21C24.5841 21 21.0188 23.4418 21.0188 27.1518C21.0188 30.8618 23.5188 34 27.1858 34C30.8529 34 34.0188 34 34.0188 34V28" stroke="black" stroke-width="1.5"></path>
+      </svg>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact us</a>
+    </nav>
+    <div class="auth-buttons">
+      <button class="login-btn" onclick="window.location.href='log-in.html'">Log In</button>
+      <button class="signup-btn" onclick="window.location.href='sign-up.html'">Sign Up</button>
+    </div>
+  </div>
+</header>
 
     <main class="selection-container">
       <div class="selection-header">
@@ -49,11 +64,11 @@
         <div class="form-step active" data-step="1">
           <h2>Your Academic Profile</h2>
           <p>Enter your current or predicted marks. Add all subjects you're taking.</p>
-          
+
           <div class="subject-inputs" id="subjectInputsContainer">
             <!-- Default subjects will be added here by JavaScript -->
           </div>
-          
+
           <div class="subject-management">
             <div class="subject-selector-container">
               <select id="subjectSelector" class="subject-selector">
@@ -66,7 +81,7 @@
             </div>
             <p class="help-text">Add all subjects you're currently taking or plan to take</p>
           </div>
-          
+
           <div class="form-navigation">
             <button type="button" class="next-btn">Next: Interests <i class="fas fa-arrow-right"></i></button>
           </div>
@@ -76,16 +91,16 @@
         <div class="form-step" data-step="2">
           <h2>Your Interests & Strengths</h2>
           <p>Select areas that excite you and match your natural abilities</p>
-          
+
           <div class="interest-grid">
             <!-- Interests will be populated by JavaScript -->
           </div>
-          
+
           <div class="interest-help">
             <i class="fas fa-info-circle"></i>
             <p>Select 3-5 areas that best match your interests and strengths</p>
           </div>
-          
+
           <div class="form-navigation">
             <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Back</button>
             <button type="button" class="next-btn">Next: Preferences <i class="fas fa-arrow-right"></i></button>
@@ -96,12 +111,12 @@
         <div class="form-step" data-step="3">
           <h2>Your Personal Preferences</h2>
           <p>Tell us more about what matters to you in your education</p>
-          
+
           <div class="preferences-help">
             <i class="fas fa-lightbulb"></i>
             <p>These preferences help us tailor recommendations to your personal situation and goals</p>
           </div>
-          
+
           <div class="preferences-container">
             <div class="preference-section">
               <h3><i class="fas fa-wallet"></i> Financial Considerations</h3>
@@ -119,11 +134,12 @@
                 <label class="preference-option">
                   <input type="radio" name="affordability" value="premium">
                   <span class="option-title">Premium Investment</span>
-                  <span class="option-description">Prioritizing best education regardless of cost (Over R80,000/year)</span>
+                  <span class="option-description">Prioritizing best education regardless of cost (Over
+                    R80,000/year)</span>
                 </label>
               </div>
             </div>
-            
+
             <div class="preference-section">
               <h3><i class="fas fa-universal-access"></i> Accessibility Needs</h3>
               <div class="preference-options multiple-options">
@@ -149,7 +165,7 @@
                 </label>
               </div>
             </div>
-            
+
             <div class="preference-section">
               <h3><i class="fas fa-map-marker-alt"></i> Location Preferences</h3>
               <div class="preference-options multiple-options">
@@ -175,7 +191,7 @@
                 </label>
               </div>
             </div>
-            
+
             <div class="preference-section">
               <h3><i class="fas fa-graduation-cap"></i> Learning Style</h3>
               <div class="preference-options">
@@ -196,7 +212,7 @@
                 </label>
               </div>
             </div>
-            
+
             <div class="preference-section">
               <h3><i class="fas fa-briefcase"></i> Career Goals</h3>
               <div class="preference-options">
@@ -218,7 +234,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="form-navigation">
             <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Back</button>
             <button type="button" class="next-btn">Get Recommendations <i class="fas fa-chart-line"></i></button>
@@ -229,7 +245,7 @@
         <div class="form-step" data-step="4">
           <h2>Your Personalized Recommendations</h2>
           <p>Carefully curated based on your unique profile</p>
-          
+
           <div class="results-summary">
             <div class="summary-card">
               <h3><i class="fas fa-user-graduate"></i> Academic Fit</h3>
@@ -256,7 +272,7 @@
               <p>Excellent employment prospects in your selected fields</p>
             </div>
           </div>
-          
+
           <div class="results-filter">
             <div class="filter-group">
               <label for="career-filter">Filter by:</label>
@@ -278,89 +294,91 @@
               </select>
             </div>
           </div>
-          
-         
-            
-            <div class="result-cards" id="recommendationsContainer">
-              <!-- Recommendations will be loaded here by JavaScript -->
-            </div>
-          </div>
-          
-          <div class="form-navigation">
-            <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Back</button>
-            <button type="button" class="save-all-btn"><i class="fas fa-download"></i> Download All Recommendations</button>
-          </div>
-        </div>
-      </form>
-    </main>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-column brand-column">
-            <div class="footer-brand">
-              <h2 class="footer-logo">Guideian</h2>
-              <p class="footer-tagline">Future Ready</p>
-              <p class="footer-description">
-                Your roadmap to a bright future. We help
-                South African students navigate their
-                educational journey from high school to
-                university.
-              </p>
-              <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
+
+
+          <div class="result-cards" id="recommendationsContainer">
+            <!-- Recommendations will be loaded here by JavaScript -->
           </div>
-          <div class="footer-column links-column">
-            <div class="footer-links-container">
-              <div class="quick-links-column">
-                <div class="links-content">
-                  <h3 class="links-title">Quick Links</h3>
-                  <div class="link-item">
-                    <a href="index.html">Home</a>
-                    <span class="bullet">•</span>
-                  </div>
-                  <div class="link-item">
-                    <a href="services.html">Services</a>
-                    <span class="bullet">•</span>
-                  </div>
-                  <div class="link-item">
-                    <a href="about.html">About Us</a>
-                    <span class="bullet">•</span>
-                  </div>
-                  <a href="contact.html" class="footer-link">Contact Us</a>
-                  <a href="#" class="footer-link">Sign Up</a>
-                </div>
-              </div>
-              <div class="contact-column">
-                <div class="contact-content">
-                  <h3 class="contact-title">Contact Us</h3>
-                  <p class="contact-info"><i class="fas fa-map-marker-alt"></i> Cape Town, South Africa</p>
-                  <p class="contact-info"><i class="fas fa-envelope"></i> guideian.help@gmail.com</p>
-                  <p class="contact-info"><i class="fas fa-phone"></i> +27 81 487 5688</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer-column cta-column">
-            <div class="footer-cta">
-              <h2 class="cta-title">Let's start your journey now!</h2>
-              <a href="#" class="cta-button">Sign Up</a>
+        </div>
+
+        <div class="form-navigation">
+          <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Back</button>
+          <button type="button" class="save-all-btn"><i class="fas fa-download"></i> Download All
+            Recommendations</button>
+        </div>
+  </div>
+  </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-column brand-column">
+          <div class="footer-brand">
+            <h2 class="footer-logo">Guideian</h2>
+            <p class="footer-tagline">Future Ready</p>
+            <p class="footer-description">
+              Your roadmap to a bright future. We help
+              South African students navigate their
+              educational journey from high school to
+              university.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
-        <div class="footer-divider"></div>
-        <div class="copyright">
-          Copyright @ 2025 Guideian, All rights reserved.
+        <div class="footer-column links-column">
+          <div class="footer-links-container">
+            <div class="quick-links-column">
+              <div class="links-content">
+                <h3 class="links-title">Quick Links</h3>
+                <div class="link-item">
+                  <a href="index.html">Home</a>
+                  <span class="bullet">•</span>
+                </div>
+                <div class="link-item">
+                  <a href="services.html">Services</a>
+                  <span class="bullet">•</span>
+                </div>
+                <div class="link-item">
+                  <a href="about.html">About Us</a>
+                  <span class="bullet">•</span>
+                </div>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+                <a href="#" class="footer-link">Sign Up</a>
+              </div>
+            </div>
+            <div class="contact-column">
+              <div class="contact-content">
+                <h3 class="contact-title">Contact Us</h3>
+                <p class="contact-info"><i class="fas fa-map-marker-alt"></i> Cape Town, South Africa</p>
+                <p class="contact-info"><i class="fas fa-envelope"></i> guideian.help@gmail.com</p>
+                <p class="contact-info"><i class="fas fa-phone"></i> +27 81 487 5688</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column cta-column">
+          <div class="footer-cta">
+            <h2 class="cta-title">Let's start your journey now!</h2>
+            <a href="#" class="cta-button">Sign Up</a>
+          </div>
         </div>
       </div>
-    </footer>
+      <div class="footer-divider"></div>
+      <div class="copyright">
+        Copyright @ 2025 Guideian, All rights reserved.
+      </div>
+    </div>
+  </footer>
   </div>
 
   <script src="subject-selection.js"></script>
 </body>
+
 </html>
