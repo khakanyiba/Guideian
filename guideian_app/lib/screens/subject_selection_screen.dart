@@ -26,6 +26,7 @@ class SubjectSelectionScreen extends StatelessWidget {
                 return SingleChildScrollView(
                   padding: const EdgeInsets.all(32),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       const Text(
                         'Assisted Subject Selection',
@@ -34,6 +35,7 @@ class SubjectSelectionScreen extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           color: Color(0xFF0D0D0D),
                         ),
+                        textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 32),
                       _buildStepIndicator(provider.currentStep),
@@ -59,7 +61,7 @@ class SubjectSelectionScreen extends StatelessWidget {
             width: 40,
             height: 40,
             decoration: BoxDecoration(
-              color: i <= currentStep ? const Color(0xFF3328BF) : Colors.grey,
+              color: i <= currentStep ? const Color(0xFF3328BF) : Colors.grey.shade300,
               shape: BoxShape.circle,
             ),
             child: Center(
@@ -76,15 +78,14 @@ class SubjectSelectionScreen extends StatelessWidget {
             Container(
               width: 60,
               height: 2,
-              color: i < currentStep ? const Color(0xFF3328BF) : Colors.grey,
+              color: i < currentStep ? const Color(0xFF3328BF) : Colors.grey.shade300,
             ),
         ],
       ],
     );
   }
 
-  Widget _buildStepContent(
-      BuildContext context, SubjectSelectionProvider provider) {
+  Widget _buildStepContent(BuildContext context, SubjectSelectionProvider provider) {
     switch (provider.currentStep) {
       case 0:
         return _buildStep1(context, provider);
@@ -108,9 +109,13 @@ class SubjectSelectionScreen extends StatelessWidget {
       'Sciences',
       'Humanities',
       'Sports',
+      'Mathematics',
+      'History',
+      'Geography',
     ];
 
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         const Text(
           'What are your interests?',
@@ -118,6 +123,7 @@ class SubjectSelectionScreen extends StatelessWidget {
             fontSize: 24,
             fontWeight: FontWeight.w600,
           ),
+          textAlign: TextAlign.center,
         ),
         const SizedBox(height: 20),
         const Text(
@@ -129,50 +135,60 @@ class SubjectSelectionScreen extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 32),
-        Wrap(
-          spacing: 12,
-          runSpacing: 12,
-          children: interests.map((interest) {
-            final selectedInterests =
-                provider.userData['interests'] ?? <String>[];
-            final isSelected = selectedInterests.contains(interest);
+        Container(
+          constraints: const BoxConstraints(maxWidth: 600),
+          child: Wrap(
+            spacing: 12,
+            runSpacing: 12,
+            alignment: WrapAlignment.center,
+            children: interests.map((interest) {
+              final selectedInterests = provider.userData['interests'] as List<String>? ?? <String>[];
+              final isSelected = selectedInterests.contains(interest);
 
-            return FilterChip(
-              label: Text(interest),
-              selected: isSelected,
-              onSelected: (selected) {
-                final currentInterests = List<String>.from(selectedInterests);
-                if (selected) {
-                  currentInterests.add(interest);
-                } else {
-                  currentInterests.remove(interest);
-                }
-                provider.updateUserData('interests', currentInterests);
-              },
-              selectedColor: const Color(0xFF3328BF).withOpacity(0.2),
-              checkmarkColor: const Color(0xFF3328BF),
-            );
-          }).toList(),
+              return FilterChip(
+                label: Text(interest),
+                selected: isSelected,
+                onSelected: (selected) {
+                  final currentInterests = List<String>.from(selectedInterests);
+                  if (selected) {
+                    currentInterests.add(interest);
+                  } else {
+                    currentInterests.remove(interest);
+                  }
+                  provider.updateUserData('interests', currentInterests);
+                },
+                selectedColor: const Color(0xFF3328BF).withOpacity(0.2),
+                checkmarkColor: const Color(0xFF3328BF),
+                backgroundColor: Colors.white,
+                side: BorderSide(
+                  color: isSelected ? const Color(0xFF3328BF) : Colors.grey.shade300,
+                ),
+              );
+            }).toList(),
+          ),
         ),
-        const SizedBox(height: 32),
+        const SizedBox(height: 40),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const SizedBox.shrink(),
+            const SizedBox(width: 100), // Spacer for alignment
             ElevatedButton(
-              onPressed: (provider.userData['interests'] ?? []).isNotEmpty
+              onPressed: (provider.userData['interests'] as List<String>? ?? []).isNotEmpty
                   ? () => provider.nextStep()
                   : null,
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF3328BF),
                 foregroundColor: Colors.white,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
+                disabledBackgroundColor: Colors.grey.shade300,
               ),
-              child: const Text('Next'),
+              child: const Text(
+                'Next',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
           ],
         ),
@@ -182,6 +198,7 @@ class SubjectSelectionScreen extends StatelessWidget {
 
   Widget _buildStep2(BuildContext context, SubjectSelectionProvider provider) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         const Text(
           'Language Preferences',
@@ -189,6 +206,7 @@ class SubjectSelectionScreen extends StatelessWidget {
             fontSize: 24,
             fontWeight: FontWeight.w600,
           ),
+          textAlign: TextAlign.center,
         ),
         const SizedBox(height: 20),
         const Text(
@@ -200,43 +218,66 @@ class SubjectSelectionScreen extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 32),
-        DropdownButtonFormField<String>(
-          initialValue: provider.userData['additionalLanguage'],
-          decoration: const InputDecoration(
-            labelText: 'Additional Language',
-            border: OutlineInputBorder(),
+        Container(
+          constraints: const BoxConstraints(maxWidth: 400),
+          child: DropdownButtonFormField<String>(
+            value: provider.userData['additionalLanguage'] as String?,
+            decoration: InputDecoration(
+              labelText: 'Additional Language',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+                borderSide: BorderSide(color: Colors.grey.shade300),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+                borderSide: const BorderSide(color: Color(0xFF3328BF)),
+              ),
+            ),
+            items: const [
+              DropdownMenuItem(value: 'French', child: Text('French')),
+              DropdownMenuItem(value: 'German', child: Text('German')),
+              DropdownMenuItem(value: 'Spanish', child: Text('Spanish')),
+              DropdownMenuItem(value: 'Portuguese', child: Text('Portuguese')),
+              DropdownMenuItem(value: 'Mandarin', child: Text('Mandarin')),
+              DropdownMenuItem(value: 'None', child: Text('None')),
+            ],
+            onChanged: (value) {
+              provider.updateUserData('additionalLanguage', value);
+            },
           ),
-          items: const [
-            DropdownMenuItem(value: 'French', child: Text('French')),
-            DropdownMenuItem(value: 'German', child: Text('German')),
-            DropdownMenuItem(value: 'Spanish', child: Text('Spanish')),
-            DropdownMenuItem(value: 'Portuguese', child: Text('Portuguese')),
-            DropdownMenuItem(value: 'None', child: Text('None')),
-          ],
-          onChanged: (value) {
-            provider.updateUserData('additionalLanguage', value);
-          },
         ),
-        const SizedBox(height: 32),
+        const SizedBox(height: 40),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             TextButton(
               onPressed: () => provider.previousStep(),
-              child: const Text('Back'),
+              style: TextButton.styleFrom(
+                foregroundColor: const Color(0xFF3328BF),
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
+              child: const Text(
+                'Back',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
             ElevatedButton(
               onPressed: () => provider.nextStep(),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF3328BF),
                 foregroundColor: Colors.white,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
               ),
-              child: const Text('Next'),
+              child: const Text(
+                'Next',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
           ],
         ),
@@ -246,6 +287,7 @@ class SubjectSelectionScreen extends StatelessWidget {
 
   Widget _buildStep3(BuildContext context, SubjectSelectionProvider provider) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         const Text(
           'Number of Elective Subjects',
@@ -253,6 +295,7 @@ class SubjectSelectionScreen extends StatelessWidget {
             fontSize: 24,
             fontWeight: FontWeight.w600,
           ),
+          textAlign: TextAlign.center,
         ),
         const SizedBox(height: 20),
         const Text(
@@ -264,41 +307,64 @@ class SubjectSelectionScreen extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 32),
-        DropdownButtonFormField<int>(
-          initialValue: provider.userData['numElectives'] ?? 2,
-          decoration: const InputDecoration(
-            labelText: 'Number of Electives',
-            border: OutlineInputBorder(),
+        Container(
+          constraints: const BoxConstraints(maxWidth: 400),
+          child: DropdownButtonFormField<int>(
+            value: provider.userData['numElectives'] as int? ?? 2,
+            decoration: InputDecoration(
+              labelText: 'Number of Electives',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+                borderSide: BorderSide(color: Colors.grey.shade300),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+                borderSide: const BorderSide(color: Color(0xFF3328BF)),
+              ),
+            ),
+            items: const [
+              DropdownMenuItem(value: 1, child: Text('1 Elective')),
+              DropdownMenuItem(value: 2, child: Text('2 Electives')),
+              DropdownMenuItem(value: 3, child: Text('3 Electives')),
+              DropdownMenuItem(value: 4, child: Text('4 Electives')),
+            ],
+            onChanged: (value) {
+              provider.updateUserData('numElectives', value);
+            },
           ),
-          items: const [
-            DropdownMenuItem(value: 1, child: Text('1')),
-            DropdownMenuItem(value: 2, child: Text('2')),
-            DropdownMenuItem(value: 3, child: Text('3')),
-          ],
-          onChanged: (value) {
-            provider.updateUserData('numElectives', value);
-          },
         ),
-        const SizedBox(height: 32),
+        const SizedBox(height: 40),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             TextButton(
               onPressed: () => provider.previousStep(),
-              child: const Text('Back'),
+              style: TextButton.styleFrom(
+                foregroundColor: const Color(0xFF3328BF),
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
+              child: const Text(
+                'Back',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
             ElevatedButton(
               onPressed: () => provider.nextStep(),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF3328BF),
                 foregroundColor: Colors.white,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
               ),
-              child: const Text('Generate Recommendations'),
+              child: const Text(
+                'Generate Recommendations',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
           ],
         ),
@@ -308,19 +374,31 @@ class SubjectSelectionScreen extends StatelessWidget {
 
   Widget _buildStep4(BuildContext context, SubjectSelectionProvider provider) {
     if (provider.isLoading) {
-      return const Center(
+      return Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircularProgressIndicator(
+            const CircularProgressIndicator(
               color: Color(0xFF3328BF),
+              strokeWidth: 3,
             ),
-            SizedBox(height: 16),
-            Text(
+            const SizedBox(height: 24),
+            const Text(
               'Generating your personalized recommendations...',
               style: TextStyle(
                 fontSize: 16,
                 color: Color(0xFF808080),
               ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'This may take a few moments',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey.shade600,
+              ),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
@@ -328,6 +406,7 @@ class SubjectSelectionScreen extends StatelessWidget {
     }
 
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         const Text(
           'Your Recommended Subject Package',
@@ -335,9 +414,11 @@ class SubjectSelectionScreen extends StatelessWidget {
             fontSize: 24,
             fontWeight: FontWeight.w600,
           ),
+          textAlign: TextAlign.center,
         ),
         const SizedBox(height: 32),
         Container(
+          constraints: const BoxConstraints(maxWidth: 700),
           padding: const EdgeInsets.all(24),
           decoration: BoxDecoration(
             color: const Color(0xFFF9F9FB),
@@ -356,29 +437,44 @@ class SubjectSelectionScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 12),
-              ...provider.compulsorySubjects.map((subject) => Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.check_circle,
-                          color: Color(0xFF3328BF),
-                          size: 20,
-                        ),
-                        const SizedBox(width: 8),
-                        Text(
-                          subject,
-                          style: const TextStyle(
-                            fontSize: 16,
-                            color: Color(0xFF0D0D0D),
+              if (provider.compulsorySubjects.isNotEmpty)
+                ...provider.compulsorySubjects.map((subject) => Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: Row(
+                        children: [
+                          const Icon(
+                            Icons.check_circle,
+                            color: Color(0xFF3328BF),
+                            size: 20,
                           ),
-                        ),
-                      ],
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Text(
+                              subject,
+                              style: const TextStyle(
+                                fontSize: 16,
+                                color: Color(0xFF0D0D0D),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ))
+              else
+                const Padding(
+                  padding: EdgeInsets.only(bottom: 8),
+                  child: Text(
+                    'No compulsory subjects found.',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Color(0xFF808080),
+                      fontStyle: FontStyle.italic,
                     ),
-                  )),
+                  ),
+                ),
               const SizedBox(height: 20),
               const Text(
-                'Elective Subjects:',
+                'Recommended Elective Subjects:',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
@@ -386,29 +482,73 @@ class SubjectSelectionScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 12),
-              ...provider.recommendedSubjects
-                  .where((subject) =>
-                      !provider.compulsorySubjects.contains(subject))
-                  .map((subject) => Padding(
-                        padding: const EdgeInsets.only(bottom: 8),
-                        child: Row(
-                          children: [
-                            const Icon(
-                              Icons.star,
-                              color: Color(0xFF3328BF),
-                              size: 20,
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              subject,
-                              style: const TextStyle(
-                                fontSize: 16,
-                                color: Color(0xFF0D0D0D),
+              if (provider.recommendedSubjects.isNotEmpty)
+                ...provider.recommendedSubjects
+                    .where((subject) => !provider.compulsorySubjects.contains(subject))
+                    .map((subject) => Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Row(
+                            children: [
+                              const Icon(
+                                Icons.star,
+                                color: Color(0xFFFFA500),
+                                size: 20,
                               ),
-                            ),
-                          ],
+                              const SizedBox(width: 8),
+                              Expanded(
+                                child: Text(
+                                  subject,
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    color: Color(0xFF0D0D0D),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ))
+              else
+                const Padding(
+                  padding: EdgeInsets.only(bottom: 8),
+                  child: Text(
+                    'No elective recommendations available.',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Color(0xFF808080),
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
+                ),
+              if (provider.userData['additionalLanguage'] != null && 
+                  provider.userData['additionalLanguage'] != 'None')
+                Padding(
+                  padding: const EdgeInsets.only(top: 16),
+                  child: Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF3328BF).withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.language,
+                          color: Color(0xFF3328BF),
+                          size: 20,
                         ),
-                      )),
+                        const SizedBox(width: 8),
+                        Text(
+                          'Additional Language: ${provider.userData['additionalLanguage']}',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            color: Color(0xFF3328BF),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
             ],
           ),
         ),
@@ -418,13 +558,27 @@ class SubjectSelectionScreen extends StatelessWidget {
           children: [
             TextButton(
               onPressed: () => provider.previousStep(),
-              child: const Text('Back'),
+              style: TextButton.styleFrom(
+                foregroundColor: const Color(0xFF3328BF),
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
+              child: const Text(
+                'Back',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
             Row(
               children: [
                 TextButton(
                   onPressed: () => provider.reset(),
-                  child: const Text('Start Over'),
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.grey.shade600,
+                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  ),
+                  child: const Text(
+                    'Start Over',
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
                 ),
                 const SizedBox(width: 16),
                 ElevatedButton(
@@ -432,13 +586,15 @@ class SubjectSelectionScreen extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF3328BF),
                     foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 32, vertical: 16),
+                    padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
-                  child: const Text('Done'),
+                  child: const Text(
+                    'Done',
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
                 ),
               ],
             ),
@@ -448,6 +604,3 @@ class SubjectSelectionScreen extends StatelessWidget {
     );
   }
 }
-
-
-

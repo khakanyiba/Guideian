@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class ServicesSection extends StatelessWidget {
   const ServicesSection({super.key});
@@ -7,156 +6,133 @@ class ServicesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 80),
+      padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 20),
       child: Column(
         children: [
-          // First row of services
-          Row(
-            children: [
-              Expanded(
-                  child: _buildServiceCard(
-                imagePath: '../assets/selective.png',
-                title: 'Assisted Subject Selection',
-                description:
-                    'Helping you navigate your educational journey with confidence.',
-                route: '/subject-selection',
-              )),
-              const SizedBox(width: 24),
-              Expanded(
-                  child: _buildServiceCard(
-                imagePath: '../assets/career guidance.png',
-                title: 'High School Navigation',
-                description:
-                    'Helping you navigate your educational journey with confidence.',
-                route: '/coming-soon',
-              )),
-              const SizedBox(width: 24),
-              Expanded(
-                  child: _buildServiceCard(
-                imagePath: '../assets/Expert-help.png',
-                title: 'Automated Application',
-                description:
-                    'Helping you navigate your educational journey with confidence.',
-                route: '/coming-soon',
-              )),
-              const SizedBox(width: 24),
-              Expanded(
-                  child: _buildServiceCard(
-                imagePath: '../assets/Easy-to-use.png',
-                title: 'Course Selection\nAssistance',
-                description:
-                    'Helping you navigate your educational journey with confidence.',
-                route: '/coming-soon',
-              )),
-            ],
+          Text(
+            'Our Services',
+            style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: const Color(0xFF3328BF),
+            ),
+            textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 24),
-          // Second row of services
-          Row(
-            children: [
-              Expanded(
-                  child: _buildServiceCard(
-                imagePath: '../assets/quick-response.png',
-                title: 'Bursary Application Support',
-                description:
-                    'Helping you navigate your educational journey with confidence.',
-                route: '/coming-soon',
-              )),
-              const SizedBox(width: 24),
-              Expanded(
-                  child: _buildServiceCard(
-                imagePath: '../assets/time-management.png',
-                title: 'Progress Monitoring &\nMotivation',
-                description:
-                    'Helping you navigate your educational journey with confidence.',
-                route: '/coming-soon',
-              )),
-              const SizedBox(width: 24),
-              Expanded(
-                  child: _buildServiceCard(
-                imagePath: '../assets/service image.png',
-                title: 'Career Exploration Tools',
-                description:
-                    'Helping you navigate your educational journey with confidence.',
-                route: '/coming-soon',
-              )),
-            ],
+          const SizedBox(height: 16),
+          Text(
+            'Comprehensive solutions for your academic and career journey',
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+              color: Colors.grey[600],
+            ),
+            textAlign: TextAlign.center,
           ),
+          const SizedBox(height: 60),
+          _buildServicesGrid(context),
         ],
       ),
     );
   }
 
-  Widget _buildServiceCard({
-    required String imagePath,
-    required String title,
-    required String description,
-    required String route,
-  }) {
-    return Builder(
-      builder: (context) => Container(
-        padding: const EdgeInsets.all(32),
+  Widget _buildServicesGrid(BuildContext context) {
+    final services = [
+      {
+        'icon': Icons.school,
+        'title': 'Course Finder',
+        'description': 'Find the perfect course that matches your interests and career goals',
+        'color': const Color(0xFF3328BF),
+      },
+      {
+        'icon': Icons.psychology,
+        'title': 'Career Guidance',
+        'description': 'Get personalized advice from industry experts and mentors',
+        'color': const Color(0xFF6C63FF),
+      },
+      {
+        'icon': Icons.assessment,
+        'title': 'Skills Assessment',
+        'description': 'Discover your strengths and areas for improvement',
+        'color': const Color(0xFF9C88FF),
+      },
+      {
+        'icon': Icons.trending_up,
+        'title': 'Growth Tracking',
+        'description': 'Monitor your progress and celebrate achievements',
+        'color': const Color(0xFFB8A9FF),
+      },
+    ];
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final crossAxisCount = constraints.maxWidth > 1200 ? 4 : 
+                               constraints.maxWidth > 800 ? 2 : 1;
+        
+        return GridView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: crossAxisCount,
+            childAspectRatio: 1.1,
+            crossAxisSpacing: 24,
+            mainAxisSpacing: 24,
+          ),
+          itemCount: services.length,
+          itemBuilder: (context, index) {
+            final service = services[index];
+            return _buildServiceCard(context, service);
+          },
+        );
+      },
+    );
+  }
+
+  Widget _buildServiceCard(BuildContext context, Map<String, dynamic> service) {
+    return Card(
+      elevation: 4,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      child: Container(
+        padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: const Color(0xFFE9ECEF)),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.05),
-              blurRadius: 10,
-              offset: const Offset(0, 4),
-            ),
-          ],
+          borderRadius: BorderRadius.circular(16),
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.white,
+              (service['color'] as Color).withOpacity(0.05),
+            ],
+          ),
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              width: 64,
-              height: 64,
+              padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFFF8F9FA),
+                color: (service['color'] as Color).withOpacity(0.1),
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Image.asset(
-                  imagePath,
-                  fit: BoxFit.cover,
-                ),
+              child: Icon(
+                service['icon'] as IconData,
+                size: 40,
+                color: service['color'] as Color,
               ),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 20),
             Text(
-              title,
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
-                color: Color(0xFF0D0D0D),
-                height: 1.3,
+              service['title'] as String,
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: const Color(0xFF2C3E50),
               ),
+              textAlign: TextAlign.center,
             ),
             const SizedBox(height: 12),
             Text(
-              description,
-              style: const TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w400,
-                color: Color(0xFF666666),
+              service['description'] as String,
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: Colors.grey[600],
                 height: 1.5,
               ),
-            ),
-            const SizedBox(height: 24),
-            GestureDetector(
-              onTap: () => GoRouter.of(context).go(route),
-              child: const Text(
-                'Try Now',
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xFF3328BF),
-                ),
-              ),
+              textAlign: TextAlign.center,
             ),
           ],
         ),

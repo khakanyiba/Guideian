@@ -14,6 +14,7 @@ import 'providers/auth_provider.dart';
 import 'providers/subject_selection_provider.dart';
 import 'providers/course_finder_provider.dart';
 
+
 void main() {
   runApp(const GuideianApp());
 }

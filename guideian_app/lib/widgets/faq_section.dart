@@ -1,195 +1,129 @@
 import 'package:flutter/material.dart';
 
-class FAQSection extends StatelessWidget {
-  final VoidCallback? onSendMailTap;
+class FAQSection extends StatefulWidget {
+  const FAQSection({super.key});
 
-  const FAQSection({
-    super.key,
-    this.onSendMailTap,
-  });
+  @override
+  State<FAQSection> createState() => _FAQSectionState();
+}
+
+class _FAQSectionState extends State<FAQSection> {
+  int? expandedIndex;
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    final isMobile = screenWidth < 768;
-
     return Container(
-      padding: EdgeInsets.symmetric(
-          vertical: isMobile ? 60 : 80, horizontal: isMobile ? 20 : 80),
+      padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 20),
       child: Column(
         children: [
           Text(
             'Frequently Asked Questions',
-            style: TextStyle(
-              fontSize: isMobile ? 32 : 48,
-              fontWeight: FontWeight.w500,
-              letterSpacing: -0.96,
-              color: const Color(0xFF0D0D0D),
+            style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: const Color(0xFF3328BF),
             ),
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 20),
-          const Text(
-            'We hope this FAQ section has addressed some of your common questions. If you have any further queries, please don\'t hesitate to reach out to us.',
-            style: TextStyle(
-              fontSize: 16,
-              height: 1.5,
-              color: Color(0xFF808080),
+          const SizedBox(height: 16),
+          Text(
+            'Find answers to common questions about our services',
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+              color: Colors.grey[600],
             ),
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 50),
-          if (isMobile) ...[
-            // Mobile FAQ - single column
-            Column(
-              children: [
-                _buildFAQItem('How do I know which courses are right for me?'),
-                const SizedBox(height: 20),
-                _buildFAQItem(
-                    'Does Guideian handle university applications for me?'),
-                const SizedBox(height: 20),
-                _buildFAQItem('How does Subject Selection Support work?'),
-                const SizedBox(height: 40),
-                Container(
-                  width: double.infinity,
-                  height: 200,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xFFE9E9E9),
-                  ),
-                  child: const Center(
-                    child: Icon(
-                      Icons.support_agent,
-                      size: 60,
-                      color: Color(0xFF3328BF),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ] else ...[
-            // Desktop FAQ - row layout
-            Row(
-              children: [
-                Expanded(
-                  child: Column(
-                    children: [
-                      _buildFAQItem(
-                          'How do I know which courses are right for me?'),
-                      const SizedBox(height: 20),
-                      _buildFAQItem(
-                          'Does Guideian handle university applications for me?'),
-                      const SizedBox(height: 20),
-                      _buildFAQItem('How does Subject Selection Support work?'),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 50),
-                Expanded(
-                  child: Container(
-                    height: 300,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: const Color(0xFFE9E9E9),
-                    ),
-                    child: const Center(
-                      child: Icon(
-                        Icons.support_agent,
-                        size: 80,
-                        color: Color(0xFF3328BF),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
-          const SizedBox(height: 50),
-          Container(
-            padding: const EdgeInsets.all(30),
-            decoration: BoxDecoration(
-              color: const Color(0xFFF9F9FB),
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Still have question?',
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w600,
-                          color: Color(0xFF0D0D0D),
-                        ),
-                      ),
-                      SizedBox(height: 8),
-                      Text(
-                        'Please write to our friendly support team.',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Color(0xFF808080),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: onSendMailTap,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF3328BF),
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 24, vertical: 12),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                  ),
-                  child: const Text(
-                    'Send Mail',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+          const SizedBox(height: 60),
+          _buildFAQList(context),
         ],
       ),
     );
   }
 
-  Widget _buildFAQItem(String question) {
+  Widget _buildFAQList(BuildContext context) {
+    final faqs = [
+      {
+        'question': 'How does the course finder work?',
+        'answer': 'Our course finder uses advanced algorithms to match your interests, skills, and career goals with the most suitable academic programs and courses available.',
+      },
+      {
+        'question': 'Is the basic plan really free?',
+        'answer': 'Yes! Our basic plan provides access to fundamental features including course recommendations and community access at no cost.',
+      },
+      {
+        'question': 'How qualified are your mentors?',
+        'answer': 'All our mentors are industry professionals with years of experience in their respective fields. They undergo a rigorous selection process.',
+      },
+      {
+        'question': 'Can I change my plan later?',
+        'answer': 'Absolutely! You can upgrade or downgrade your plan at any time. Changes take effect immediately.',
+      },
+      {
+        'question': 'Do you offer refunds?',
+        'answer': 'Yes, we offer a 30-day money-back guarantee for all paid plans if you\'re not completely satisfied.',
+      },
+    ];
+
     return Container(
-      padding: const EdgeInsets.all(20),
+      constraints: const BoxConstraints(maxWidth: 800),
+      child: Column(
+        children: faqs.asMap().entries.map((entry) {
+          final index = entry.key;
+          final faq = entry.value;
+          return _buildFAQItem(context, faq, index);
+        }).toList(),
+      ),
+    );
+  }
+
+  Widget _buildFAQItem(BuildContext context, Map<String, String> faq, int index) {
+    final isExpanded = expandedIndex == index;
+    
+    return Container(
+      margin: const EdgeInsets.only(bottom: 16),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFFE5E7EB)),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Expanded(
-            child: Text(
-              question,
-              style: const TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                color: Color(0xFF0D0D0D),
-              ),
-            ),
-          ),
-          const Icon(
-            Icons.keyboard_arrow_down,
-            color: Color(0xFF3328BF),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.1),
+            spreadRadius: 1,
+            blurRadius: 5,
+            offset: const Offset(0, 2),
           ),
         ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: ExpansionTile(
+          title: Text(
+            faq['question']!,
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.w600,
+              color: const Color(0xFF2C3E50),
+            ),
+          ),
+          trailing: Icon(
+            isExpanded ? Icons.remove : Icons.add,
+            color: const Color(0xFF3328BF),
+          ),
+          onExpansionChanged: (expanded) {
+            setState(() {
+              expandedIndex = expanded ? index : null;
+            });
+          },
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              child: Text(
+                faq['answer']!,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: Colors.grey[700],
+                  height: 1.5,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

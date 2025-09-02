@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class FooterSection extends StatelessWidget {
   const FooterSection({super.key});
@@ -7,211 +6,174 @@ class FooterSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 80),
-      color: const Color(0xFF0D0D0D),
+      padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 20),
+      color: const Color(0xFF2C3E50),
       child: Column(
         children: [
-          // Main footer content
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Brand column
-              Expanded(
-                flex: 2,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'Guideian',
-                      style: TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    const Text(
-                      'Future Ready',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                        color: Color(0xFFCCCCCC),
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-                    const Text(
-                      'Your roadmap to a bright future. We help South African students navigate their educational journey from high school to university.',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                        color: Color(0xFF999999),
-                        height: 1.6,
-                      ),
-                    ),
-                    const SizedBox(height: 32),
-                    Row(
-                      children: [
-                        _buildSocialIcon('../assets/email icon.png'),
-                        const SizedBox(width: 16),
-                        _buildSocialIcon('../assets/phone icon.png'),
-                        const SizedBox(width: 16),
-                        _buildSocialIcon('../assets/location icon.png'),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 80),
-              // Quick Links column
-              Expanded(
-                flex: 1,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'Quick Links',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-                    _buildFooterLink('Home'),
-                    _buildFooterLink('Services'),
-                    _buildFooterLink('About Us'),
-                    _buildFooterLink('Contact Us'),
-                    _buildFooterLink('Sign Up'),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 80),
-              // Contact column
-              Expanded(
-                flex: 1,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'Contact Us',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-                    _buildContactInfo('Cape Town, South Africa'),
-                    _buildContactInfo('guideian.help@gmail.com'),
-                    _buildContactInfo('+27 81 487 5688'),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 80),
-              // CTA column
-              Expanded(
-                flex: 1,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'Let\'s start your journey now!',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-                    GestureDetector(
-                      onTap: () => context.go('/signup'),
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 32, vertical: 16),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF3328BF),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: const Text(
-                          'Sign Up',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
+          _buildFooterContent(context),
+          const Divider(
+            color: Colors.grey,
+            height: 60,
+            thickness: 1,
           ),
-          const SizedBox(height: 64),
-          // Divider
-          Container(
-            height: 1,
-            color: const Color(0xFF333333),
-          ),
-          const SizedBox(height: 32),
-          // Copyright
-          const Text(
-            'Copyright @ 2025 Guideian, All rights reserved.',
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w400,
-              color: Color(0xFF999999),
-            ),
-            textAlign: TextAlign.center,
-          ),
+          _buildBottomBar(context),
         ],
       ),
     );
   }
 
-  Widget _buildSocialIcon(String imagePath) {
+  Widget _buildFooterContent(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isMobile = constraints.maxWidth < 768;
+        
+        if (isMobile) {
+          return Column(
+            children: [
+              _buildCompanyInfo(context),
+              const SizedBox(height: 40),
+              _buildQuickLinks(context),
+              const SizedBox(height: 40),
+              _buildSocialLinks(context),
+            ],
+          );
+        }
+        
+        return Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(flex: 2, child: _buildCompanyInfo(context)),
+            Expanded(child: _buildQuickLinks(context)),
+            Expanded(child: _buildSocialLinks(context)),
+          ],
+        );
+      },
+    );
+  }
+
+  Widget _buildCompanyInfo(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Guideian',
+          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 16),
+        Text(
+          'Your trusted partner in educational and career guidance. We help students and professionals find their perfect path to success.',
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+            color: Colors.grey[400],
+            height: 1.6,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildQuickLinks(BuildContext context) {
+    final links = [
+      {'title': 'Home', 'route': '/'},
+      {'title': 'Services', 'route': '/services'},
+      {'title': 'About', 'route': '/about'},
+      {'title': 'Contact', 'route': '/contact'},
+      {'title': 'Privacy Policy', 'route': '/privacy'},
+      {'title': 'Terms of Service', 'route': '/terms'},
+    ];
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Quick Links',
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 16),
+        ...links.map((link) =>
+          Container(
+            margin: const EdgeInsets.only(bottom: 8),
+            child: InkWell(
+              onTap: () {
+                // Navigation logic here
+              },
+              child: Text(
+                link['title']!,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: Colors.grey[400],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildSocialLinks(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Connect With Us',
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 16),
+        Row(
+          children: [
+            _buildSocialIcon(Icons.alternate_email), // Twitter replacement
+            const SizedBox(width: 16),
+            _buildSocialIcon(Icons.business), // LinkedIn replacement
+            const SizedBox(width: 16),
+            _buildSocialIcon(Icons.camera_alt), // Instagram replacement
+          ],
+        ),
+      ],
+    );
+  }
+
+  Widget _buildSocialIcon(IconData icon) {
     return Container(
-      width: 40,
-      height: 40,
+      padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: const Color(0xFF333333),
+        color: Colors.grey[800],
         borderRadius: BorderRadius.circular(8),
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(8),
-        child: Image.asset(
-          imagePath,
-          fit: BoxFit.contain,
-        ),
+      child: Icon(
+        icon,
+        color: Colors.white,
+        size: 20,
       ),
     );
   }
 
-  Widget _buildFooterLink(String text) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 12),
-      child: Text(
-        text,
-        style: const TextStyle(
-          fontSize: 14,
-          fontWeight: FontWeight.w400,
-          color: Color(0xFF999999),
+  Widget _buildBottomBar(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          '© 2024 Guideian. All rights reserved.',
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+            color: Colors.grey[500],
+          ),
+          textAlign: TextAlign.center,
         ),
-      ),
-    );
-  }
-
-  Widget _buildContactInfo(String text) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 12),
-      child: Text(
-        text,
-        style: const TextStyle(
-          fontSize: 14,
-          fontWeight: FontWeight.w400,
-          color: Color(0xFF999999),
+        const SizedBox(height: 8),
+        Text(
+          'Made with ❤️ for students worldwide',
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+            color: Colors.grey[600],
+          ),
+          textAlign: TextAlign.center,
         ),
-      ),
+      ],
     );
   }
 }
