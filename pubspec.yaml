@@ -1,0 +1,54 @@
+name: guideian_app
+description: "Guideian - Your roadmap to a bright future"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  # State Management
+  provider: ^6.1.1
+  # Navigation
+  go_router: ^16.2.1
+  # UI Components
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  # Forms and Validation
+  form_validator: ^2.1.1
+  # Local Storage
+  shared_preferences: ^2.2.2
+  # HTTP Requests
+  http: ^1.1.2
+  # Icons
+  font_awesome_flutter: ^10.6.0
+  # Animations
+  lottie: ^3.3.1
+  # Charts and Data Visualization
+  fl_chart: ^1.1.0
+  # Date and Time
+  intl: ^0.20.2
+  # Image Picker
+  image_picker: ^1.0.4
+  # Permission Handler
+  permission_handler: ^12.0.1
+  # Video Player
+  video_player: ^2.8.1
+  # URL Launcher
+  url_launcher: ^6.2.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/
