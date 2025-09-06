@@ -109,6 +109,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     // Signup Form Section
                     Expanded(
                       child: Container(
+                        height: 600,
                         padding: const EdgeInsets.all(30),
                         decoration: BoxDecoration(
                           color: Colors.white,

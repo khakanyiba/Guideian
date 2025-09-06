@@ -78,7 +78,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     // Hero Section
                     Expanded(
                       child: Container(
-                        height: 500,
+                        height: 600,
                         decoration: BoxDecoration(
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(8),
@@ -141,7 +141,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     // Auth Section
                     Expanded(
                       child: Container(
-                        height: 500,
+                        height: 600,
                         padding: const EdgeInsets.all(40),
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -159,29 +159,27 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         child: Form(
                           key: _formKey,
-                          child: SingleChildScrollView(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                _buildAuthHeader(),
-                                const SizedBox(height: 30),
-                                _buildLoginForm(),
-                                const SizedBox(height: 20),
-                                _buildRememberMeRow(),
-                                const SizedBox(height: 20),
-                                _buildForgotPasswordRow(),
-                                const SizedBox(height: 20),
-                                _buildLoginButton(),
-                                const SizedBox(height: 20),
-                                _buildDemoLogin(),
-                                const SizedBox(height: 20),
-                                _buildSignupLink(),
-                                const SizedBox(height: 30),
-                                _buildDivider(),
-                                const SizedBox(height: 20),
-                                _buildSocialLogin(),
-                              ],
-                            ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              _buildAuthHeader(),
+                              const SizedBox(height: 30),
+                              _buildLoginForm(),
+                              const SizedBox(height: 20),
+                              _buildRememberMeRow(),
+                              const SizedBox(height: 20),
+                              _buildForgotPasswordRow(),
+                              const SizedBox(height: 20),
+                              _buildLoginButton(),
+                              const SizedBox(height: 20),
+                              _buildDemoLogin(),
+                              const SizedBox(height: 20),
+                              _buildSignupLink(),
+                              const SizedBox(height: 30),
+                              _buildDivider(),
+                              const SizedBox(height: 20),
+                              _buildSocialLogin(),
+                            ],
                           ),
                         ),
                       ),

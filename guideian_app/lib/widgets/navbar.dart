@@ -235,7 +235,7 @@ class GuideianLogoPainter extends CustomPainter {
       ),
     );
     textPainter.layout();
-    textPainter.paint(canvas, const Offset(64, 20.855));
+    textPainter.paint(canvas, const Offset(64, 28));
 
     // Draw the curved lines (exact replica of the original SVG paths)
     final path1 = Path();
