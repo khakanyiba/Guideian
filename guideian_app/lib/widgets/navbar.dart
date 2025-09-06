@@ -48,36 +48,12 @@ class Navbar extends StatelessWidget {
         // Logo
         GestureDetector(
           onTap: onHomeTap,
-          child: Row(
-            children: [
-              // Custom Logo SVG
-              CustomPaint(
-                size: const Size(55, 55),
-                painter: LogoPainter(),
-              ),
-              const SizedBox(width: 8),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Guideian',
-                    style: GoogleFonts.tenorSans(
-                      fontSize: 26,
-                      fontWeight: FontWeight.w400,
-                      color: const Color(0xFF0D0D0D),
-                    ),
-                  ),
-                  Text(
-                    'Future Ready',
-                    style: GoogleFonts.tenorSans(
-                      fontSize: 13,
-                      color: const Color(0xFF0D0D0D),
-                    ),
-                  ),
-                ],
-              ),
-            ],
+          child: SizedBox(
+            width: 217,
+            height: 55,
+            child: CustomPaint(
+              painter: GuideianLogoPainter(),
+            ),
           ),
         ),
 
@@ -137,35 +113,12 @@ class Navbar extends StatelessWidget {
         // Logo
         GestureDetector(
           onTap: onHomeTap,
-          child: Row(
-            children: [
-              CustomPaint(
-                size: const Size(40, 40),
-                painter: LogoPainter(),
-              ),
-              const SizedBox(width: 8),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Guideian',
-                    style: GoogleFonts.tenorSans(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w400,
-                      color: const Color(0xFF0D0D0D),
-                    ),
-                  ),
-                  Text(
-                    'Future Ready',
-                    style: GoogleFonts.tenorSans(
-                      fontSize: 10,
-                      color: const Color(0xFF0D0D0D),
-                    ),
-                  ),
-                ],
-              ),
-            ],
+          child: SizedBox(
+            width: 120,
+            height: 30,
+            child: CustomPaint(
+              painter: GuideianLogoPainter(),
+            ),
           ),
         ),
 
@@ -247,76 +200,104 @@ class Navbar extends StatelessWidget {
   }
 }
 
-// Logo Painter for the custom SVG - exact replica of the original
-class LogoPainter extends CustomPainter {
+// Guideian Logo Painter - exact replica of the HTML SVG
+class GuideianLogoPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = const Color(0xFF0D0D0D)
+      ..color = const Color(0xFF000000)
       ..strokeWidth = 1.5
       ..style = PaintingStyle.stroke;
 
+    final textPainter = TextPainter(
+      textDirection: TextDirection.ltr,
+    );
+
+    // Draw the text "Guideian"
+    textPainter.text = TextSpan(
+      text: 'Guideian',
+      style: TextStyle(
+        fontFamily: 'Tenor Sans',
+        fontSize: 26,
+        color: const Color(0xFF000000),
+      ),
+    );
+    textPainter.layout();
+    textPainter.paint(canvas, const Offset(63, 0.71));
+
+    // Draw the text "Future Ready"
+    textPainter.text = TextSpan(
+      text: 'Future Ready',
+      style: TextStyle(
+        fontFamily: 'Tenor Sans',
+        fontSize: 13,
+        color: const Color(0xFF000000),
+      ),
+    );
+    textPainter.layout();
+    textPainter.paint(canvas, const Offset(64, 20.855));
+
     // Draw the curved lines (exact replica of the original SVG paths)
     final path1 = Path();
-    path1.moveTo(55, 1);
-    path1.quadraticBezierTo(40, 1, 25, 1);
-    path1.quadraticBezierTo(0.5, 17, 1, 28);
-    path1.quadraticBezierTo(1.5, 39, 9, 52.8);
-    path1.quadraticBezierTo(25, 53, 41, 53.2);
-    path1.lineTo(54, 53);
-    path1.lineTo(54, 28);
+    path1.moveTo(55.0188, 1);
+    path1.quadraticBezierTo(40.0187, 1, 25.0188, 1);
+    path1.quadraticBezierTo(10.0189, 1, 0.518789, 17);
+    path1.quadraticBezierTo(1.01882, 28, 1.51886, 39);
+    path1.quadraticBezierTo(9.01882, 52.7638, 25.0188, 53);
+    path1.quadraticBezierTo(41.0188, 53.2362, 54.0188, 53);
+    path1.lineTo(54.0188, 28);
     canvas.drawPath(path1, paint);
 
     final path2 = Path();
-    path2.moveTo(55, 5);
-    path2.quadraticBezierTo(38, 5, 26.5, 5);
-    path2.quadraticBezierTo(15, 5, 5, 14.3256);
-    path2.quadraticBezierTo(5, 41.6744, 5, 28);
-    path2.quadraticBezierTo(16.0323, 49, 27, 49);
-    path2.quadraticBezierTo(38.0053, 49, 50, 49);
-    path2.lineTo(50, 40);
-    path2.lineTo(50, 28);
+    path2.moveTo(55.0188, 5);
+    path2.quadraticBezierTo(38.0188, 5, 26.5188, 5);
+    path2.quadraticBezierTo(15.0188, 5, 5.0188, 14.3256);
+    path2.quadraticBezierTo(5.0188, 28, 5.0188, 41.6744);
+    path2.quadraticBezierTo(16.0323, 49, 27.0188, 49);
+    path2.quadraticBezierTo(38.0053, 49, 50.0188, 49);
+    path2.lineTo(50.0188, 40);
+    path2.lineTo(50.0188, 28);
     canvas.drawPath(path2, paint);
 
     final path3 = Path();
-    path3.moveTo(55, 9);
+    path3.moveTo(55.0188, 9);
     path3.quadraticBezierTo(33.473, 9, 25.9207, 9);
-    path3.quadraticBezierTo(18.3683, 9, 9, 17.1554);
-    path3.quadraticBezierTo(9, 38.8446, 9, 28);
-    path3.quadraticBezierTo(17.2723, 45.5, 26, 45.5);
-    path3.quadraticBezierTo(34.7653, 45.5, 46, 45.5);
-    path3.lineTo(46, 37.5);
-    path3.lineTo(46, 28);
+    path3.quadraticBezierTo(18.3683, 9, 9.0188, 17.1554);
+    path3.quadraticBezierTo(9.0188, 28, 9.0188, 38.8446);
+    path3.quadraticBezierTo(17.2723, 45.5, 26.0188, 45.5);
+    path3.quadraticBezierTo(34.7653, 45.5, 46.0188, 45.5);
+    path3.lineTo(46.0188, 37.5);
+    path3.lineTo(46.0188, 28);
     canvas.drawPath(path3, paint);
 
     final path4 = Path();
-    path4.moveTo(55, 13);
+    path4.moveTo(55.0188, 13);
     path4.quadraticBezierTo(32.2727, 13, 26.2633, 13);
-    path4.quadraticBezierTo(20.2539, 13, 13, 18.9385);
-    path4.quadraticBezierTo(13, 36.0615, 13, 27.5);
-    path4.quadraticBezierTo(20, 41, 26.5, 41.5);
-    path4.quadraticBezierTo(33, 42, 42, 41.5);
-    path4.lineTo(42, 28);
+    path4.quadraticBezierTo(20.2539, 13, 13.0188, 18.9385);
+    path4.quadraticBezierTo(13.0188, 27.5, 13.0188, 36.0615);
+    path4.quadraticBezierTo(20.0188, 41, 26.5188, 41.5);
+    path4.quadraticBezierTo(33.0188, 42, 42.0188, 41.5);
+    path4.lineTo(42.0188, 28);
     canvas.drawPath(path4, paint);
 
     final path5 = Path();
-    path5.moveTo(55, 17);
+    path5.moveTo(55.0189, 17);
     path5.quadraticBezierTo(35.6287, 17, 28.0738, 17);
     path5.quadraticBezierTo(20.5189, 17, 16.5189, 21.5);
-    path5.quadraticBezierTo(17.5189, 34.5, 17.5189, 28);
+    path5.quadraticBezierTo(17.5189, 28, 17.5189, 34.5);
     path5.quadraticBezierTo(23.1612, 37.5, 28.0738, 37.5);
-    path5.quadraticBezierTo(32.9865, 37.5, 38, 37.5);
-    path5.lineTo(38, 28);
+    path5.quadraticBezierTo(32.9865, 37.5, 38.0189, 37.5);
+    path5.lineTo(38.0189, 28);
     canvas.drawPath(path5, paint);
 
     final path6 = Path();
-    path6.moveTo(55, 21);
+    path6.moveTo(55.0188, 21);
     path6.quadraticBezierTo(29.7875, 21, 27.1858, 21);
-    path6.quadraticBezierTo(24.5841, 21, 21, 23.4418);
-    path6.quadraticBezierTo(21, 30.8618, 21, 27.1518);
+    path6.quadraticBezierTo(24.5841, 21, 21.0188, 23.4418);
+    path6.quadraticBezierTo(21.0188, 27.1518, 21.0188, 30.8618);
     path6.quadraticBezierTo(23.5188, 34, 27.1858, 34);
-    path6.quadraticBezierTo(30.8529, 34, 34, 34);
-    path6.lineTo(34, 28);
+    path6.quadraticBezierTo(30.8529, 34, 34.0188, 34);
+    path6.lineTo(34.0188, 28);
     canvas.drawPath(path6, paint);
   }
 
