@@ -78,7 +78,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     // Hero Section
                     Expanded(
                       child: Container(
-                        height: 600,
+                        height: 700,
                         decoration: BoxDecoration(
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(8),
@@ -141,7 +141,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     // Auth Section
                     Expanded(
                       child: Container(
-                        height: 600,
+                        height: 700,
                         padding: const EdgeInsets.all(40),
                         decoration: BoxDecoration(
                           color: Colors.white,
