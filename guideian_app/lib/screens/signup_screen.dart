@@ -109,7 +109,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     // Signup Form Section
                     Expanded(
                       child: Container(
-                        height: 700,
+                        height: 800,
                         padding: const EdgeInsets.all(30),
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -124,23 +124,25 @@ class _SignupScreenState extends State<SignupScreen> {
                         ),
                         child: Form(
                           key: _formKey,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              _buildFormHeader(),
-                              const SizedBox(height: 30),
-                              _buildSignupForm(),
-                              const SizedBox(height: 20),
-                              _buildTermsCheckbox(),
-                              const SizedBox(height: 20),
-                              _buildSignupButton(),
-                              const SizedBox(height: 20),
-                              _buildDivider(),
-                              const SizedBox(height: 20),
-                              _buildSocialLogin(),
-                              const SizedBox(height: 20),
-                              _buildLoginLink(),
-                            ],
+                          child: SingleChildScrollView(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                _buildFormHeader(),
+                                const SizedBox(height: 30),
+                                _buildSignupForm(),
+                                const SizedBox(height: 20),
+                                _buildTermsCheckbox(),
+                                const SizedBox(height: 20),
+                                _buildSignupButton(),
+                                const SizedBox(height: 20),
+                                _buildDivider(),
+                                const SizedBox(height: 20),
+                                _buildSocialLogin(),
+                                const SizedBox(height: 20),
+                                _buildLoginLink(),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -149,7 +151,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     // Hero Section
                     Expanded(
                       child: Container(
-                        height: 700,
+                        height: 800,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           image: const DecorationImage(

@@ -78,7 +78,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     // Hero Section
                     Expanded(
                       child: Container(
-                        height: 700,
+                        height: 800,
                         decoration: BoxDecoration(
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(8),
@@ -141,7 +141,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     // Auth Section
                     Expanded(
                       child: Container(
-                        height: 700,
+                        height: 800,
                         padding: const EdgeInsets.all(40),
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -159,27 +159,27 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         child: Form(
                           key: _formKey,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              _buildAuthHeader(),
-                              const SizedBox(height: 30),
-                              _buildLoginForm(),
-                              const SizedBox(height: 20),
-                              _buildRememberMeRow(),
-                              const SizedBox(height: 20),
-                              _buildForgotPasswordRow(),
-                              const SizedBox(height: 20),
-                              _buildLoginButton(),
-                              const SizedBox(height: 20),
-                              _buildDemoLogin(),
-                              const SizedBox(height: 20),
-                              _buildSignupLink(),
-                              const SizedBox(height: 30),
-                              _buildDivider(),
-                              const SizedBox(height: 20),
-                              _buildSocialLogin(),
-                            ],
+                          child: SingleChildScrollView(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                _buildAuthHeader(),
+                                const SizedBox(height: 30),
+                                _buildLoginForm(),
+                                const SizedBox(height: 20),
+                                _buildRememberMeRow(),
+                                const SizedBox(height: 20),
+                                _buildForgotPasswordRow(),
+                                const SizedBox(height: 20),
+                                _buildLoginButton(),
+                                const SizedBox(height: 20),
+                                _buildSignupLink(),
+                                const SizedBox(height: 30),
+                                _buildDivider(),
+                                const SizedBox(height: 20),
+                                _buildSocialLogin(),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -418,52 +418,6 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Widget _buildDemoLogin() {
-    return Container(
-      padding: const EdgeInsets.only(top: 20),
-      decoration: const BoxDecoration(
-        border: Border(
-          top: BorderSide(color: Color(0xFFEEEEEE)),
-        ),
-      ),
-      child: Column(
-        children: [
-          const Text(
-            'Want to try it out?',
-            style: TextStyle(
-              fontSize: 14,
-              color: Color(0xFF6C757D),
-            ),
-          ),
-          const SizedBox(height: 10),
-          SizedBox(
-            width: double.infinity,
-            child: OutlinedButton(
-              onPressed: () {
-                _emailController.text = 'user@example.com';
-                _passwordController.text = 'Password123!';
-              },
-              style: OutlinedButton.styleFrom(
-                foregroundColor: const Color(0xFF3328BF),
-                side: const BorderSide(color: Color(0xFF3328BF), width: 1.5),
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-              child: const Text(
-                'Use Demo Account',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
 
   Widget _buildSignupLink() {
     return const Center(
