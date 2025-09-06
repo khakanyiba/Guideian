@@ -62,20 +62,26 @@ class _SignupScreenState extends State<SignupScreen> {
 
     try {
       final authProvider = Provider.of<AuthProvider>(context, listen: false);
-      await authProvider.signup(
-        _nameController.text,
+      final error = await authProvider.signup(
         _emailController.text,
         _passwordController.text,
+        _nameController.text,
+        _selectedGrade,
       );
       
-      if (authProvider.isLoggedIn && mounted) {
-        context.go('/subject-selection');
-      }
-    } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Signup failed: ${e.toString()}')),
-        );
+        if (error == null) {
+          // Signup successful
+          context.go('/');
+        } else {
+          // Show error message
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(error),
+              backgroundColor: Colors.red,
+            ),
+          );
+        }
       }
     } finally {
       if (mounted) {
@@ -675,9 +681,7 @@ class _SignupScreenState extends State<SignupScreen> {
         SizedBox(
           width: double.infinity,
           child: OutlinedButton.icon(
-            onPressed: () {
-              // Handle Google signup
-            },
+            onPressed: _isLoading ? null : _handleGoogleSignup,
             icon: const Icon(Icons.g_mobiledata, color: Color(0xFF4285F4), size: 20),
             label: const Text(
               'Sign up with Google',
@@ -700,9 +704,7 @@ class _SignupScreenState extends State<SignupScreen> {
         SizedBox(
           width: double.infinity,
           child: OutlinedButton.icon(
-            onPressed: () {
-              // Handle Facebook signup
-            },
+            onPressed: _isLoading ? null : _handleFacebookSignup,
             icon: const Icon(Icons.facebook, color: Color(0xFF1877F2), size: 20),
             label: const Text(
               'Continue with Facebook',
@@ -723,6 +725,70 @@ class _SignupScreenState extends State<SignupScreen> {
         ),
       ],
     );
+  }
+
+  Future<void> _handleGoogleSignup() async {
+    setState(() {
+      _isLoading = true;
+    });
+
+    try {
+      final authProvider = Provider.of<AuthProvider>(context, listen: false);
+      final error = await authProvider.signInWithGoogle();
+      
+      if (mounted) {
+        if (error == null) {
+          // Signup successful
+          context.go('/');
+        } else {
+          // Show error message
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(error),
+              backgroundColor: Colors.red,
+            ),
+          );
+        }
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _handleFacebookSignup() async {
+    setState(() {
+      _isLoading = true;
+    });
+
+    try {
+      final authProvider = Provider.of<AuthProvider>(context, listen: false);
+      final error = await authProvider.signInWithFacebook();
+      
+      if (mounted) {
+        if (error == null) {
+          // Signup successful
+          context.go('/');
+        } else {
+          // Show error message
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(error),
+              backgroundColor: Colors.red,
+            ),
+          );
+        }
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+      }
+    }
   }
 
   Widget _buildLoginLink() {
