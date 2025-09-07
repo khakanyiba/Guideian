@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthProvider extends ChangeNotifier {
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final GoogleSignIn _googleSignIn = GoogleSignIn();
-
   bool _isLoggedIn = false;
   String? _userEmail;
   String? _userName;
@@ -21,25 +14,6 @@ class AuthProvider extends ChangeNotifier {
   String? get userId => _userId;
   bool get isLoading => _isLoading;
 
-  AuthProvider() {
-    _auth.authStateChanges().listen(_onAuthStateChanged);
-  }
-
-  void _onAuthStateChanged(User? user) {
-    if (user != null) {
-      _isLoggedIn = true;
-      _userEmail = user.email;
-      _userName = user.displayName ?? user.email?.split('@')[0];
-      _userId = user.uid;
-    } else {
-      _isLoggedIn = false;
-      _userEmail = null;
-      _userName = null;
-      _userId = null;
-    }
-    notifyListeners();
-  }
-
   void _setLoading(bool loading) {
     _isLoading = loading;
     notifyListeners();
@@ -49,38 +23,27 @@ class AuthProvider extends ChangeNotifier {
     try {
       _setLoading(true);
       
-      final UserCredential userCredential = await _auth.signInWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
-
-      if (userCredential.user != null) {
+      // Simulate login process
+      await Future.delayed(const Duration(seconds: 1));
+      
+      // For demo purposes, accept any email/password combination
+      if (email.isNotEmpty && password.isNotEmpty) {
+        _isLoggedIn = true;
+        _userEmail = email;
+        _userName = email.split('@')[0];
+        _userId = 'demo_user_${DateTime.now().millisecondsSinceEpoch}';
+        
         // Save to local storage
         final prefs = await SharedPreferences.getInstance();
         await prefs.setBool('isLoggedIn', true);
         await prefs.setString('userEmail', email);
-        await prefs.setString('userName', _userName ?? '');
-        await prefs.setString('userId', userCredential.user!.uid);
+        await prefs.setString('userName', _userName!);
+        await prefs.setString('userId', _userId!);
         
+        notifyListeners();
         return null; // Success
       }
-      return 'Login failed';
-    } on FirebaseAuthException catch (e) {
-      _setLoading(false);
-      switch (e.code) {
-        case 'user-not-found':
-          return 'No user found with this email address.';
-        case 'wrong-password':
-          return 'Wrong password provided.';
-        case 'invalid-email':
-          return 'The email address is not valid.';
-        case 'user-disabled':
-          return 'This user account has been disabled.';
-        case 'too-many-requests':
-          return 'Too many attempts. Please try again later.';
-        default:
-          return 'Login failed: ${e.message}';
-      }
+      return 'Please enter email and password';
     } catch (e) {
       _setLoading(false);
       return 'An unexpected error occurred: $e';
@@ -91,46 +54,27 @@ class AuthProvider extends ChangeNotifier {
     try {
       _setLoading(true);
       
-      final UserCredential userCredential = await _auth.createUserWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
-
-      if (userCredential.user != null) {
-        // Update display name
-        await userCredential.user!.updateDisplayName(name);
+      // Simulate signup process
+      await Future.delayed(const Duration(seconds: 1));
+      
+      // For demo purposes, accept any valid input
+      if (email.isNotEmpty && password.isNotEmpty && name.isNotEmpty) {
+        _isLoggedIn = true;
+        _userEmail = email;
+        _userName = name;
+        _userId = 'demo_user_${DateTime.now().millisecondsSinceEpoch}';
         
-        // Save additional user data to Firestore
-        await _firestore.collection('users').doc(userCredential.user!.uid).set({
-          'name': name,
-          'email': email,
-          'grade': grade,
-          'createdAt': FieldValue.serverTimestamp(),
-          'lastLoginAt': FieldValue.serverTimestamp(),
-        });
-
         // Save to local storage
         final prefs = await SharedPreferences.getInstance();
         await prefs.setBool('isLoggedIn', true);
         await prefs.setString('userEmail', email);
         await prefs.setString('userName', name);
-        await prefs.setString('userId', userCredential.user!.uid);
+        await prefs.setString('userId', _userId!);
         
+        notifyListeners();
         return null; // Success
       }
-      return 'Signup failed';
-    } on FirebaseAuthException catch (e) {
-      _setLoading(false);
-      switch (e.code) {
-        case 'weak-password':
-          return 'The password provided is too weak.';
-        case 'email-already-in-use':
-          return 'An account already exists with this email address.';
-        case 'invalid-email':
-          return 'The email address is not valid.';
-        default:
-          return 'Signup failed: ${e.message}';
-      }
+      return 'Please fill in all required fields';
     } catch (e) {
       _setLoading(false);
       return 'An unexpected error occurred: $e';
@@ -141,48 +85,23 @@ class AuthProvider extends ChangeNotifier {
     try {
       _setLoading(true);
       
-      final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
-      if (googleUser == null) {
-        _setLoading(false);
-        return 'Google sign-in was cancelled';
-      }
-
-      final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
-      final credential = GoogleAuthProvider.credential(
-        accessToken: googleAuth.accessToken,
-        idToken: googleAuth.idToken,
-      );
-
-      final UserCredential userCredential = await _auth.signInWithCredential(credential);
+      // Simulate Google sign-in process
+      await Future.delayed(const Duration(seconds: 2));
       
-      if (userCredential.user != null) {
-        // Check if user exists in Firestore, if not create them
-        final userDoc = await _firestore.collection('users').doc(userCredential.user!.uid).get();
-        if (!userDoc.exists) {
-          await _firestore.collection('users').doc(userCredential.user!.uid).set({
-            'name': userCredential.user!.displayName ?? '',
-            'email': userCredential.user!.email ?? '',
-            'grade': 'Not specified',
-            'createdAt': FieldValue.serverTimestamp(),
-            'lastLoginAt': FieldValue.serverTimestamp(),
-          });
-        } else {
-          // Update last login time
-          await _firestore.collection('users').doc(userCredential.user!.uid).update({
-            'lastLoginAt': FieldValue.serverTimestamp(),
-          });
-        }
-
-        // Save to local storage
-        final prefs = await SharedPreferences.getInstance();
-        await prefs.setBool('isLoggedIn', true);
-        await prefs.setString('userEmail', userCredential.user!.email ?? '');
-        await prefs.setString('userName', userCredential.user!.displayName ?? '');
-        await prefs.setString('userId', userCredential.user!.uid);
-        
-        return null; // Success
-      }
-      return 'Google sign-in failed';
+      _isLoggedIn = true;
+      _userEmail = 'google_user@example.com';
+      _userName = 'Google User';
+      _userId = 'google_user_${DateTime.now().millisecondsSinceEpoch}';
+      
+      // Save to local storage
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('isLoggedIn', true);
+      await prefs.setString('userEmail', _userEmail!);
+      await prefs.setString('userName', _userName!);
+      await prefs.setString('userId', _userId!);
+      
+      notifyListeners();
+      return null; // Success
     } catch (e) {
       _setLoading(false);
       return 'Google sign-in error: $e';
@@ -192,10 +111,24 @@ class AuthProvider extends ChangeNotifier {
   Future<String?> signInWithFacebook() async {
     try {
       _setLoading(true);
-      // Note: Facebook sign-in requires additional setup with facebook_login package
-      // For now, we'll return a message indicating it's not implemented
-      _setLoading(false);
-      return 'Facebook sign-in is not yet implemented. Please use email/password or Google sign-in.';
+      
+      // Simulate Facebook sign-in process
+      await Future.delayed(const Duration(seconds: 2));
+      
+      _isLoggedIn = true;
+      _userEmail = 'facebook_user@example.com';
+      _userName = 'Facebook User';
+      _userId = 'facebook_user_${DateTime.now().millisecondsSinceEpoch}';
+      
+      // Save to local storage
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('isLoggedIn', true);
+      await prefs.setString('userEmail', _userEmail!);
+      await prefs.setString('userName', _userName!);
+      await prefs.setString('userId', _userId!);
+      
+      notifyListeners();
+      return null; // Success
     } catch (e) {
       _setLoading(false);
       return 'Facebook sign-in error: $e';
@@ -205,19 +138,15 @@ class AuthProvider extends ChangeNotifier {
   Future<String?> resetPassword(String email) async {
     try {
       _setLoading(true);
-      await _auth.sendPasswordResetEmail(email: email);
-      _setLoading(false);
-      return null; // Success
-    } on FirebaseAuthException catch (e) {
-      _setLoading(false);
-      switch (e.code) {
-        case 'user-not-found':
-          return 'No user found with this email address.';
-        case 'invalid-email':
-          return 'The email address is not valid.';
-        default:
-          return 'Password reset failed: ${e.message}';
+      
+      // Simulate password reset process
+      await Future.delayed(const Duration(seconds: 1));
+      
+      if (email.isNotEmpty) {
+        _setLoading(false);
+        return null; // Success
       }
+      return 'Please enter a valid email address';
     } catch (e) {
       _setLoading(false);
       return 'An unexpected error occurred: $e';
@@ -226,12 +155,12 @@ class AuthProvider extends ChangeNotifier {
 
   Future<void> logout() async {
     try {
-      await _auth.signOut();
-      await _googleSignIn.signOut();
-      
       // Clear local storage
       final prefs = await SharedPreferences.getInstance();
-      await prefs.clear();
+      await prefs.setBool('isLoggedIn', false);
+      await prefs.remove('userEmail');
+      await prefs.remove('userName');
+      await prefs.remove('userId');
       
       _isLoggedIn = false;
       _userEmail = null;
@@ -256,10 +185,13 @@ class AuthProvider extends ChangeNotifier {
     if (_userId == null) return null;
     
     try {
-      final doc = await _firestore.collection('users').doc(_userId!).get();
-      if (doc.exists) {
-        return doc.data();
-      }
+      // Return demo user data
+      return {
+        'name': _userName,
+        'email': _userEmail,
+        'userId': _userId,
+        'createdAt': DateTime.now().toIso8601String(),
+      };
     } catch (e) {
       print('Error fetching user data: $e');
     }
