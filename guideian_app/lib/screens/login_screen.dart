@@ -468,7 +468,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
 
   Widget _buildSignupLink() {
-    return const Center(
+    return Center(
       child: Text.rich(
         TextSpan(
           text: "Don't have an account? ",
@@ -477,12 +477,21 @@ class _LoginScreenState extends State<LoginScreen> {
             color: Color(0xFF212529),
           ),
           children: [
-            TextSpan(
-              text: 'Sign Up',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w500,
-                color: Color(0xFF3328BF),
+            WidgetSpan(
+              child: GestureDetector(
+                onTap: () {
+                  context.go('/signup');
+                },
+                child: Text(
+                  'Sign Up',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF3328BF),
+                    decoration: TextDecoration.underline,
+                    decorationColor: Color(0xFF3328BF),
+                  ),
+                ),
               ),
             ),
           ],
@@ -545,29 +554,6 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
         ),
-        const SizedBox(height: 15),
-        SizedBox(
-          width: double.infinity,
-          child: OutlinedButton.icon(
-            onPressed: _isLoading ? null : _handleFacebookLogin,
-            icon: const Icon(Icons.facebook, color: Color(0xFF1877F2), size: 20),
-            label: const Text(
-              'Continue with Facebook',
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                color: Color(0xFF212529),
-              ),
-            ),
-            style: OutlinedButton.styleFrom(
-              side: const BorderSide(color: Color(0xFFCED4DA)),
-              padding: const EdgeInsets.symmetric(vertical: 12),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
-              ),
-            ),
-          ),
-        ),
       ],
     );
   }
@@ -604,35 +590,4 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
-  Future<void> _handleFacebookLogin() async {
-    setState(() {
-      _isLoading = true;
-    });
-
-    try {
-      final authProvider = Provider.of<AuthProvider>(context, listen: false);
-      final error = await authProvider.signInWithFacebook();
-      
-      if (mounted) {
-        if (error == null) {
-          // Login successful
-          context.go('/');
-        } else {
-          // Show error message
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(error),
-              backgroundColor: Colors.red,
-            ),
-          );
-        }
-      }
-    } finally {
-      if (mounted) {
-        setState(() {
-          _isLoading = false;
-        });
-      }
-    }
-  }
 }

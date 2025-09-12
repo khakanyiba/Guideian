@@ -701,28 +701,6 @@ class _SignupScreenState extends State<SignupScreen> {
           ),
         ),
         const SizedBox(height: 15),
-        SizedBox(
-          width: double.infinity,
-          child: OutlinedButton.icon(
-            onPressed: _isLoading ? null : _handleFacebookSignup,
-            icon: const Icon(Icons.facebook, color: Color(0xFF1877F2), size: 20),
-            label: const Text(
-              'Continue with Facebook',
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                color: Color(0xFF111827),
-              ),
-            ),
-            style: OutlinedButton.styleFrom(
-              side: const BorderSide(color: Color(0xFFE5E7EB)),
-              padding: const EdgeInsets.symmetric(vertical: 12),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(6),
-              ),
-            ),
-          ),
-        ),
       ],
     );
   }
@@ -759,40 +737,9 @@ class _SignupScreenState extends State<SignupScreen> {
     }
   }
 
-  Future<void> _handleFacebookSignup() async {
-    setState(() {
-      _isLoading = true;
-    });
-
-    try {
-      final authProvider = Provider.of<AuthProvider>(context, listen: false);
-      final error = await authProvider.signInWithFacebook();
-      
-      if (mounted) {
-        if (error == null) {
-          // Signup successful
-          context.go('/');
-        } else {
-          // Show error message
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(error),
-              backgroundColor: Colors.red,
-            ),
-          );
-        }
-      }
-    } finally {
-      if (mounted) {
-        setState(() {
-          _isLoading = false;
-        });
-      }
-    }
-  }
 
   Widget _buildLoginLink() {
-    return const Center(
+    return Center(
       child: Text.rich(
         TextSpan(
           text: 'Already have an account? ',
@@ -801,12 +748,21 @@ class _SignupScreenState extends State<SignupScreen> {
             color: Color(0xFF4B5563),
           ),
           children: [
-            TextSpan(
-              text: 'Log In',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w500,
-                color: Color(0xFF3328BF),
+            WidgetSpan(
+              child: GestureDetector(
+                onTap: () {
+                  context.go('/login');
+                },
+                child: Text(
+                  'Log In',
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF3328BF),
+                    decoration: TextDecoration.underline,
+                    decorationColor: Color(0xFF3328BF),
+                  ),
+                ),
               ),
             ),
           ],

@@ -50,6 +50,10 @@ dependencies:
   video_player: ^2.8.1
   url_launcher: ^6.2.1
 
+  # Firebase dependencies
+  firebase_core: ^2.24.2
+  google_sign_in: ^6.1.6
+
   google_fonts: ^6.1.0
 
 dev_dependencies:
@@ -62,6 +66,9 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+
+dependency_overrides:
+  js: ^0.6.7
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
