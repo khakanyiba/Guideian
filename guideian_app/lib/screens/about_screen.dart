@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import '../providers/auth_provider.dart';
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
@@ -72,44 +74,15 @@ class AboutScreen extends StatelessWidget {
             ],
           ),
           const Spacer(),
-          // Auth Buttons
-          Row(
-            children: [
-              TextButton(
-                onPressed: () => context.go('/login'),
-                style: TextButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                ),
-                child: Text(
-                  'Log In',
-                  style: GoogleFonts.plusJakartaSans(
-                    color: const Color(0xFF3328BF),
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 12),
-              ElevatedButton(
-                onPressed: () => context.go('/signup'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF3328BF),
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  elevation: 0,
-                ),
-                child: Text(
-                  'Sign Up',
-                  style: GoogleFonts.plusJakartaSans(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-            ],
+          // Auth Buttons or User Profile
+          Consumer<AuthProvider>(
+            builder: (context, authProvider, child) {
+              if (authProvider.isLoggedIn) {
+                return _buildUserProfile(context, authProvider);
+              } else {
+                return _buildAuthButtons(context);
+              }
+            },
           ),
         ],
       ),
@@ -123,6 +96,154 @@ class AboutScreen extends StatelessWidget {
       child: CustomPaint(
         painter: GuideianLogoPainter(),
       ),
+    );
+  }
+
+  Widget _buildAuthButtons(BuildContext context) {
+    return Row(
+      children: [
+        TextButton(
+          onPressed: () => context.go('/login'),
+          style: TextButton.styleFrom(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          ),
+          child: Text(
+            'Log In',
+            style: GoogleFonts.plusJakartaSans(
+              color: const Color(0xFF3328BF),
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ),
+        const SizedBox(width: 12),
+        ElevatedButton(
+          onPressed: () => context.go('/signup'),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color(0xFF3328BF),
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+            ),
+            elevation: 0,
+          ),
+          child: Text(
+            'Sign Up',
+            style: GoogleFonts.plusJakartaSans(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildUserProfile(BuildContext context, AuthProvider authProvider) {
+    return Row(
+      children: [
+        // User Avatar
+        Container(
+          width: 40,
+          height: 40,
+          decoration: BoxDecoration(
+            color: const Color(0xFF3328BF),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Center(
+            child: Text(
+              authProvider.userName?.isNotEmpty == true 
+                ? authProvider.userName![0].toUpperCase()
+                : 'U',
+              style: GoogleFonts.plusJakartaSans(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(width: 12),
+        // User Info
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              authProvider.userName ?? 'User',
+              style: GoogleFonts.plusJakartaSans(
+                color: const Color(0xFF1A1A1A),
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            Text(
+              authProvider.userEmail ?? '',
+              style: GoogleFonts.plusJakartaSans(
+                color: const Color(0xFF666666),
+                fontSize: 12,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(width: 16),
+        // Dropdown Menu
+        PopupMenuButton<String>(
+          icon: const Icon(
+            Icons.keyboard_arrow_down,
+            color: Color(0xFF666666),
+            size: 20,
+          ),
+          onSelected: (value) {
+            if (value == 'logout') {
+              authProvider.logout();
+            } else if (value == 'profile') {
+              // Navigate to profile page when created
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('Profile page coming soon!')),
+              );
+            }
+          },
+          itemBuilder: (context) => [
+            PopupMenuItem<String>(
+              value: 'profile',
+              child: Row(
+                children: [
+                  const Icon(Icons.person_outline, size: 20, color: Color(0xFF666666)),
+                  const SizedBox(width: 12),
+                  Text(
+                    'Profile',
+                    style: GoogleFonts.plusJakartaSans(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                      color: const Color(0xFF1A1A1A),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            PopupMenuItem<String>(
+              value: 'logout',
+              child: Row(
+                children: [
+                  const Icon(Icons.logout, size: 20, color: Color(0xFF666666)),
+                  const SizedBox(width: 12),
+                  Text(
+                    'Logout',
+                    style: GoogleFonts.plusJakartaSans(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                      color: const Color(0xFF1A1A1A),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ],
     );
   }
 
