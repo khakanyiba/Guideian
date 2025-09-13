@@ -1,0 +1,11 @@
+[33m7d9c7e4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to HEAD
+[33m7d9c7e4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: commit: Implement Firebase Authentication with Google Sign-in
+[33m8ac839c[m HEAD@{2}: commit: Fix Firebase compatibility issues by removing Firebase dependencies
+[33m2d8eb0b[m HEAD@{3}: commit: Implement complete Firebase authentication system
+[33m89bea1c[m HEAD@{4}: commit: Remove demo account and add scrolling to fix overflow
+[33m2a28230[m HEAD@{5}: commit: Remove debug overlay bars by increasing container heights
+[33m009839a[m HEAD@{6}: commit: Update login and signup screens to match HTML exactly
+[33m1e8c107[m HEAD@{7}: commit: Fix overflow issue in login screen
+[33mb628ad3[m HEAD@{8}: commit: Update Flutter screens to match HTML designs exactly
+[33md7d1456[m HEAD@{9}: commit: Update Flutter login and signup screens to match HTML designs
+[33mf7bf979[m HEAD@{10}: clone: from https://github.com/khakanyiba/Guideian.git
