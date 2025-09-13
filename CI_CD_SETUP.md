@@ -1,17 +1,17 @@
-# 🚀 CI/CD Pipeline Setup for Guideian
+# CI/CD Pipeline Setup for Guideian
 
 This document explains how to set up and use the Continuous Integration/Continuous Deployment pipeline for your Guideian Flutter app.
 
-## 📋 Overview
+## Overview
 
 The CI/CD pipeline includes:
-- ✅ **Automated Testing** - Unit tests, integration tests, and code quality checks
-- ✅ **Automated Building** - Web, Android, and iOS builds
-- ✅ **Automated Deployment** - Deploy to GitHub Pages, Vercel, or Firebase Hosting
-- ✅ **Code Quality** - Linting, formatting, and security checks
-- ✅ **Performance Testing** - Automated performance validation
+- **Automated Testing** - Unit tests, integration tests, and code quality checks
+- **Automated Building** - Web, Android, and iOS builds
+- **Automated Deployment** - Deploy to GitHub Pages, Vercel, or Firebase Hosting
+- **Code Quality** - Linting, formatting, and security checks
+- **Performance Testing** - Automated performance validation
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 ### 1. GitHub Actions Workflows
 
@@ -59,7 +59,7 @@ FIREBASE_SERVICE_ACCOUNT_GUIDEIAN_B5EB4=your_service_account_json
 3. **Click "New repository secret"**
 4. **Add the required secrets above**
 
-## 🎯 Workflow Features
+## Workflow Features
 
 ### Code Quality Checks
 - **Formatting:** Ensures consistent code formatting
@@ -97,7 +97,7 @@ FIREBASE_SERVICE_ACCOUNT_GUIDEIAN_B5EB4=your_service_account_json
 # Requires FIREBASE_SERVICE_ACCOUNT_GUIDEIAN_B5EB4 secret
 ```
 
-## 📊 Monitoring and Notifications
+## Monitoring and Notifications
 
 ### GitHub Actions Dashboard
 - View all workflow runs in the **Actions** tab
@@ -108,9 +108,9 @@ FIREBASE_SERVICE_ACCOUNT_GUIDEIAN_B5EB4=your_service_account_json
 1. **Go to Settings → Branches**
 2. **Add rule for `main` branch**
 3. **Enable:**
-   - ✅ Require status checks to pass before merging
-   - ✅ Require branches to be up to date before merging
-   - ✅ Select "test" and "build-web" checks
+   - Require status checks to pass before merging
+   - Require branches to be up to date before merging
+   - Select "test" and "build-web" checks
 
 ### Slack/Discord Notifications (Optional)
 Add webhook notifications for build status:
@@ -123,7 +123,7 @@ Add webhook notifications for build status:
     webhook_url: ${{ secrets.SLACK_WEBHOOK }}
 ```
 
-## 🛠️ Local Development
+## Local Development
 
 ### Pre-commit Hooks
 Install pre-commit hooks for local quality checks:
@@ -155,7 +155,7 @@ flutter analyze
 flutter build web --release
 ```
 
-## 📈 Performance Monitoring
+##Performance Monitoring
 
 ### Lighthouse CI (Optional)
 Add Lighthouse performance testing:
@@ -170,7 +170,7 @@ Add Lighthouse performance testing:
     temporaryPublicStorage: true
 ```
 
-## 🔧 Customization
+## Customization
 
 ### Environment-Specific Builds
 ```yaml
@@ -198,7 +198,7 @@ Add Lighthouse performance testing:
   if: github.ref == 'refs/heads/main'
 ```
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -229,7 +229,7 @@ flutter pub deps
 flutter clean && flutter pub get
 ```
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Flutter CI/CD Best Practices](https://docs.flutter.dev/deployment/ci)
@@ -237,13 +237,13 @@ flutter clean && flutter pub get
 - [Vercel Documentation](https://vercel.com/docs)
 - [Firebase Hosting Documentation](https://firebase.google.com/docs/hosting)
 
-## 🎉 Success!
+## Success!
 
 Once set up, your CI/CD pipeline will:
-- ✅ Automatically test every code change
-- ✅ Build and deploy on successful tests
-- ✅ Maintain code quality standards
-- ✅ Provide fast feedback on issues
-- ✅ Enable reliable, repeatable deployments
+- Automatically test every code change
+- Build and deploy on successful tests
+- Maintain code quality standards
+- Provide fast feedback on issues
+- Enable reliable, repeatable deployments
 
-Your Guideian app is now ready for professional development workflows! 🚀
+Guideian is now ready for professional development workflows
