@@ -1,0 +1,57 @@
+name: Deploy Guideian App
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy to Web
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.24.0'
+        channel: 'stable'
+        
+    - name: Get dependencies
+      run: |
+        cd guideian_app
+        flutter pub get
+        
+    - name: Build web app
+      run: |
+        cd guideian_app
+        flutter build web --release --web-renderer html
+        
+    # Option 1: Deploy to GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./guideian_app/build/web
+        cname: guideian.app  # Replace with your domain
+        
+    # Option 2: Deploy to Vercel (uncomment if using Vercel)
+    # - name: Deploy to Vercel
+    #   uses: amondnet/vercel-action@v25
+    #   with:
+    #     vercel-token: ${{ secrets.VERCEL_TOKEN }}
+    #     vercel-org-id: ${{ secrets.ORG_ID }}
+    #     vercel-project-id: ${{ secrets.PROJECT_ID }}
+    #     working-directory: ./guideian_app/build/web
+        
+    # Option 3: Deploy to Firebase Hosting (uncomment if using Firebase)
+    # - name: Deploy to Firebase Hosting
+    #   uses: FirebaseExtended/action-hosting-deploy@v0
+    #   with:
+    #     repoToken: '${{ secrets.GITHUB_TOKEN }}'
+    #     firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GUIDEIAN_B5EB4 }}'
+    #     channelId: live
+    #     projectId: guideian-b5eb4
