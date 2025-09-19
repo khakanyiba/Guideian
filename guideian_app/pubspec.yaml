@@ -52,11 +52,11 @@ dependencies:
 
   # Firebase dependencies
   firebase_core: ^2.24.2
-  firebase_auth: ^4.15.3
-  cloud_firestore: ^4.13.6
-  firebase_storage: ^11.5.6
-  firebase_analytics: ^10.7.4
-  firebase_crashlytics: ^3.4.9
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.17.5
+  firebase_storage: ^11.6.5
+  firebase_analytics: ^10.10.7
+  firebase_crashlytics: ^3.5.7
   firebase_messaging: ^14.7.10
   google_sign_in: ^6.1.6
   google_fonts: ^6.1.0
@@ -75,7 +75,7 @@ dev_dependencies:
     sdk: flutter
 
 dependency_overrides:
-  js: ^0.6.7
+  js: ^0.7.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
