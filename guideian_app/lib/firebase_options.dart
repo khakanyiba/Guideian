@@ -52,8 +52,8 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB41Go0wudzjur1xcPO4t-_gk9fGYccgg4',
-    appId: '1:723263641111:android:your_android_app_id',
+    apiKey: 'AIzaSyCQl2GBWQqenIGdczcJo54ZkYiZE0BPW6Q',
+    appId: '1:723263641111:android:f452b19b7da392871e6e52',
     messagingSenderId: '723263641111',
     projectId: 'guideian-b5eb4',
     databaseURL: 'https://guideian-b5eb4-default-rtdb.firebaseio.com',
@@ -61,23 +61,23 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB41Go0wudzjur1xcPO4t-_gk9fGYccgg4',
-    appId: '1:723263641111:ios:your_ios_app_id',
+    apiKey: 'AIzaSyAO58E6PV82p4iJvF_TOr7JVkLsmmPCXPM',
+    appId: '1:723263641111:ios:c3d080794c38e8151e6e52',
     messagingSenderId: '723263641111',
     projectId: 'guideian-b5eb4',
     databaseURL: 'https://guideian-b5eb4-default-rtdb.firebaseio.com',
     storageBucket: 'guideian-b5eb4.firebasestorage.app',
-    iosBundleId: 'com.example.guideianApp',
+    iosBundleId: 'com.guideian.app',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyB41Go0wudzjur1xcPO4t-_gk9fGYccgg4',
-    appId: '1:723263641111:ios:your_macos_app_id',
+    apiKey: 'AIzaSyAO58E6PV82p4iJvF_TOr7JVkLsmmPCXPM',
+    appId: '1:723263641111:ios:c3d080794c38e8151e6e52',
     messagingSenderId: '723263641111',
     projectId: 'guideian-b5eb4',
     databaseURL: 'https://guideian-b5eb4-default-rtdb.firebaseio.com',
     storageBucket: 'guideian-b5eb4.firebasestorage.app',
-    iosBundleId: 'com.example.guideianApp',
+    iosBundleId: 'com.guideian.app',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(

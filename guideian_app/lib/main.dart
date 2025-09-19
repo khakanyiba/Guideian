@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'firebase_options.dart';
 import 'screens/home_screen.dart';
 import 'screens/services_screen.dart';
@@ -15,15 +16,36 @@ import 'screens/coming_soon_screen.dart';
 import 'providers/auth_provider.dart';
 import 'providers/subject_selection_provider.dart';
 import 'providers/course_finder_provider.dart';
-import 'firebase_options.dart';
+import 'services/firebase_service.dart';
 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(const GuideianApp());
+  
+  try {
+    // Initialize Firebase services
+    await FirebaseService.initialize();
+    
+    // Set up error handling
+    FlutterError.onError = (FlutterErrorDetails details) {
+      if (kDebugMode) {
+        FlutterError.presentError(details);
+      } else {
+        // Log to Firebase Crashlytics in production
+        FirebaseService.logCrash(
+          details.exception.toString(),
+          stackTrace: details.stack,
+        );
+      }
+    };
+    
+    runApp(const GuideianApp());
+  } catch (e) {
+    if (kDebugMode) {
+      print('Error initializing app: $e');
+    }
+    runApp(const ErrorApp());
+  }
 }
 
 class GuideianApp extends StatelessWidget {
@@ -112,3 +134,47 @@ final GoRouter _router = GoRouter(
     ),
   ],
 );
+
+class ErrorApp extends StatelessWidget {
+  const ErrorApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Guideian - Error',
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(
+                Icons.error_outline,
+                size: 64,
+                color: Colors.red,
+              ),
+              const SizedBox(height: 16),
+              Text(
+                'Failed to initialize app',
+                style: Theme.of(context).textTheme.headlineSmall,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'Please restart the application',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
+              const SizedBox(height: 24),
+              ElevatedButton(
+                onPressed: () {
+                  // In a real app, you might want to restart the app
+                  // For now, we'll just show a message
+                },
+                child: const Text('Restart App'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

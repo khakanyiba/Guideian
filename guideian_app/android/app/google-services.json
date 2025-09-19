@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "723263641111",
+    "firebase_url": "https://guideian-b5eb4-default-rtdb.firebaseio.com",
+    "project_id": "guideian-b5eb4",
+    "storage_bucket": "guideian-b5eb4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723263641111:android:f452b19b7da392871e6e52",
+        "android_client_info": {
+          "package_name": "com.guideian.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723263641111-cf6ee50tgv17gsi1c6v4ds4v9u8jd2kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQl2GBWQqenIGdczcJo54ZkYiZE0BPW6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723263641111-cf6ee50tgv17gsi1c6v4ds4v9u8jd2kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

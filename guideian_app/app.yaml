@@ -1,0 +1,46 @@
+runtime: custom
+env: flex
+
+# This configuration is for App Engine Flexible Environment
+# which supports custom runtimes like Flutter web
+
+service: default
+
+# Automatic scaling configuration
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 10
+  cool_down_period_sec: 60
+  cpu_utilization:
+    target_utilization: 0.6
+
+# Health check configuration
+health_check:
+  enable_health_check: true
+  check_interval_sec: 30
+  timeout_sec: 4
+  unhealthy_threshold: 2
+  healthy_threshold: 2
+  restart_threshold: 60
+
+# Environment variables
+env_variables:
+  FLUTTER_WEB_CANVASKIT_URL: "https://unpkg.com/canvaskit-wasm@0.33.0/bin/"
+  FLUTTER_WEB_AUTO_DETECT: "true"
+
+# Resource configuration
+resources:
+  cpu: 1
+  memory_gb: 2
+  disk_size_gb: 10
+
+# Network configuration
+network:
+  forwarded_ports:
+    - 8080
+  instance_tag: "guideian-web"
+
+# Beta settings for better performance
+beta_settings:
+  cloud_sql_instances: ""
+
