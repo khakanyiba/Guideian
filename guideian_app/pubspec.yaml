@@ -58,7 +58,6 @@ dependencies:
   firebase_analytics: ^10.7.4
   firebase_crashlytics: ^3.4.9
   firebase_messaging: ^14.7.10
-  firebase_dynamic_links: ^4.3.8
   google_sign_in: ^6.1.6
   google_fonts: ^6.1.0
 
