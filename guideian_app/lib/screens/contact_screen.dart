@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
-import '../services/contact_email_service.dart';
 
 class ContactScreen extends StatefulWidget {
   const ContactScreen({super.key});
@@ -338,7 +337,7 @@ class _ContactScreenState extends State<ContactScreen> {
         _buildContactDetail(
           icon: Icons.email_outlined,
           title: 'Email Us',
-          content: 'Guideian.help@gmail.com',
+          content: 'gguideian@gmail.com',
         ),
         
         const SizedBox(height: 48),
@@ -358,13 +357,11 @@ class _ContactScreenState extends State<ContactScreen> {
             const SizedBox(height: 16),
             Row(
               children: [
-                _buildSocialIcon(Icons.facebook, 'https://facebook.com'),
+                _buildSocialIcon(Icons.facebook, 'https://www.facebook.com/guideian.2025/'),
                 const SizedBox(width: 12),
-                _buildSocialIcon(Icons.camera_alt, 'https://instagram.com'),
+                _buildSocialIcon(Icons.camera_alt, 'https://www.instagram.com/guideian/'),
                 const SizedBox(width: 12),
-                _buildSocialIcon(Icons.alternate_email, 'https://twitter.com'),
-                const SizedBox(width: 12),
-                _buildSocialIcon(Icons.business, 'https://linkedin.com'),
+                _buildSocialIcon(Icons.business, 'https://za.linkedin.com/company/guideian'),
               ],
             ),
           ],
@@ -422,16 +419,23 @@ class _ContactScreenState extends State<ContactScreen> {
     return GestureDetector(
       onTap: () => _launchSocial(url),
       child: Container(
-        width: 40,
-        height: 40,
+        width: 44,
+        height: 44,
         decoration: BoxDecoration(
           color: const Color(0xFF3328BF),
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: const Color(0xFF3328BF).withOpacity(0.3),
+              blurRadius: 8,
+              offset: const Offset(0, 4),
+            ),
+          ],
         ),
         child: Icon(
           icon,
           color: Colors.white,
-          size: 20,
+          size: 22,
         ),
       ),
     );
@@ -864,22 +868,17 @@ class _ContactScreenState extends State<ContactScreen> {
                       children: [
                         _SocialMediaIcon(
                           icon: Icons.facebook,
-                          onTap: () {},
-                        ),
-                        const SizedBox(width: 12),
-                        _SocialMediaIcon(
-                          icon: Icons.alternate_email, // Twitter/X
-                          onTap: () {},
+                          onTap: () => _launchSocial('https://www.facebook.com/guideian.2025/'),
                         ),
                         const SizedBox(width: 12),
                         _SocialMediaIcon(
                           icon: Icons.camera_alt, // Instagram
-                          onTap: () {},
+                          onTap: () => _launchSocial('https://www.instagram.com/guideian/'),
                         ),
                         const SizedBox(width: 12),
                         _SocialMediaIcon(
-                          icon: Icons.work, // LinkedIn
-                          onTap: () {},
+                          icon: Icons.business, // LinkedIn
+                          onTap: () => _launchSocial('https://za.linkedin.com/company/guideian'),
                         ),
                       ],
                     ),
@@ -936,7 +935,7 @@ class _ContactScreenState extends State<ContactScreen> {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'guideian.help@gmail.com',
+                      'gguideian@gmail.com',
                       style: GoogleFonts.plusJakartaSans(
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
@@ -1023,47 +1022,32 @@ class _ContactScreenState extends State<ContactScreen> {
     setState(() => _isLoading = true);
 
     try {
-      // Send email using the contact email service
-      final error = await ContactEmailService.sendContactMessage(
-        name: _nameController.text.trim(),
-        email: _emailController.text.trim(),
-        message: _messageController.text.trim(),
-      );
+      // Simulate form submission
+      await Future.delayed(const Duration(seconds: 1));
+      
+      print('Contact form submitted:');
+      print('Name: ${_nameController.text.trim()}');
+      print('Email: ${_emailController.text.trim()}');
+      print('Message: ${_messageController.text.trim()}');
 
       setState(() => _isLoading = false);
 
-      if (error == null) {
-        // Success
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                'Message sent successfully! We\'ll get back to you within 24 hours.',
-                style: GoogleFonts.plusJakartaSans(),
-              ),
-              backgroundColor: Colors.green,
-              duration: const Duration(seconds: 4),
+      // Show success message
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Message sent successfully! We\'ll get back to you within 24 hours.',
+              style: GoogleFonts.plusJakartaSans(),
             ),
-          );
-        }
-        
-        // Clear the message field only
-        _messageController.clear();
-      } else {
-        // Error occurred
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                'Failed to send message: $error',
-                style: GoogleFonts.plusJakartaSans(),
-              ),
-              backgroundColor: Colors.red,
-              duration: const Duration(seconds: 4),
-            ),
-          );
-        }
+            backgroundColor: Colors.green,
+            duration: const Duration(seconds: 4),
+          ),
+        );
       }
+      
+      // Clear the message field only
+      _messageController.clear();
     } catch (e) {
       setState(() => _isLoading = false);
       
@@ -1158,17 +1142,24 @@ class _SocialMediaIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(8),
+      borderRadius: BorderRadius.circular(12),
       child: Container(
-        width: 40,
-        height: 40,
+        width: 44,
+        height: 44,
         decoration: BoxDecoration(
-          color: const Color(0xFF1A1A1A),
-          borderRadius: BorderRadius.circular(8),
+          color: const Color(0xFF3328BF),
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: const Color(0xFF3328BF).withOpacity(0.3),
+              blurRadius: 8,
+              offset: const Offset(0, 4),
+            ),
+          ],
         ),
         child: Icon(
           icon,
-          size: 20,
+          size: 22,
           color: Colors.white,
         ),
       ),

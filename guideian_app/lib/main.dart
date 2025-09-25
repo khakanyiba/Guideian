@@ -20,30 +20,26 @@ import 'services/firebase_service.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
-  try {
-    // Initialize Firebase services
-    await FirebaseService.initialize();
-    
-    // Set up error handling
-    FlutterError.onError = (FlutterErrorDetails details) {
-      if (kDebugMode) {
-        FlutterError.presentError(details);
-      } else {
-        // Log to Firebase Crashlytics in production
-        FirebaseService.logCrash(
-          details.exception.toString(),
-          stackTrace: details.stack,
-        );
-      }
-    };
-    
-    runApp(const GuideianApp());
-  } catch (e) {
+  // Set up error handling
+  FlutterError.onError = (FlutterErrorDetails details) {
     if (kDebugMode) {
-      print('Error initializing app: $e');
+      FlutterError.presentError(details);
+    } else {
+      // Log error in production
+      print('Error in production: ${details.exception}');
     }
-    runApp(const ErrorApp());
+  };
+  
+  // Initialize Firebase services (with error handling)
+  try {
+    await FirebaseService.initialize();
+    print('✅ Firebase initialized successfully');
+  } catch (e) {
+    print('⚠️ Firebase initialization failed: $e');
+    print('App will continue without Firebase features');
   }
+  
+  runApp(const GuideianApp());
 }
 
 class GuideianApp extends StatelessWidget {

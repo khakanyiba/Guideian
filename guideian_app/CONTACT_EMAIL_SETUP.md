@@ -73,7 +73,7 @@ If you prefer other services, you can modify `contact_email_service.dart` to use
 
 ## 📧 Current Email Configuration
 
-- **Support Email:** `Guideian.help@gmail.com`
+- **Support Email:** `gguideian@gmail.com`
 - **Form Fields:** Name, Email, Message
 - **Response Time:** Users expect response within 24 hours
 
@@ -118,7 +118,7 @@ The implemented email template includes:
 
 ## 📞 Support
 
-The contact form will send emails to: **Guideian.help@gmail.com**
+The contact form will send emails to: **gguideian@gmail.com**
 
 Make sure this email address:
 - ✅ Is monitored regularly

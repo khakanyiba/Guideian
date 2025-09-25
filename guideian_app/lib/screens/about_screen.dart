@@ -2,10 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../providers/auth_provider.dart';
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
+
+  static void _launchSocial(String url) async {
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -790,22 +797,17 @@ class AboutScreen extends StatelessWidget {
                       children: [
                         _SocialMediaIcon(
                           icon: Icons.facebook,
-                          onTap: () {},
-                        ),
-                        const SizedBox(width: 12),
-                        _SocialMediaIcon(
-                          icon: Icons.alternate_email, // Twitter/X
-                          onTap: () {},
+                          onTap: () => AboutScreen._launchSocial('https://www.facebook.com/guideian.2025/'),
                         ),
                         const SizedBox(width: 12),
                         _SocialMediaIcon(
                           icon: Icons.camera_alt, // Instagram
-                          onTap: () {},
+                          onTap: () => AboutScreen._launchSocial('https://www.instagram.com/guideian/'),
                         ),
                         const SizedBox(width: 12),
                         _SocialMediaIcon(
-                          icon: Icons.work, // LinkedIn
-                          onTap: () {},
+                          icon: Icons.business, // LinkedIn
+                          onTap: () => AboutScreen._launchSocial('https://za.linkedin.com/company/guideian'),
                         ),
                       ],
                     ),
@@ -1056,17 +1058,24 @@ class _SocialMediaIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(8),
+      borderRadius: BorderRadius.circular(12),
       child: Container(
-        width: 40,
-        height: 40,
+        width: 44,
+        height: 44,
         decoration: BoxDecoration(
-          color: const Color(0xFF1A1A1A),
-          borderRadius: BorderRadius.circular(8),
+          color: const Color(0xFF3328BF),
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: const Color(0xFF3328BF).withOpacity(0.3),
+              blurRadius: 8,
+              offset: const Offset(0, 4),
+            ),
+          ],
         ),
         child: Icon(
           icon,
-          size: 20,
+          size: 22,
           color: Colors.white,
         ),
       ),

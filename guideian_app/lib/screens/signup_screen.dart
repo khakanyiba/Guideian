@@ -23,7 +23,6 @@ class _SignupScreenState extends State<SignupScreen> {
   bool _agreeTerms = false;
   bool _isLoading = false;
   String _selectedGrade = '';
-  double _passwordStrength = 0.0;
 
   @override
   void dispose() {
@@ -34,19 +33,6 @@ class _SignupScreenState extends State<SignupScreen> {
     super.dispose();
   }
 
-  void _updatePasswordStrength(String password) {
-    double strength = 0.0;
-    if (password.length >= 8) strength += 0.2;
-    if (password.length >= 12) strength += 0.2;
-    if (RegExp(r'[A-Z]').hasMatch(password)) strength += 0.2;
-    if (RegExp(r'[a-z]').hasMatch(password)) strength += 0.2;
-    if (RegExp(r'[0-9]').hasMatch(password)) strength += 0.1;
-    if (RegExp(r'[^A-Za-z0-9]').hasMatch(password)) strength += 0.1;
-    
-    setState(() {
-      _passwordStrength = strength;
-    });
-  }
 
   Future<void> _handleSignup() async {
     if (!_formKey.currentState!.validate()) return;

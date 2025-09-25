@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class AuthProvider extends ChangeNotifier {
   // Google Sign-in configuration
   final GoogleSignIn _googleSignIn = GoogleSignIn(
-    clientId: '723263641111-cf6ee50tgv17gsi1c6v4ds4v9u8jd2kn.apps.googleusercontent.com',
     scopes: ['email', 'profile'],
   );
 
   // Firebase configuration
   static const String _apiKey = 'AIzaSyB41Go0wudzjur1xcPO4t-_gk9fGYccgg4';
-  static const String _authDomain = "guideian-b5eb4.firebaseapp.com";
   static const String _databaseUrl = 'https://guideian-b5eb4-default-rtdb.firebaseio.com';
 
   bool _isLoggedIn = false;
@@ -132,6 +131,54 @@ class AuthProvider extends ChangeNotifier {
     }
   }
 
+  /// Link Google account to existing user
+  Future<String?> linkGoogleAccount() async {
+    try {
+      print('Starting Google account linking');
+      
+      final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
+      
+      if (googleUser == null) {
+        print('Google Sign-in cancelled by user');
+        return null; // User cancelled, not an error
+      }
+
+      print('Google user: ${googleUser.email}');
+      
+      final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+      
+      if (googleAuth.idToken != null) {
+        // Create a special password for Google users and update existing account
+        final tempPassword = 'google_user_${googleUser.email}';
+        
+        // Update the existing user's password to allow Google sign-in
+        final response = await http.post(
+          Uri.parse('https://identitytoolkit.googleapis.com/v1/accounts:update?key=$_apiKey'),
+          headers: {'Content-Type': 'application/json'},
+          body: json.encode({
+            'idToken': _idToken,
+            'password': tempPassword,
+            'returnSecureToken': true,
+          }),
+        );
+
+        if (response.statusCode == 200) {
+          print('Google account linked successfully');
+          return null; // Success
+        } else {
+          final error = json.decode(response.body);
+          print('Google account linking error: ${error['error']['message']}');
+          return 'Failed to link Google account: ${error['error']['message']}';
+        }
+      } else {
+        return 'Google Sign-in failed: No ID token received';
+      }
+    } catch (e) {
+      print('Google account linking error: $e');
+      return 'Google account linking failed: $e';
+    }
+  }
+
   Future<String?> signInWithGoogle() async {
     try {
       print('Starting Google Sign-in');
@@ -184,13 +231,27 @@ class AuthProvider extends ChangeNotifier {
           return 'Google Sign-in failed: ${error['error']['message']}';
         }
       } else {
-        // Fallback: Create user directly with email and name
+        // Fallback: Handle account linking for existing users
         print('No ID token available, using fallback method');
         
-        // Create a temporary password for Google users
-        final tempPassword = 'google_user_${DateTime.now().millisecondsSinceEpoch}';
+        // Check if user already exists by trying to sign in with a special Google password
+        final tempPassword = 'google_user_${googleUser.email}';
         
-        // Try to create a new user account
+        // Try to sign in with existing account first
+        final loginError = await login(googleUser.email, tempPassword);
+        
+        if (loginError == null) {
+          // Successfully signed in with existing account
+          _userName = googleUser.displayName ?? _userName ?? googleUser.email.split('@')[0];
+          await _saveUserData();
+          await _saveUserDataToDatabase();
+          notifyListeners();
+          print('Google Sign-in successful with existing account');
+          return null; // Success
+        }
+        
+        // If login failed, the user doesn't exist yet, so create a new account
+        print('User does not exist, creating new account');
         final signupError = await signup(
           googleUser.email,
           tempPassword,
@@ -198,12 +259,12 @@ class AuthProvider extends ChangeNotifier {
         );
         
         if (signupError != null) {
-          // If signup fails (user might already exist), try to sign in
-          print('Signup failed, trying to sign in: $signupError');
-          return await login(googleUser.email, tempPassword);
+          // If signup also fails, return a helpful error
+          print('Google Sign-in fallback failed: $signupError');
+          return 'Google Sign-in failed: $signupError';
         }
         
-        // If signup was successful, set user data
+        // Account created successfully
         _userEmail = googleUser.email;
         _userName = googleUser.displayName ?? googleUser.email.split('@')[0];
         _isLoggedIn = true;
@@ -211,7 +272,7 @@ class AuthProvider extends ChangeNotifier {
         await _saveUserData();
         await _saveUserDataToDatabase();
         notifyListeners();
-        print('Google Sign-in successful with fallback method');
+        print('Google Sign-in successful with new account');
         return null; // Success
       }
     } catch (e) {

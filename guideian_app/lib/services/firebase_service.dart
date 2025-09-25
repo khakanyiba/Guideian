@@ -3,7 +3,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import '../firebase_options.dart';
@@ -13,7 +12,6 @@ class FirebaseService {
   static FirebaseFirestore? _firestore;
   static FirebaseStorage? _storage;
   static FirebaseAnalytics? _analytics;
-  static FirebaseCrashlytics? _crashlytics;
   static FirebaseMessaging? _messaging;
 
   /// Initialize Firebase services
@@ -36,14 +34,11 @@ class FirebaseService {
       // Initialize Firebase Analytics
       _analytics = FirebaseAnalytics.instance;
 
-      // Initialize Firebase Crashlytics
-      _crashlytics = FirebaseCrashlytics.instance;
-
       // Initialize Firebase Messaging
       _messaging = FirebaseMessaging.instance;
 
-      // Configure Firebase settings
-      await _configureFirebase();
+      // Configure Firebase settings (non-blocking)
+      _configureFirebase();
 
       if (kDebugMode) {
         print('✅ Firebase services initialized successfully');
@@ -52,32 +47,33 @@ class FirebaseService {
       if (kDebugMode) {
         print('❌ Error initializing Firebase: $e');
       }
-      rethrow;
+      // Don't rethrow - let the app continue without Firebase
     }
   }
 
   /// Configure Firebase settings
-  static Future<void> _configureFirebase() async {
-    // Configure Firestore settings
-    _firestore?.settings = const Settings(
-      persistenceEnabled: true,
-      cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED,
-    );
+  static void _configureFirebase() {
+    try {
+      // Configure Firestore settings
+      _firestore?.settings = const Settings(
+        persistenceEnabled: true,
+        cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED,
+      );
 
-    // Configure Crashlytics for debug mode
-    if (kDebugMode) {
-      await _crashlytics?.setCrashlyticsCollectionEnabled(false);
+      // Configure Firebase Messaging (non-blocking)
+      _messaging?.setForegroundNotificationPresentationOptions(
+        alert: true,
+        badge: true,
+        sound: true,
+      );
+
+      // Request notification permissions (non-blocking)
+      _requestNotificationPermissions();
+    } catch (e) {
+      if (kDebugMode) {
+        print('Error configuring Firebase: $e');
+      }
     }
-
-    // Configure Firebase Messaging
-    await _messaging?.setForegroundNotificationPresentationOptions(
-      alert: true,
-      badge: true,
-      sound: true,
-    );
-
-    // Request notification permissions
-    await _requestNotificationPermissions();
   }
 
   /// Request notification permissions
@@ -135,13 +131,6 @@ class FirebaseService {
     return _analytics!;
   }
 
-  /// Get Firebase Crashlytics instance
-  static FirebaseCrashlytics get crashlytics {
-    if (_crashlytics == null) {
-      throw Exception('Firebase Crashlytics not initialized. Call FirebaseService.initialize() first.');
-    }
-    return _crashlytics!;
-  }
 
   /// Get Firebase Messaging instance
   static FirebaseMessaging get messaging {
@@ -178,30 +167,6 @@ class FirebaseService {
     }
   }
 
-  /// Log custom crash report
-  static Future<void> logCrash(String message, {StackTrace? stackTrace}) async {
-    try {
-      await _crashlytics?.recordError(
-        Exception(message),
-        stackTrace ?? StackTrace.current,
-      );
-    } catch (e) {
-      if (kDebugMode) {
-        print('Error logging crash: $e');
-      }
-    }
-  }
-
-  /// Set user identifier for crashlytics
-  static Future<void> setCrashlyticsUserId(String userId) async {
-    try {
-      await _crashlytics?.setUserIdentifier(userId);
-    } catch (e) {
-      if (kDebugMode) {
-        print('Error setting crashlytics user ID: $e');
-      }
-    }
-  }
 
   /// Get FCM token for push notifications
   static Future<String?> getFCMToken() async {
