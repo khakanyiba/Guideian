@@ -63,3 +63,4 @@ If it still doesn't work after these steps, check:
 3. Make sure you're testing in the same browser where you're logged into Google
 
 The most common fix is **Step 1** - enabling Google Sign-In in Firebase Console!
+

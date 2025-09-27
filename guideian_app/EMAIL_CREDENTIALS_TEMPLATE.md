@@ -45,3 +45,4 @@ static const String _publicKey = 'xxxxxxxxxxxxxxxx'; // Your Public Key from Ema
 - Don't commit them to public repositories
 - The email service will send to: **gguideian@gmail.com**
 - Free plan includes 200 emails/month
+

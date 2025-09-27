@@ -11,6 +11,7 @@ import 'screens/login_screen.dart';
 import 'screens/signup_screen.dart';
 import 'screens/subject_selection_screen.dart';
 import 'screens/coming_soon_screen.dart';
+import 'screens/career_insights_dashboard.dart';
 import 'providers/auth_provider.dart';
 import 'providers/subject_selection_provider.dart';
 import 'providers/course_finder_provider.dart';
@@ -125,6 +126,10 @@ final GoRouter _router = GoRouter(
     GoRoute(
       path: '/coming-soon',
       builder: (context, state) => const ComingSoonScreen(),
+    ),
+    GoRoute(
+      path: '/career-insights',
+      builder: (context, state) => const CareerInsightsScreen(),
     ),
   ],
 );

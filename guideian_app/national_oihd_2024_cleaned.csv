@@ -1,0 +1,155 @@
+OFO_CODE,OFO_TITLE,SECONDARY_DATA,MENTIONS_FREQUENCY,AVERAGE_CERTAINTY,WEIGHTED_AVERAGE
+2021-241103,Tax Professional,0.66,0.37,1.00,0.57
+2021-121101,Finance Manager,0.67,0.37,1.00,0.57
+2021-242101,Management Consultant,0.40,0.63,1.00,0.57
+2021-242208,Organisational Development Practitioner,0.40,0.63,1.00,0.57
+2021-242301,Skills Development Practitioner,0.40,0.63,1.00,0.57
+2021-411101,General Clerk,0.07,0.99,0.58,0.56
+2021-242211,Business Development Officer,0.39,0.63,1.00,0.56
+2021-121905,Programme or Project Manager,0.39,0.63,1.00,0.56
+2021-671101,Electrician,0.39,0.63,1.00,0.56
+2021-641401,Plumber,0.39,0.63,1.00,0.56
+2021-121201,Human Resource Manager,0.40,0.63,0.58,0.55
+2021-242204,Corporate General Manager,0.40,0.63,0.58,0.55
+2021-351301,Computer Network Technician,0.40,0.63,0.58,0.55
+2021-133101,Information Technology Manager,0.40,0.63,0.58,0.55
+2021-132401,Supply Chain Practitioner,0.40,0.63,0.58,0.55
+2021-214201,Civil Engineer,0.40,0.63,0.58,0.55
+2021-251101,ICT Systems Analyst,0.40,0.63,0.58,0.55
+2021-243101,Marketing Practitioner,0.40,0.63,0.58,0.55
+2021-251201,Software Developer,0.40,0.63,0.58,0.55
+2021-215101,Electrical Engineer,0.40,0.63,0.58,0.55
+2021-422601,Call or Contact Centre Agent,0.40,0.63,0.58,0.55
+2021-214401,Mechanical Engineer,0.40,0.63,0.58,0.55
+2021-252901,ICT Security Specialist,0.40,0.63,0.58,0.55
+2021-122101,Sales and Marketing Manager,0.40,0.63,0.58,0.55
+2021-422201,Call or Contact Centre Manager,0.40,0.63,0.58,0.55
+2021-121301,Policy Analyst,0.40,0.63,0.58,0.55
+2021-134501,School Principal,0.40,0.63,0.58,0.55
+2021-235101,FET Phase School Teacher (Grades 10-12),0.40,0.63,0.58,0.55
+2021-671202,Millwright,0.40,0.63,0.58,0.55
+2021-234101,Foundation Phase School Teacher,0.40,0.63,0.58,0.55
+2021-234201,Early Childhood Development Practitioner,0.40,0.63,0.58,0.55
+2021-235201,Senior Phase School Teacher (Grades 7-9),0.40,0.63,0.58,0.55
+2021-121202,Recruitment Officer,0.40,0.63,0.58,0.55
+2021-216401,Urban and Regional Planner,0.40,0.63,0.58,0.55
+2021-641201,Bricklayer,0.40,0.63,0.58,0.55
+2021-241101,General Accountant,0.40,0.63,0.58,0.55
+2021-242214,Fraud Examiner,0.40,0.63,0.58,0.55
+2021-263101,Economist,0.40,0.63,0.58,0.55
+2021-242107,Internal Auditor,0.40,0.63,0.58,0.55
+2021-652302,Fitter and Turner,0.40,0.63,0.58,0.55
+2021-242209,Compliance Officer,0.40,0.63,0.58,0.55
+2021-242202,Policy and Planning Manager,0.40,0.63,0.58,0.55
+2021-251202,Programmer Analyst,0.40,0.63,0.58,0.55
+2021-143101,Facilities Manager,0.40,0.63,0.58,0.55
+2021-643101,Painter and Decorator,0.40,0.63,0.58,0.55
+2021-242103,Data Scientist,0.40,0.63,0.58,0.55
+2021-132301,Construction Project Manager,0.40,0.63,0.58,0.55
+2021-132402,Logistics Manager,0.40,0.63,0.58,0.55
+2021-671201,Mechanical Fitter,0.40,0.63,0.58,0.55
+2021-143905,Warehouse Manager,0.40,0.63,0.58,0.55
+2021-242215,Forensic Accountant,0.40,0.63,0.58,0.55
+2021-351201,ICT Communications Assistant,0.40,0.63,0.58,0.55
+2021-411201,Statistical Clerk,0.62,0.37,1.00,0.54
+2021-211301,Chemist,0.74,0.37,0.14,0.54
+2021-333905,Property Manager,0.75,0.37,0.14,0.54
+2021-514201,Skin Care Therapist,0.34,0.75,0.44,0.54
+2021-672107,Special Class Electrician,0.67,0.37,1.00,0.54
+2021-251302,Web Developer,0.38,0.70,0.46,0.54
+2021-252301,Computer Network and Systems Engineer,0.27,0.78,0.76,0.54
+2021-264301,Interpreter,0.66,0.37,1.00,0.54
+2021-264302,Translator,0.66,0.37,1.00,0.54
+2021-214605,Metallurgist,0.74,0.37,0.14,0.54
+2021-242210,Business Administrator,0.39,0.63,1.00,0.53
+2021-524903,Sales Clerk/Officer,0.07,0.99,0.58,0.53
+2021-315304,Flying Instructor,0.57,0.53,0.15,0.53
+2021-352102,Camera Operator (Film, Television, or Video),0.73,0.37,0.14,0.53
+2021-213104,Biochemist,0.73,0.37,0.14,0.53
+2021-313901,Integrated Manufacturing Line Process Control Technician,0.64,0.37,1.00,0.53
+2021-211401,Geologist,0.70,0.37,0.42,0.53
+2021-641501,Carpenter and Joiner,0.53,0.53,0.42,0.52
+2021-221207,Pathologist,0.63,0.37,1.00,0.52
+2021-311101,Chemistry Technician,0.72,0.37,0.14,0.52
+2021-242402,Occupational Instructor,0.41,0.63,0.49,0.52
+2021-653201,Aircraft Maintenance Mechanic,0.25,0.78,0.58,0.52
+2021-134205,Health Service Specialised Clinic Manager,0.46,0.53,1.00,0.52
+2021-213306,Water Quality Analyst,0.37,0.70,0.14,0.52
+2021-321201,Medical Technician,0.39,0.63,0.58,0.52
+2021-431203,Statistical Clerk,0.62,0.37,1.00,0.52
+2021-431204,Insurance Claims Administrator,0.62,0.37,1.00,0.52
+2021-333201,Events Manager,0.40,0.63,0.42,0.51
+2021-683401,Upholsterer,0.70,0.37,0.14,0.51
+2021-312103,Engineering Supervisor,0.40,0.63,0.42,0.51
+2021-671203,Mechatronics Technician,0.64,0.37,0.69,0.51
+2021-712101,Metal Processing Plant Operator,0.61,0.37,1.00,0.51
+2021-331501,Valuer,0.69,0.37,0.14,0.51
+2021-235904,Examination Supervisor,0.63,0.37,0.69,0.51
+2021-441501,Filing or Registry Clerk,0.32,0.70,0.42,0.51
+2021-214905,Agricultural Engineer,0.67,0.37,0.21,0.50
+2021-235601,ICT Trainer,0.28,0.70,0.77,0.50
+2021-671301,Electrical Line Mechanic,0.40,0.63,0.14,0.50
+2021-422205,Contact Centre Forecast Analyst,0.41,0.53,1.00,0.50
+2021-264303,Linguist,0.66,0.37,0.14,0.50
+2021-441201,Courier,0.57,0.37,1.00,0.49
+2021-225101,Veterinarian,0.37,0.63,0.23,0.49
+2021-226301,Environmental Health Officer,0.40,0.53,1.00,0.49
+2021-321107,Operating Theatre Technician,0.65,0.37,0.14,0.49
+2021-514204,Nail Technician,0.34,0.63,0.58,0.49
+2021-681301,Dairyman,0.64,0.37,0.21,0.49
+2021-214102,Industrial Engineering Technologist,0.41,0.53,0.76,0.49
+2021-684905,Vehicle Body Builder,0.39,0.53,1.00,0.48
+2021-734210,Scraper Operator,0.55,0.37,1.00,0.48
+2021-134903,Small Business Manager,0.41,0.53,0.76,0.48
+2021-221203,Emergency Medicine Specialist,0.63,0.37,0.14,0.48
+2021-216101,Architect,0.29,0.70,0.27,0.48
+2021-264103,Technical Writer,0.62,0.37,0.21,0.48
+2021-421401,Debt Collector,0.54,0.37,1.00,0.48
+2021-261901,Adjudicator,0.54,0.37,1.00,0.48
+2021-214302,Environmental Impact and Restoration Analyst,0.37,0.53,1.00,0.48
+2021-732202,Taxi Driver,0.40,0.53,0.69,0.48
+2021-216301,Fashion Designer,0.53,0.37,1.00,0.48
+2021-243301,Industrial Products Sales Representative,0.36,0.53,1.00,0.47
+2021-734101,Agricultural Mobile Plant Operator,0.53,0.37,1.00,0.47
+2021-515103,Commercial Housekeeper,0.34,0.63,0.14,0.47
+2021-643202,Vehicle Painter,0.61,0.37,0.14,0.47
+2021-263206,Heritage Consultant,0.34,0.63,0.15,0.47
+2021-342103,Jockey,0.52,0.37,1.00,0.47
+2021-431301,Payroll Clerk,0.41,0.53,0.42,0.47
+2021-252902,Technical ICT Support Services Manager,0.29,0.63,0.58,0.47
+2021-132104,Manufacturing Operations Manager,0.40,0.63,0.58,0.55
+2021-214402,Marine Engineering Technologist,0.40,0.63,0.58,0.55
+2021-263401,Librarian,0.40,0.63,0.58,0.55
+2021-222108,Nurse Educator,0.40,0.63,0.58,0.55
+2021-222106,Registered Nurse (Critical Care and Emergency),0.40,0.63,0.58,0.55
+2021-222104,Registered Nurse (Medical),0.40,0.63,0.58,0.55
+2021-222107,Registered Nurse (Mental Health),0.40,0.63,0.58,0.55
+2021-222105,Registered Nurse (Operating Theatre),0.40,0.63,0.58,0.55
+2021-222103,Registered Nurse (Child and Family Health),0.40,0.63,0.58,0.55
+2021-215201,Electronics Engineer,0.40,0.63,0.58,0.55
+2021-311401,Mechanical Engineering Technician,0.40,0.63,0.58,0.55
+2021-121901,Corporate Services Manager,0.40,0.63,0.58,0.55
+2021-132102,Production/Operations Supervisor (Manufacturing),0.40,0.63,0.58,0.55
+2021-216501,Surveyor,0.40,0.63,0.58,0.55
+2021-652301,Metal Machinist,0.40,0.63,0.58,0.55
+2021-215301,Telecommunications Engineer,0.40,0.63,0.58,0.55
+2021-211201,Mathematician,0.40,0.63,0.58,0.55
+2021-263501,Statistician,0.40,0.63,0.58,0.55
+2021-683201,Patternmaker,0.40,0.63,0.58,0.55
+2021-226202,Physiotherapist,0.40,0.63,0.58,0.55
+2021-321101,Sonographer,0.40,0.63,0.58,0.55
+2021-333401,Retail Buyer,0.40,0.63,0.58,0.55
+2021-332201,Commercial Sales Representative,0.40,0.63,0.58,0.55
+2021-441601,Human Resources Clerk,0.40,0.63,0.58,0.55
+2021-411401,Office Administrator,0.40,0.63,0.58,0.55
+2021-412101,Secretary (General),0.40,0.63,0.58,0.55
+2021-431101,Accounts Clerk,0.40,0.63,0.58,0.55
+2021-432201,Production Coordinator,0.40,0.63,0.58,0.55
+2021-441901,Programme or Project Administrator,0.40,0.63,0.58,0.55
+2021-523101,Retail General Manager,0.40,0.63,0.58,0.55
+2021-532201,Commercial Cleaner,0.40,0.63,0.58,0.55
+2021-732201,Truck Driver (General),0.40,0.63,0.58,0.55
+2021-734301,Crane or Hoist Operator,0.40,0.63,0.58,0.55
+2021-734401,Lifting Machine Operator,0.40,0.63,0.58,0.55
+2021-214101,Industrial Engineer,0.40,0.63,0.58,0.55
+2021-235401,University Lecturer,0.40,0.63,0.58,0.55

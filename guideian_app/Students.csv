@@ -1,0 +1,1001 @@
+math_marks,english_marks,science_marks,interest,budget_preference,location_preference,learning_style,career_goal
+85,78,92,Technology,Balanced,Western Cape,Hands-on Practical,Quick Employment
+70,82,75,Business,Budget Conscious,Anywhere in SA,Structured Learning,Long-term Growth
+88,90,85,Engineering,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+60,65,70,Arts,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+95,88,92,Medicine,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+78,80,76,Science,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+82,79,85,Law,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+67,72,70,Education,Balanced,Western Cape,Hands-on Practical,Quick Employment
+90,85,88,Environment,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+75,80,78,Social Sciences,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+85,87,90,Mathematics,Premium Investment,Western Cape,Hands-on Practical,Entrepreneurial
+68,74,70,Sports,Balanced,Gauteng,Flexible Learning,Quick Employment
+92,88,91,Technology,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+77,80,79,Business,Balanced,Anywhere in SA,Hands-on Practical,Quick Employment
+80,85,83,Engineering,Balanced,Gauteng,Flexible Learning,Long-term Growth
+65,70,68,Arts,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+89,91,87,Medicine,Premium Investment,Western Cape,Hands-on Practical,Long-term Growth
+73,78,75,Science,Balanced,Anywhere in SA,Flexible Learning,Quick Employment
+81,83,80,Law,Balanced,Gauteng,Structured Learning,Entrepreneurial
+70,75,72,Education,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+85,78,92,Technology,Balanced,Western Cape,Hands-on Practical,Quick Employment
+70,82,75,Business,Budget Conscious,Anywhere in SA,Structured Learning,Long-term Growth
+88,90,85,Engineering,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+60,65,70,Arts,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+95,88,92,Medicine,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+78,80,76,Science,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+82,79,85,Law,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+67,72,70,Education,Balanced,Western Cape,Hands-on Practical,Quick Employment
+90,85,88,Environment,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+75,80,78,Social Sciences,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+85,87,90,Mathematics,Premium Investment,Western Cape,Hands-on Practical,Entrepreneurial
+68,74,70,Sports,Balanced,Gauteng,Flexible Learning,Quick Employment
+92,88,91,Technology,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+77,80,79,Business,Balanced,Anywhere in SA,Hands-on Practical,Quick Employment
+80,85,83,Engineering,Balanced,Gauteng,Flexible Learning,Long-term Growth
+65,70,68,Arts,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+89,91,87,Medicine,Premium Investment,Western Cape,Hands-on Practical,Long-term Growth
+73,78,75,Science,Balanced,Anywhere in SA,Flexible Learning,Quick Employment
+81,83,80,Law,Balanced,Gauteng,Structured Learning,Entrepreneurial
+70,75,72,Education,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+85,78,92,Technology,Balanced,Western Cape,Hands-on Practical,Quick Employment
+70,82,75,Business,Budget Conscious,Anywhere in SA,Structured Learning,Long-term Growth
+88,90,85,Engineering,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+60,65,70,Arts,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+95,88,92,Medicine,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+78,80,76,Science,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+82,79,85,Law,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+67,72,70,Education,Balanced,Western Cape,Hands-on Practical,Quick Employment
+90,85,88,Environment,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+75,80,78,Social Sciences,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+85,87,90,Mathematics,Premium Investment,Western Cape,Hands-on Practical,Entrepreneurial
+68,74,70,Sports,Balanced,Gauteng,Flexible Learning,Quick Employment
+92,88,91,Technology,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+77,80,79,Business,Balanced,Anywhere in SA,Hands-on Practical,Quick Employment
+80,85,83,Engineering,Balanced,Gauteng,Flexible Learning,Long-term Growth
+65,70,68,Arts,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+89,91,87,Medicine,Premium Investment,Western Cape,Hands-on Practical,Long-term Growth
+73,78,75,Science,Balanced,Anywhere in SA,Flexible Learning,Quick Employment
+81,83,80,Law,Balanced,Gauteng,Structured Learning,Entrepreneurial
+70,75,72,Education,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+88,72,83,Sports,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+74,89,89,Engineering,Budget Conscious,Anywhere in SA,Hands-on Practical,Quick Employment
+67,82,73,Environment,Balanced,Other Provinces,Hands-on Practical,Entrepreneurial
+80,78,65,Education,Premium Investment,Anywhere in SA,Hands-on Practical,Quick Employment
+78,91,62,Medicine,Balanced,Western Cape,Structured Learning,Quick Employment
+82,89,75,Education,Balanced,Other Provinces,Flexible Learning,Quick Employment
+70,88,66,Environment,Budget Conscious,Anywhere in SA,Hands-on Practical,Entrepreneurial
+70,88,73,Medicine,Premium Investment,Gauteng,Structured Learning,Long-term Growth
+83,89,68,Medicine,Premium Investment,Kwazulu-Natal,Structured Learning,Quick Employment
+95,75,74,Engineering,Balanced,Kwazulu-Natal,Flexible Learning,Quick Employment
+83,78,80,Education,Premium Investment,Gauteng,Hands-on Practical,Quick Employment
+62,77,94,Social Sciences,Balanced,Western Cape,Structured Learning,Long-term Growth
+81,60,61,Technology,Balanced,Other Provinces,Flexible Learning,Long-term Growth
+61,73,86,Education,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+83,61,61,Law,Budget Conscious,Gauteng,Flexible Learning,Long-term Growth
+89,87,94,Law,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+61,89,77,Medicine,Balanced,Western Cape,Structured Learning,Entrepreneurial
+80,63,73,Technology,Premium Investment,Western Cape,Structured Learning,Entrepreneurial
+92,60,79,Business,Budget Conscious,Anywhere in SA,Structured Learning,Entrepreneurial
+71,67,77,Environment,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+81,88,69,Arts,Budget Conscious,Anywhere in SA,Structured Learning,Quick Employment
+84,62,84,Technology,Budget Conscious,Gauteng,Flexible Learning,Long-term Growth
+86,91,61,Arts,Balanced,Other Provinces,Flexible Learning,Quick Employment
+87,69,84,Education,Budget Conscious,Other Provinces,Structured Learning,Entrepreneurial
+75,69,92,Education,Budget Conscious,Western Cape,Hands-on Practical,Long-term Growth
+74,78,95,Arts,Balanced,Other Provinces,Hands-on Practical,Quick Employment
+62,93,90,Sports,Premium Investment,Other Provinces,Hands-on Practical,Quick Employment
+66,92,73,Environment,Budget Conscious,Other Provinces,Flexible Learning,Entrepreneurial
+80,82,60,Technology,Balanced,Gauteng,Flexible Learning,Quick Employment
+68,87,75,Business,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+77,91,62,Medicine,Balanced,Other Provinces,Structured Learning,Quick Employment
+63,66,94,Engineering,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+84,88,65,Education,Premium Investment,Anywhere in SA,Structured Learning,Quick Employment
+73,67,84,Law,Balanced,Gauteng,Structured Learning,Entrepreneurial
+68,60,72,Environment,Balanced,Western Cape,Hands-on Practical,Entrepreneurial
+85,62,93,Engineering,Balanced,Anywhere in SA,Hands-on Practical,Quick Employment
+61,83,67,Business,Premium Investment,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+79,82,80,Science,Budget Conscious,Gauteng,Structured Learning,Entrepreneurial
+87,67,93,Mathematics,Premium Investment,Gauteng,Structured Learning,Long-term Growth
+66,62,63,Medicine,Balanced,Kwazulu-Natal,Structured Learning,Quick Employment
+67,92,84,Education,Balanced,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+94,87,74,Medicine,Premium Investment,Kwazulu-Natal,Structured Learning,Entrepreneurial
+73,67,63,Sports,Balanced,Western Cape,Hands-on Practical,Quick Employment
+76,93,71,Engineering,Premium Investment,Other Provinces,Hands-on Practical,Long-term Growth
+95,94,91,Medicine,Balanced,Gauteng,Structured Learning,Quick Employment
+63,91,91,Mathematics,Budget Conscious,Other Provinces,Structured Learning,Long-term Growth
+61,83,87,Science,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+65,73,72,Engineering,Balanced,Kwazulu-Natal,Structured Learning,Quick Employment
+63,91,90,Education,Premium Investment,Western Cape,Hands-on Practical,Quick Employment
+88,75,73,Technology,Budget Conscious,Anywhere in SA,Flexible Learning,Quick Employment
+77,63,79,Law,Premium Investment,Western Cape,Hands-on Practical,Long-term Growth
+85,80,77,Engineering,Balanced,Other Provinces,Flexible Learning,Long-term Growth
+93,73,88,Social Sciences,Premium Investment,Western Cape,Structured Learning,Entrepreneurial
+69,90,65,Sports,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+95,77,91,Science,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+73,66,88,Sports,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+90,69,61,Engineering,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+74,66,82,Engineering,Balanced,Other Provinces,Structured Learning,Quick Employment
+67,92,78,Social Sciences,Balanced,Anywhere in SA,Hands-on Practical,Entrepreneurial
+73,82,90,Education,Budget Conscious,Anywhere in SA,Structured Learning,Long-term Growth
+82,80,64,Sports,Budget Conscious,Anywhere in SA,Hands-on Practical,Quick Employment
+80,78,78,Engineering,Balanced,Western Cape,Hands-on Practical,Long-term Growth
+75,78,93,Law,Balanced,Western Cape,Flexible Learning,Long-term Growth
+77,95,69,Medicine,Budget Conscious,Other Provinces,Structured Learning,Entrepreneurial
+83,88,84,Education,Budget Conscious,Anywhere in SA,Flexible Learning,Long-term Growth
+85,77,61,Law,Budget Conscious,Gauteng,Structured Learning,Long-term Growth
+84,61,70,Education,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+88,60,90,Law,Balanced,Anywhere in SA,Hands-on Practical,Quick Employment
+74,64,74,Mathematics,Budget Conscious,Anywhere in SA,Structured Learning,Entrepreneurial
+60,79,68,Science,Balanced,Western Cape,Structured Learning,Quick Employment
+84,70,82,Law,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+66,61,78,Arts,Premium Investment,Anywhere in SA,Structured Learning,Entrepreneurial
+68,62,68,Law,Budget Conscious,Anywhere in SA,Structured Learning,Long-term Growth
+83,82,94,Technology,Premium Investment,Other Provinces,Structured Learning,Entrepreneurial
+60,71,80,Technology,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+67,79,68,Environment,Premium Investment,Other Provinces,Structured Learning,Entrepreneurial
+83,64,87,Arts,Budget Conscious,Other Provinces,Hands-on Practical,Long-term Growth
+70,89,66,Arts,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+76,68,75,Medicine,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+67,93,75,Arts,Balanced,Anywhere in SA,Hands-on Practical,Quick Employment
+94,94,92,Medicine,Premium Investment,Other Provinces,Hands-on Practical,Entrepreneurial
+94,81,63,Environment,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+92,83,63,Environment,Budget Conscious,Kwazulu-Natal,Structured Learning,Entrepreneurial
+64,76,76,Science,Budget Conscious,Other Provinces,Hands-on Practical,Long-term Growth
+87,69,88,Technology,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+66,89,95,Law,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+68,82,94,Law,Budget Conscious,Anywhere in SA,Flexible Learning,Long-term Growth
+67,91,66,Social Sciences,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+71,76,86,Social Sciences,Premium Investment,Western Cape,Structured Learning,Entrepreneurial
+93,76,87,Business,Balanced,Other Provinces,Hands-on Practical,Long-term Growth
+92,73,81,Education,Premium Investment,Western Cape,Hands-on Practical,Quick Employment
+82,68,73,Science,Budget Conscious,Kwazulu-Natal,Structured Learning,Entrepreneurial
+83,61,66,Business,Balanced,Gauteng,Hands-on Practical,Quick Employment
+94,84,81,Business,Balanced,Western Cape,Flexible Learning,Quick Employment
+81,68,64,Engineering,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+86,81,61,Engineering,Balanced,Kwazulu-Natal,Structured Learning,Long-term Growth
+94,63,86,Sports,Balanced,Anywhere in SA,Structured Learning,Entrepreneurial
+60,85,80,Business,Premium Investment,Anywhere in SA,Flexible Learning,Entrepreneurial
+94,88,74,Arts,Budget Conscious,Other Provinces,Structured Learning,Long-term Growth
+73,93,80,Education,Budget Conscious,Kwazulu-Natal,Structured Learning,Entrepreneurial
+62,82,69,Science,Budget Conscious,Gauteng,Flexible Learning,Quick Employment
+60,70,82,Business,Budget Conscious,Gauteng,Hands-on Practical,Entrepreneurial
+64,65,64,Mathematics,Budget Conscious,Kwazulu-Natal,Flexible Learning,Long-term Growth
+85,77,60,Law,Balanced,Gauteng,Hands-on Practical,Quick Employment
+73,80,72,Education,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+86,95,80,Engineering,Budget Conscious,Gauteng,Hands-on Practical,Quick Employment
+68,93,85,Sports,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+74,76,80,Law,Premium Investment,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+74,84,77,Engineering,Balanced,Kwazulu-Natal,Flexible Learning,Quick Employment
+85,71,91,Engineering,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+72,82,95,Education,Balanced,Western Cape,Flexible Learning,Entrepreneurial
+91,81,76,Engineering,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+91,80,94,Mathematics,Balanced,Other Provinces,Hands-on Practical,Quick Employment
+63,86,70,Environment,Premium Investment,Other Provinces,Flexible Learning,Long-term Growth
+89,90,80,Sports,Budget Conscious,Anywhere in SA,Hands-on Practical,Long-term Growth
+82,65,85,Technology,Premium Investment,Gauteng,Hands-on Practical,Quick Employment
+74,86,63,Environment,Premium Investment,Western Cape,Flexible Learning,Entrepreneurial
+88,93,93,Technology,Balanced,Anywhere in SA,Hands-on Practical,Long-term Growth
+95,71,77,Social Sciences,Budget Conscious,Gauteng,Flexible Learning,Quick Employment
+72,66,94,Social Sciences,Premium Investment,Kwazulu-Natal,Structured Learning,Entrepreneurial
+91,69,88,Engineering,Balanced,Other Provinces,Hands-on Practical,Entrepreneurial
+66,76,88,Science,Budget Conscious,Western Cape,Structured Learning,Entrepreneurial
+81,85,80,Science,Budget Conscious,Other Provinces,Hands-on Practical,Long-term Growth
+87,80,72,Technology,Premium Investment,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+61,87,76,Law,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+65,61,68,Education,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+87,60,60,Engineering,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+87,95,61,Education,Balanced,Other Provinces,Hands-on Practical,Quick Employment
+79,85,88,Environment,Premium Investment,Western Cape,Flexible Learning,Long-term Growth
+89,88,92,Science,Premium Investment,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+70,80,69,Arts,Budget Conscious,Other Provinces,Flexible Learning,Entrepreneurial
+87,70,80,Sports,Budget Conscious,Western Cape,Hands-on Practical,Long-term Growth
+84,70,87,Environment,Premium Investment,Gauteng,Structured Learning,Quick Employment
+92,95,70,Sports,Budget Conscious,Gauteng,Structured Learning,Entrepreneurial
+60,94,93,Mathematics,Balanced,Anywhere in SA,Hands-on Practical,Quick Employment
+86,93,67,Environment,Budget Conscious,Other Provinces,Flexible Learning,Entrepreneurial
+72,83,81,Technology,Balanced,Western Cape,Hands-on Practical,Entrepreneurial
+62,81,67,Mathematics,Balanced,Kwazulu-Natal,Flexible Learning,Long-term Growth
+65,64,74,Medicine,Balanced,Gauteng,Hands-on Practical,Quick Employment
+67,92,76,Environment,Balanced,Western Cape,Flexible Learning,Entrepreneurial
+86,95,82,Mathematics,Balanced,Other Provinces,Structured Learning,Long-term Growth
+68,79,83,Engineering,Budget Conscious,Anywhere in SA,Hands-on Practical,Entrepreneurial
+92,78,78,Sports,Balanced,Gauteng,Structured Learning,Entrepreneurial
+83,94,64,Business,Budget Conscious,Western Cape,Structured Learning,Entrepreneurial
+74,76,91,Business,Balanced,Western Cape,Hands-on Practical,Entrepreneurial
+91,93,60,Engineering,Premium Investment,Western Cape,Hands-on Practical,Entrepreneurial
+91,68,82,Medicine,Balanced,Other Provinces,Flexible Learning,Entrepreneurial
+83,85,67,Medicine,Premium Investment,Other Provinces,Flexible Learning,Long-term Growth
+71,61,72,Technology,Balanced,Other Provinces,Structured Learning,Entrepreneurial
+61,68,67,Science,Balanced,Kwazulu-Natal,Flexible Learning,Quick Employment
+62,68,82,Education,Balanced,Western Cape,Flexible Learning,Long-term Growth
+76,76,60,Sports,Premium Investment,Gauteng,Hands-on Practical,Quick Employment
+61,60,83,Medicine,Premium Investment,Other Provinces,Flexible Learning,Entrepreneurial
+61,84,94,Arts,Balanced,Other Provinces,Structured Learning,Quick Employment
+87,84,83,Technology,Budget Conscious,Western Cape,Flexible Learning,Entrepreneurial
+82,94,76,Social Sciences,Balanced,Other Provinces,Structured Learning,Entrepreneurial
+91,62,64,Law,Premium Investment,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+92,89,79,Social Sciences,Balanced,Kwazulu-Natal,Structured Learning,Long-term Growth
+60,93,80,Technology,Premium Investment,Other Provinces,Flexible Learning,Entrepreneurial
+78,71,90,Sports,Premium Investment,Western Cape,Hands-on Practical,Long-term Growth
+61,78,95,Mathematics,Premium Investment,Western Cape,Flexible Learning,Quick Employment
+85,76,70,Environment,Balanced,Western Cape,Hands-on Practical,Long-term Growth
+91,69,74,Education,Premium Investment,Anywhere in SA,Hands-on Practical,Long-term Growth
+65,71,78,Law,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+91,75,66,Social Sciences,Balanced,Western Cape,Flexible Learning,Long-term Growth
+63,83,87,Law,Premium Investment,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+70,78,64,Arts,Balanced,Gauteng,Hands-on Practical,Quick Employment
+76,67,64,Arts,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+83,90,89,Mathematics,Budget Conscious,Western Cape,Structured Learning,Quick Employment
+64,80,91,Arts,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+93,76,67,Technology,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+65,82,69,Education,Budget Conscious,Anywhere in SA,Flexible Learning,Long-term Growth
+81,75,91,Sports,Balanced,Kwazulu-Natal,Structured Learning,Entrepreneurial
+70,65,87,Mathematics,Budget Conscious,Kwazulu-Natal,Flexible Learning,Long-term Growth
+75,67,76,Technology,Premium Investment,Anywhere in SA,Hands-on Practical,Quick Employment
+92,84,90,Business,Premium Investment,Anywhere in SA,Flexible Learning,Entrepreneurial
+68,77,67,Environment,Balanced,Gauteng,Hands-on Practical,Entrepreneurial
+65,84,84,Environment,Premium Investment,Other Provinces,Hands-on Practical,Quick Employment
+75,71,68,Arts,Balanced,Gauteng,Flexible Learning,Quick Employment
+88,74,61,Business,Budget Conscious,Anywhere in SA,Hands-on Practical,Entrepreneurial
+62,85,74,Medicine,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+79,85,62,Medicine,Balanced,Gauteng,Structured Learning,Long-term Growth
+95,91,95,Sports,Balanced,Other Provinces,Structured Learning,Quick Employment
+78,69,63,Arts,Premium Investment,Gauteng,Structured Learning,Quick Employment
+85,75,73,Social Sciences,Budget Conscious,Western Cape,Structured Learning,Entrepreneurial
+62,66,84,Technology,Balanced,Gauteng,Hands-on Practical,Long-term Growth
+78,76,69,Arts,Budget Conscious,Anywhere in SA,Flexible Learning,Quick Employment
+79,82,80,Science,Balanced,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+91,85,95,Law,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+66,80,71,Sports,Premium Investment,Anywhere in SA,Hands-on Practical,Long-term Growth
+92,81,86,Environment,Budget Conscious,Western Cape,Flexible Learning,Entrepreneurial
+77,66,61,Medicine,Budget Conscious,Anywhere in SA,Structured Learning,Quick Employment
+60,73,72,Engineering,Budget Conscious,Gauteng,Hands-on Practical,Entrepreneurial
+70,74,91,Medicine,Budget Conscious,Anywhere in SA,Hands-on Practical,Quick Employment
+87,66,90,Sports,Budget Conscious,Anywhere in SA,Structured Learning,Quick Employment
+84,68,75,Environment,Premium Investment,Western Cape,Hands-on Practical,Entrepreneurial
+82,67,91,Sports,Balanced,Gauteng,Flexible Learning,Long-term Growth
+90,82,91,Law,Budget Conscious,Other Provinces,Hands-on Practical,Long-term Growth
+89,88,93,Environment,Premium Investment,Other Provinces,Hands-on Practical,Quick Employment
+94,77,70,Engineering,Budget Conscious,Kwazulu-Natal,Structured Learning,Entrepreneurial
+66,90,69,Arts,Budget Conscious,Anywhere in SA,Hands-on Practical,Long-term Growth
+75,89,74,Business,Balanced,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+85,94,76,Engineering,Budget Conscious,Western Cape,Flexible Learning,Quick Employment
+61,77,77,Environment,Premium Investment,Other Provinces,Structured Learning,Quick Employment
+60,76,68,Environment,Premium Investment,Anywhere in SA,Structured Learning,Entrepreneurial
+71,73,84,Science,Balanced,Western Cape,Flexible Learning,Quick Employment
+64,90,73,Mathematics,Budget Conscious,Western Cape,Hands-on Practical,Long-term Growth
+91,83,84,Science,Premium Investment,Anywhere in SA,Structured Learning,Long-term Growth
+68,94,81,Education,Budget Conscious,Western Cape,Structured Learning,Long-term Growth
+94,93,89,Science,Budget Conscious,Anywhere in SA,Hands-on Practical,Long-term Growth
+78,62,79,Technology,Budget Conscious,Anywhere in SA,Hands-on Practical,Entrepreneurial
+75,85,80,Business,Balanced,Gauteng,Structured Learning,Entrepreneurial
+62,82,91,Law,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+79,74,80,Engineering,Premium Investment,Western Cape,Structured Learning,Quick Employment
+83,63,94,Environment,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+92,88,91,Education,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+83,81,89,Education,Budget Conscious,Gauteng,Flexible Learning,Long-term Growth
+70,84,71,Law,Premium Investment,Gauteng,Hands-on Practical,Quick Employment
+67,72,77,Business,Premium Investment,Other Provinces,Flexible Learning,Long-term Growth
+95,77,80,Engineering,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+79,92,72,Medicine,Budget Conscious,Other Provinces,Structured Learning,Quick Employment
+94,75,80,Sports,Premium Investment,Anywhere in SA,Structured Learning,Quick Employment
+84,61,67,Science,Balanced,Western Cape,Hands-on Practical,Quick Employment
+94,94,66,Sports,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+84,93,82,Sports,Balanced,Anywhere in SA,Structured Learning,Long-term Growth
+88,89,91,Arts,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+77,72,70,Sports,Budget Conscious,Western Cape,Flexible Learning,Long-term Growth
+77,72,81,Education,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+61,77,81,Science,Budget Conscious,Gauteng,Flexible Learning,Quick Employment
+94,91,84,Science,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+75,91,81,Technology,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+95,94,87,Business,Premium Investment,Western Cape,Hands-on Practical,Entrepreneurial
+92,88,88,Arts,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+63,88,72,Sports,Balanced,Other Provinces,Flexible Learning,Long-term Growth
+92,75,77,Mathematics,Budget Conscious,Gauteng,Hands-on Practical,Quick Employment
+73,69,61,Medicine,Premium Investment,Western Cape,Hands-on Practical,Quick Employment
+80,89,88,Environment,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+79,84,80,Technology,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+67,79,74,Science,Premium Investment,Gauteng,Hands-on Practical,Long-term Growth
+66,64,86,Science,Premium Investment,Western Cape,Hands-on Practical,Quick Employment
+62,60,90,Social Sciences,Balanced,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+76,89,74,Arts,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+92,62,82,Sports,Budget Conscious,Other Provinces,Structured Learning,Long-term Growth
+71,73,83,Arts,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+81,89,72,Social Sciences,Premium Investment,Western Cape,Flexible Learning,Entrepreneurial
+81,63,81,Arts,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+89,77,92,Science,Budget Conscious,Gauteng,Flexible Learning,Quick Employment
+67,84,62,Education,Balanced,Gauteng,Structured Learning,Quick Employment
+86,60,78,Engineering,Balanced,Gauteng,Structured Learning,Entrepreneurial
+86,74,82,Science,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+93,68,88,Technology,Balanced,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+80,74,89,Business,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+89,83,84,Social Sciences,Balanced,Gauteng,Hands-on Practical,Entrepreneurial
+92,63,67,Medicine,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+87,71,75,Environment,Balanced,Other Provinces,Structured Learning,Entrepreneurial
+92,65,67,Medicine,Premium Investment,Anywhere in SA,Structured Learning,Long-term Growth
+64,83,60,Science,Budget Conscious,Kwazulu-Natal,Flexible Learning,Long-term Growth
+78,70,64,Technology,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+63,72,62,Sports,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+94,93,60,Science,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+76,84,63,Business,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+87,66,94,Education,Balanced,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+89,63,91,Mathematics,Balanced,Other Provinces,Hands-on Practical,Long-term Growth
+88,67,93,Environment,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+65,79,84,Business,Budget Conscious,Other Provinces,Structured Learning,Quick Employment
+94,88,69,Social Sciences,Balanced,Western Cape,Flexible Learning,Entrepreneurial
+83,69,80,Sports,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+88,93,86,Social Sciences,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+90,85,86,Science,Premium Investment,Kwazulu-Natal,Flexible Learning,Quick Employment
+94,62,61,Technology,Balanced,Other Provinces,Flexible Learning,Entrepreneurial
+92,65,72,Business,Budget Conscious,Other Provinces,Structured Learning,Long-term Growth
+80,64,68,Law,Premium Investment,Other Provinces,Structured Learning,Quick Employment
+91,64,95,Sports,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+82,82,81,Technology,Premium Investment,Kwazulu-Natal,Structured Learning,Quick Employment
+92,68,85,Education,Balanced,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+62,94,71,Sports,Balanced,Gauteng,Structured Learning,Quick Employment
+77,79,76,Social Sciences,Premium Investment,Other Provinces,Structured Learning,Entrepreneurial
+84,94,73,Sports,Premium Investment,Western Cape,Structured Learning,Quick Employment
+90,77,73,Mathematics,Balanced,Other Provinces,Structured Learning,Long-term Growth
+62,76,93,Science,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+83,83,79,Arts,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+91,62,70,Social Sciences,Balanced,Kwazulu-Natal,Structured Learning,Quick Employment
+81,91,75,Mathematics,Premium Investment,Other Provinces,Flexible Learning,Long-term Growth
+82,94,90,Environment,Premium Investment,Kwazulu-Natal,Flexible Learning,Quick Employment
+61,72,65,Engineering,Premium Investment,Anywhere in SA,Structured Learning,Entrepreneurial
+86,84,78,Arts,Balanced,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+61,68,63,Science,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+85,63,63,Law,Balanced,Western Cape,Flexible Learning,Entrepreneurial
+76,73,79,Arts,Balanced,Other Provinces,Hands-on Practical,Quick Employment
+92,93,69,Environment,Budget Conscious,Kwazulu-Natal,Flexible Learning,Quick Employment
+68,70,83,Technology,Budget Conscious,Other Provinces,Structured Learning,Quick Employment
+88,62,94,Law,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+85,87,85,Social Sciences,Balanced,Western Cape,Flexible Learning,Quick Employment
+94,88,80,Law,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+84,68,80,Business,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+83,62,69,Environment,Budget Conscious,Other Provinces,Structured Learning,Long-term Growth
+72,84,63,Sports,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+66,93,79,Mathematics,Balanced,Kwazulu-Natal,Structured Learning,Entrepreneurial
+95,71,76,Arts,Balanced,Kwazulu-Natal,Structured Learning,Entrepreneurial
+79,68,66,Business,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+60,74,63,Law,Budget Conscious,Anywhere in SA,Hands-on Practical,Entrepreneurial
+67,84,88,Business,Balanced,Gauteng,Structured Learning,Long-term Growth
+75,64,73,Medicine,Premium Investment,Gauteng,Structured Learning,Long-term Growth
+73,70,62,Environment,Balanced,Kwazulu-Natal,Structured Learning,Entrepreneurial
+71,93,83,Mathematics,Budget Conscious,Anywhere in SA,Structured Learning,Quick Employment
+82,83,75,Education,Premium Investment,Kwazulu-Natal,Flexible Learning,Quick Employment
+74,74,63,Technology,Budget Conscious,Anywhere in SA,Structured Learning,Entrepreneurial
+87,67,83,Law,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+93,64,93,Environment,Budget Conscious,Western Cape,Structured Learning,Long-term Growth
+61,85,89,Education,Premium Investment,Western Cape,Hands-on Practical,Entrepreneurial
+91,77,77,Education,Premium Investment,Other Provinces,Flexible Learning,Long-term Growth
+82,65,78,Science,Budget Conscious,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+81,72,90,Mathematics,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+84,87,78,Business,Balanced,Other Provinces,Flexible Learning,Quick Employment
+81,64,78,Education,Budget Conscious,Western Cape,Hands-on Practical,Entrepreneurial
+81,72,81,Medicine,Balanced,Kwazulu-Natal,Structured Learning,Long-term Growth
+65,76,83,Environment,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+74,91,71,Engineering,Premium Investment,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+92,88,89,Engineering,Premium Investment,Western Cape,Flexible Learning,Entrepreneurial
+67,62,90,Sports,Premium Investment,Other Provinces,Structured Learning,Entrepreneurial
+64,93,95,Sports,Budget Conscious,Western Cape,Flexible Learning,Quick Employment
+63,86,78,Law,Balanced,Anywhere in SA,Hands-on Practical,Entrepreneurial
+65,72,95,Sports,Balanced,Western Cape,Structured Learning,Quick Employment
+91,92,89,Social Sciences,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+89,65,92,Business,Budget Conscious,Gauteng,Structured Learning,Quick Employment
+94,83,77,Social Sciences,Balanced,Western Cape,Structured Learning,Quick Employment
+75,78,87,Education,Balanced,Gauteng,Structured Learning,Long-term Growth
+72,75,70,Environment,Balanced,Anywhere in SA,Flexible Learning,Quick Employment
+89,87,92,Law,Balanced,Other Provinces,Hands-on Practical,Quick Employment
+78,92,76,Arts,Budget Conscious,Other Provinces,Hands-on Practical,Entrepreneurial
+76,72,65,Education,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+78,84,63,Business,Premium Investment,Other Provinces,Structured Learning,Quick Employment
+87,95,79,Engineering,Balanced,Western Cape,Flexible Learning,Long-term Growth
+85,86,86,Mathematics,Premium Investment,Gauteng,Structured Learning,Long-term Growth
+85,66,74,Sports,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+82,64,65,Science,Budget Conscious,Western Cape,Flexible Learning,Entrepreneurial
+68,90,73,Environment,Premium Investment,Western Cape,Flexible Learning,Long-term Growth
+71,82,70,Technology,Balanced,Western Cape,Flexible Learning,Quick Employment
+60,69,68,Mathematics,Balanced,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+60,91,85,Social Sciences,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+93,89,75,Sports,Balanced,Other Provinces,Flexible Learning,Entrepreneurial
+91,90,64,Law,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+84,77,69,Social Sciences,Premium Investment,Anywhere in SA,Structured Learning,Quick Employment
+60,95,62,Environment,Budget Conscious,Gauteng,Flexible Learning,Quick Employment
+75,61,72,Social Sciences,Balanced,Other Provinces,Flexible Learning,Entrepreneurial
+64,73,89,Environment,Balanced,Kwazulu-Natal,Structured Learning,Quick Employment
+81,72,65,Social Sciences,Balanced,Western Cape,Structured Learning,Entrepreneurial
+88,88,76,Mathematics,Premium Investment,Western Cape,Structured Learning,Quick Employment
+62,71,78,Medicine,Balanced,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+71,61,94,Mathematics,Premium Investment,Anywhere in SA,Hands-on Practical,Long-term Growth
+85,91,85,Arts,Balanced,Anywhere in SA,Structured Learning,Entrepreneurial
+75,72,64,Education,Balanced,Gauteng,Flexible Learning,Entrepreneurial
+81,86,88,Education,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+88,76,79,Business,Balanced,Anywhere in SA,Hands-on Practical,Quick Employment
+73,90,80,Sports,Balanced,Kwazulu-Natal,Flexible Learning,Quick Employment
+87,93,69,Mathematics,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+64,83,64,Mathematics,Premium Investment,Western Cape,Flexible Learning,Quick Employment
+89,94,95,Technology,Premium Investment,Western Cape,Hands-on Practical,Quick Employment
+64,65,65,Technology,Balanced,Western Cape,Flexible Learning,Long-term Growth
+71,78,85,Business,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+75,89,63,Science,Balanced,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+85,66,94,Education,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+85,69,60,Science,Budget Conscious,Western Cape,Hands-on Practical,Long-term Growth
+80,91,83,Sports,Balanced,Gauteng,Hands-on Practical,Entrepreneurial
+95,93,95,Environment,Budget Conscious,Western Cape,Flexible Learning,Long-term Growth
+92,87,65,Environment,Budget Conscious,Gauteng,Flexible Learning,Long-term Growth
+89,74,90,Engineering,Balanced,Gauteng,Hands-on Practical,Long-term Growth
+82,89,79,Social Sciences,Balanced,Other Provinces,Flexible Learning,Entrepreneurial
+69,88,83,Technology,Budget Conscious,Gauteng,Flexible Learning,Long-term Growth
+64,81,84,Engineering,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+95,63,95,Arts,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+93,79,80,Business,Balanced,Western Cape,Flexible Learning,Quick Employment
+90,91,89,Business,Balanced,Gauteng,Structured Learning,Quick Employment
+69,95,83,Environment,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+78,63,89,Mathematics,Budget Conscious,Western Cape,Hands-on Practical,Long-term Growth
+91,86,81,Education,Premium Investment,Anywhere in SA,Structured Learning,Entrepreneurial
+60,76,87,Science,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+64,71,66,Technology,Premium Investment,Kwazulu-Natal,Flexible Learning,Long-term Growth
+63,81,94,Engineering,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+75,76,87,Science,Balanced,Kwazulu-Natal,Structured Learning,Long-term Growth
+83,69,73,Mathematics,Balanced,Anywhere in SA,Hands-on Practical,Long-term Growth
+75,60,69,Engineering,Budget Conscious,Other Provinces,Hands-on Practical,Entrepreneurial
+61,81,75,Social Sciences,Budget Conscious,Western Cape,Flexible Learning,Entrepreneurial
+87,85,75,Arts,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+91,77,90,Arts,Budget Conscious,Western Cape,Hands-on Practical,Entrepreneurial
+86,73,84,Science,Premium Investment,Anywhere in SA,Flexible Learning,Quick Employment
+79,88,72,Science,Balanced,Other Provinces,Hands-on Practical,Long-term Growth
+83,71,65,Science,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+71,95,68,Engineering,Budget Conscious,Western Cape,Structured Learning,Entrepreneurial
+94,94,95,Social Sciences,Budget Conscious,Other Provinces,Flexible Learning,Entrepreneurial
+92,71,79,Medicine,Premium Investment,Other Provinces,Structured Learning,Long-term Growth
+92,66,77,Science,Premium Investment,Anywhere in SA,Structured Learning,Quick Employment
+71,88,80,Education,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+62,70,63,Sports,Balanced,Western Cape,Hands-on Practical,Long-term Growth
+60,92,92,Mathematics,Balanced,Gauteng,Hands-on Practical,Entrepreneurial
+92,65,86,Sports,Balanced,Gauteng,Flexible Learning,Quick Employment
+69,74,66,Technology,Budget Conscious,Anywhere in SA,Hands-on Practical,Long-term Growth
+88,91,65,Technology,Balanced,Western Cape,Structured Learning,Entrepreneurial
+72,70,74,Mathematics,Premium Investment,Western Cape,Hands-on Practical,Long-term Growth
+71,82,77,Engineering,Premium Investment,Anywhere in SA,Hands-on Practical,Long-term Growth
+90,85,91,Mathematics,Budget Conscious,Western Cape,Flexible Learning,Entrepreneurial
+61,93,70,Sports,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+94,93,79,Sports,Budget Conscious,Anywhere in SA,Structured Learning,Quick Employment
+82,88,83,Science,Balanced,Kwazulu-Natal,Flexible Learning,Long-term Growth
+76,63,74,Environment,Balanced,Western Cape,Hands-on Practical,Entrepreneurial
+85,76,66,Business,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+67,94,80,Medicine,Premium Investment,Western Cape,Structured Learning,Quick Employment
+88,72,85,Sports,Budget Conscious,Anywhere in SA,Hands-on Practical,Quick Employment
+85,74,73,Education,Balanced,Western Cape,Structured Learning,Entrepreneurial
+69,88,80,Mathematics,Budget Conscious,Kwazulu-Natal,Flexible Learning,Quick Employment
+85,88,77,Social Sciences,Balanced,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+93,70,64,Environment,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+66,91,62,Sports,Premium Investment,Anywhere in SA,Hands-on Practical,Quick Employment
+63,61,82,Mathematics,Budget Conscious,Gauteng,Flexible Learning,Long-term Growth
+70,73,85,Arts,Premium Investment,Kwazulu-Natal,Flexible Learning,Long-term Growth
+88,79,83,Environment,Premium Investment,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+95,81,78,Engineering,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+84,70,84,Medicine,Balanced,Western Cape,Structured Learning,Long-term Growth
+80,86,80,Law,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+95,62,71,Law,Budget Conscious,Western Cape,Flexible Learning,Long-term Growth
+69,76,92,Science,Premium Investment,Other Provinces,Hands-on Practical,Entrepreneurial
+68,87,63,Science,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+83,88,66,Engineering,Premium Investment,Other Provinces,Hands-on Practical,Long-term Growth
+94,80,81,Social Sciences,Premium Investment,Kwazulu-Natal,Flexible Learning,Quick Employment
+94,75,92,Science,Budget Conscious,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+95,79,76,Business,Budget Conscious,Other Provinces,Hands-on Practical,Long-term Growth
+77,65,83,Sports,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+91,78,93,Medicine,Premium Investment,Western Cape,Hands-on Practical,Entrepreneurial
+83,64,87,Mathematics,Premium Investment,Other Provinces,Structured Learning,Entrepreneurial
+82,62,81,Engineering,Premium Investment,Western Cape,Flexible Learning,Entrepreneurial
+91,60,76,Technology,Budget Conscious,Western Cape,Hands-on Practical,Entrepreneurial
+71,74,93,Mathematics,Premium Investment,Western Cape,Flexible Learning,Entrepreneurial
+72,93,65,Mathematics,Balanced,Kwazulu-Natal,Structured Learning,Entrepreneurial
+82,94,65,Arts,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+84,84,93,Engineering,Balanced,Other Provinces,Structured Learning,Long-term Growth
+94,83,60,Engineering,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+89,71,69,Law,Budget Conscious,Other Provinces,Flexible Learning,Long-term Growth
+76,77,80,Education,Premium Investment,Kwazulu-Natal,Structured Learning,Quick Employment
+79,74,64,Social Sciences,Balanced,Anywhere in SA,Structured Learning,Long-term Growth
+84,75,61,Education,Balanced,Anywhere in SA,Hands-on Practical,Entrepreneurial
+81,86,81,Business,Premium Investment,Other Provinces,Structured Learning,Long-term Growth
+72,67,61,Technology,Balanced,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+78,84,69,Mathematics,Balanced,Kwazulu-Natal,Structured Learning,Entrepreneurial
+95,76,93,Law,Budget Conscious,Western Cape,Structured Learning,Long-term Growth
+71,88,75,Technology,Premium Investment,Gauteng,Hands-on Practical,Long-term Growth
+78,67,81,Mathematics,Premium Investment,Other Provinces,Structured Learning,Long-term Growth
+71,74,71,Business,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+68,86,83,Education,Balanced,Gauteng,Flexible Learning,Long-term Growth
+66,66,69,Engineering,Premium Investment,Other Provinces,Structured Learning,Entrepreneurial
+87,62,94,Science,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+73,88,91,Science,Budget Conscious,Other Provinces,Hands-on Practical,Long-term Growth
+90,83,66,Sports,Budget Conscious,Gauteng,Structured Learning,Long-term Growth
+78,62,80,Environment,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+75,79,79,Arts,Balanced,Anywhere in SA,Hands-on Practical,Entrepreneurial
+64,74,85,Social Sciences,Premium Investment,Other Provinces,Hands-on Practical,Entrepreneurial
+94,84,63,Business,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+71,89,81,Arts,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+84,73,74,Sports,Budget Conscious,Anywhere in SA,Hands-on Practical,Quick Employment
+80,66,80,Sports,Premium Investment,Anywhere in SA,Hands-on Practical,Entrepreneurial
+95,76,74,Social Sciences,Premium Investment,Kwazulu-Natal,Flexible Learning,Quick Employment
+82,79,81,Mathematics,Premium Investment,Western Cape,Flexible Learning,Long-term Growth
+75,95,87,Arts,Balanced,Other Provinces,Structured Learning,Long-term Growth
+73,68,73,Education,Balanced,Other Provinces,Flexible Learning,Entrepreneurial
+90,81,86,Social Sciences,Budget Conscious,Gauteng,Flexible Learning,Quick Employment
+64,61,87,Sports,Premium Investment,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+94,83,85,Education,Budget Conscious,Gauteng,Hands-on Practical,Entrepreneurial
+82,67,61,Engineering,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+88,70,84,Law,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+70,72,62,Education,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+77,76,67,Mathematics,Balanced,Gauteng,Structured Learning,Entrepreneurial
+71,67,92,Science,Balanced,Anywhere in SA,Structured Learning,Quick Employment
+68,80,94,Arts,Premium Investment,Kwazulu-Natal,Structured Learning,Entrepreneurial
+69,77,65,Mathematics,Budget Conscious,Gauteng,Flexible Learning,Quick Employment
+76,89,82,Environment,Premium Investment,Other Provinces,Flexible Learning,Long-term Growth
+66,77,84,Medicine,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+72,90,78,Sports,Budget Conscious,Kwazulu-Natal,Structured Learning,Entrepreneurial
+68,91,64,Social Sciences,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+86,70,70,Business,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+61,84,71,Environment,Balanced,Anywhere in SA,Structured Learning,Quick Employment
+64,92,69,Science,Balanced,Other Provinces,Flexible Learning,Long-term Growth
+88,67,67,Education,Budget Conscious,Anywhere in SA,Flexible Learning,Entrepreneurial
+78,70,83,Law,Balanced,Western Cape,Hands-on Practical,Entrepreneurial
+67,81,87,Mathematics,Balanced,Other Provinces,Flexible Learning,Quick Employment
+60,83,95,Engineering,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+81,76,80,Medicine,Balanced,Kwazulu-Natal,Structured Learning,Long-term Growth
+76,71,67,Technology,Premium Investment,Gauteng,Structured Learning,Long-term Growth
+66,91,68,Environment,Premium Investment,Anywhere in SA,Hands-on Practical,Quick Employment
+84,74,74,Law,Budget Conscious,Anywhere in SA,Hands-on Practical,Entrepreneurial
+63,75,77,Technology,Balanced,Kwazulu-Natal,Flexible Learning,Long-term Growth
+95,81,79,Medicine,Premium Investment,Kwazulu-Natal,Structured Learning,Quick Employment
+65,87,65,Business,Premium Investment,Gauteng,Hands-on Practical,Quick Employment
+90,79,71,Business,Balanced,Gauteng,Hands-on Practical,Entrepreneurial
+78,92,61,Arts,Balanced,Other Provinces,Hands-on Practical,Quick Employment
+86,69,66,Medicine,Premium Investment,Western Cape,Flexible Learning,Quick Employment
+69,91,75,Medicine,Premium Investment,Gauteng,Structured Learning,Long-term Growth
+85,92,62,Technology,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+78,61,62,Law,Budget Conscious,Gauteng,Structured Learning,Quick Employment
+62,92,86,Mathematics,Premium Investment,Anywhere in SA,Hands-on Practical,Long-term Growth
+72,92,92,Social Sciences,Budget Conscious,Western Cape,Hands-on Practical,Entrepreneurial
+87,72,87,Technology,Premium Investment,Other Provinces,Structured Learning,Entrepreneurial
+79,89,60,Engineering,Premium Investment,Anywhere in SA,Structured Learning,Long-term Growth
+87,92,67,Business,Budget Conscious,Anywhere in SA,Structured Learning,Long-term Growth
+67,72,91,Business,Budget Conscious,Western Cape,Flexible Learning,Entrepreneurial
+60,85,63,Arts,Balanced,Other Provinces,Hands-on Practical,Entrepreneurial
+62,81,89,Mathematics,Balanced,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+72,61,65,Engineering,Balanced,Other Provinces,Structured Learning,Entrepreneurial
+87,85,78,Business,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+84,74,91,Technology,Budget Conscious,Anywhere in SA,Flexible Learning,Long-term Growth
+92,93,68,Engineering,Premium Investment,Gauteng,Hands-on Practical,Quick Employment
+65,70,71,Technology,Budget Conscious,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+91,62,70,Social Sciences,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+80,65,75,Social Sciences,Balanced,Other Provinces,Flexible Learning,Quick Employment
+75,68,60,Business,Balanced,Gauteng,Hands-on Practical,Quick Employment
+80,65,80,Business,Balanced,Kwazulu-Natal,Hands-on Practical,Quick Employment
+70,68,89,Law,Premium Investment,Kwazulu-Natal,Hands-on Practical,Quick Employment
+95,90,72,Social Sciences,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+94,91,93,Mathematics,Budget Conscious,Other Provinces,Structured Learning,Quick Employment
+78,71,63,Mathematics,Balanced,Kwazulu-Natal,Flexible Learning,Long-term Growth
+79,67,87,Environment,Balanced,Anywhere in SA,Structured Learning,Quick Employment
+77,67,90,Environment,Balanced,Kwazulu-Natal,Structured Learning,Quick Employment
+73,87,86,Arts,Balanced,Gauteng,Structured Learning,Long-term Growth
+74,79,64,Social Sciences,Budget Conscious,Gauteng,Hands-on Practical,Quick Employment
+90,66,84,Technology,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+60,70,62,Technology,Premium Investment,Other Provinces,Hands-on Practical,Entrepreneurial
+62,79,92,Science,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+75,75,63,Engineering,Premium Investment,Other Provinces,Hands-on Practical,Long-term Growth
+82,63,84,Education,Balanced,Other Provinces,Flexible Learning,Entrepreneurial
+70,65,79,Environment,Balanced,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+71,81,93,Business,Balanced,Anywhere in SA,Hands-on Practical,Entrepreneurial
+69,85,85,Arts,Premium Investment,Kwazulu-Natal,Structured Learning,Quick Employment
+91,62,64,Mathematics,Balanced,Kwazulu-Natal,Structured Learning,Long-term Growth
+75,73,94,Education,Balanced,Other Provinces,Structured Learning,Long-term Growth
+67,70,87,Medicine,Budget Conscious,Other Provinces,Flexible Learning,Long-term Growth
+71,77,88,Arts,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+83,71,68,Medicine,Balanced,Gauteng,Hands-on Practical,Entrepreneurial
+87,82,65,Sports,Budget Conscious,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+67,71,78,Social Sciences,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+87,72,70,Medicine,Balanced,Western Cape,Flexible Learning,Entrepreneurial
+95,84,61,Medicine,Balanced,Gauteng,Flexible Learning,Quick Employment
+85,78,68,Sports,Balanced,Western Cape,Flexible Learning,Long-term Growth
+67,95,80,Law,Balanced,Gauteng,Structured Learning,Long-term Growth
+87,67,83,Law,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+87,88,93,Law,Premium Investment,Kwazulu-Natal,Structured Learning,Entrepreneurial
+95,91,81,Social Sciences,Balanced,Anywhere in SA,Structured Learning,Quick Employment
+86,77,62,Education,Budget Conscious,Kwazulu-Natal,Flexible Learning,Long-term Growth
+76,65,71,Arts,Balanced,Gauteng,Hands-on Practical,Long-term Growth
+68,77,87,Arts,Balanced,Gauteng,Hands-on Practical,Quick Employment
+92,78,89,Business,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+79,81,85,Law,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+72,91,80,Social Sciences,Balanced,Western Cape,Hands-on Practical,Quick Employment
+87,62,87,Business,Balanced,Western Cape,Structured Learning,Quick Employment
+88,87,85,Engineering,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+72,69,92,Business,Premium Investment,Gauteng,Flexible Learning,Long-term Growth
+94,94,80,Education,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+65,88,94,Environment,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+77,74,93,Medicine,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+64,92,77,Law,Premium Investment,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+84,66,70,Sports,Budget Conscious,Anywhere in SA,Flexible Learning,Long-term Growth
+61,71,82,Environment,Premium Investment,Western Cape,Flexible Learning,Long-term Growth
+69,89,81,Mathematics,Premium Investment,Kwazulu-Natal,Flexible Learning,Long-term Growth
+89,80,76,Business,Budget Conscious,Anywhere in SA,Hands-on Practical,Long-term Growth
+64,90,64,Social Sciences,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+92,83,70,Medicine,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+60,79,89,Arts,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+77,63,74,Technology,Balanced,Gauteng,Hands-on Practical,Quick Employment
+91,87,86,Medicine,Budget Conscious,Other Provinces,Structured Learning,Quick Employment
+70,79,94,Education,Premium Investment,Kwazulu-Natal,Hands-on Practical,Quick Employment
+80,83,92,Mathematics,Premium Investment,Anywhere in SA,Flexible Learning,Quick Employment
+85,91,79,Education,Premium Investment,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+84,95,75,Business,Budget Conscious,Western Cape,Flexible Learning,Long-term Growth
+81,93,93,Engineering,Premium Investment,Kwazulu-Natal,Structured Learning,Entrepreneurial
+86,95,61,Education,Premium Investment,Gauteng,Hands-on Practical,Quick Employment
+72,61,94,Education,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+92,74,87,Social Sciences,Balanced,Other Provinces,Structured Learning,Long-term Growth
+93,93,65,Business,Balanced,Other Provinces,Structured Learning,Long-term Growth
+94,95,68,Medicine,Premium Investment,Other Provinces,Hands-on Practical,Long-term Growth
+60,65,79,Engineering,Budget Conscious,Anywhere in SA,Structured Learning,Quick Employment
+80,71,60,Environment,Premium Investment,Other Provinces,Flexible Learning,Quick Employment
+65,62,67,Technology,Budget Conscious,Anywhere in SA,Structured Learning,Long-term Growth
+87,77,82,Law,Budget Conscious,Other Provinces,Structured Learning,Entrepreneurial
+76,80,62,Arts,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+64,74,63,Education,Balanced,Kwazulu-Natal,Structured Learning,Long-term Growth
+90,92,84,Business,Budget Conscious,Kwazulu-Natal,Structured Learning,Entrepreneurial
+64,94,74,Law,Premium Investment,Gauteng,Structured Learning,Long-term Growth
+62,85,80,Arts,Balanced,Anywhere in SA,Structured Learning,Entrepreneurial
+82,67,94,Arts,Premium Investment,Western Cape,Flexible Learning,Long-term Growth
+69,95,73,Environment,Balanced,Gauteng,Structured Learning,Entrepreneurial
+69,89,95,Environment,Balanced,Kwazulu-Natal,Flexible Learning,Quick Employment
+78,82,71,Environment,Premium Investment,Anywhere in SA,Structured Learning,Long-term Growth
+76,73,76,Sports,Balanced,Other Provinces,Structured Learning,Long-term Growth
+80,73,68,Science,Balanced,Western Cape,Structured Learning,Entrepreneurial
+73,61,94,Science,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+68,64,72,Arts,Balanced,Gauteng,Flexible Learning,Long-term Growth
+60,73,74,Environment,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+72,84,77,Social Sciences,Balanced,Western Cape,Flexible Learning,Quick Employment
+63,79,92,Education,Premium Investment,Anywhere in SA,Hands-on Practical,Quick Employment
+60,61,65,Law,Budget Conscious,Other Provinces,Structured Learning,Entrepreneurial
+91,65,86,Law,Premium Investment,Gauteng,Structured Learning,Quick Employment
+93,76,82,Science,Budget Conscious,Anywhere in SA,Flexible Learning,Entrepreneurial
+87,84,86,Arts,Balanced,Kwazulu-Natal,Hands-on Practical,Quick Employment
+90,87,93,Business,Budget Conscious,Gauteng,Structured Learning,Entrepreneurial
+67,61,73,Medicine,Premium Investment,Kwazulu-Natal,Flexible Learning,Quick Employment
+85,94,95,Medicine,Premium Investment,Anywhere in SA,Structured Learning,Quick Employment
+93,64,67,Science,Balanced,Gauteng,Structured Learning,Entrepreneurial
+62,60,94,Business,Budget Conscious,Kwazulu-Natal,Flexible Learning,Long-term Growth
+71,71,78,Sports,Balanced,Other Provinces,Flexible Learning,Long-term Growth
+60,95,89,Sports,Balanced,Other Provinces,Structured Learning,Quick Employment
+64,82,73,Science,Premium Investment,Anywhere in SA,Structured Learning,Entrepreneurial
+89,90,79,Medicine,Budget Conscious,Gauteng,Flexible Learning,Long-term Growth
+89,70,84,Business,Budget Conscious,Western Cape,Structured Learning,Entrepreneurial
+76,69,83,Environment,Budget Conscious,Gauteng,Structured Learning,Long-term Growth
+82,62,73,Arts,Budget Conscious,Other Provinces,Flexible Learning,Entrepreneurial
+74,73,85,Law,Balanced,Kwazulu-Natal,Structured Learning,Quick Employment
+80,75,82,Social Sciences,Balanced,Western Cape,Structured Learning,Entrepreneurial
+73,69,81,Engineering,Premium Investment,Anywhere in SA,Hands-on Practical,Long-term Growth
+61,88,78,Arts,Balanced,Western Cape,Flexible Learning,Quick Employment
+70,69,62,Environment,Balanced,Anywhere in SA,Hands-on Practical,Entrepreneurial
+93,71,78,Mathematics,Premium Investment,Western Cape,Hands-on Practical,Long-term Growth
+93,89,68,Medicine,Premium Investment,Anywhere in SA,Hands-on Practical,Quick Employment
+77,60,87,Environment,Premium Investment,Anywhere in SA,Structured Learning,Entrepreneurial
+89,64,79,Mathematics,Balanced,Western Cape,Structured Learning,Long-term Growth
+74,79,66,Science,Balanced,Western Cape,Hands-on Practical,Entrepreneurial
+86,67,73,Business,Premium Investment,Anywhere in SA,Hands-on Practical,Entrepreneurial
+93,71,68,Law,Premium Investment,Other Provinces,Hands-on Practical,Quick Employment
+92,60,78,Education,Premium Investment,Western Cape,Structured Learning,Quick Employment
+83,79,73,Science,Balanced,Gauteng,Hands-on Practical,Long-term Growth
+74,87,95,Arts,Balanced,Kwazulu-Natal,Hands-on Practical,Quick Employment
+89,71,76,Science,Budget Conscious,Anywhere in SA,Flexible Learning,Long-term Growth
+76,87,89,Arts,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+64,74,68,Education,Balanced,Kwazulu-Natal,Structured Learning,Entrepreneurial
+88,65,92,Technology,Balanced,Other Provinces,Flexible Learning,Long-term Growth
+63,79,84,Mathematics,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+69,73,73,Law,Balanced,Western Cape,Flexible Learning,Quick Employment
+76,61,70,Social Sciences,Premium Investment,Kwazulu-Natal,Structured Learning,Entrepreneurial
+69,68,94,Social Sciences,Budget Conscious,Anywhere in SA,Flexible Learning,Quick Employment
+76,79,73,Mathematics,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+79,85,89,Engineering,Premium Investment,Gauteng,Hands-on Practical,Long-term Growth
+83,88,63,Environment,Premium Investment,Western Cape,Flexible Learning,Entrepreneurial
+64,60,63,Technology,Premium Investment,Kwazulu-Natal,Structured Learning,Entrepreneurial
+93,94,87,Mathematics,Balanced,Anywhere in SA,Flexible Learning,Quick Employment
+65,65,67,Social Sciences,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+61,64,61,Science,Premium Investment,Anywhere in SA,Structured Learning,Entrepreneurial
+72,92,81,Environment,Balanced,Other Provinces,Structured Learning,Entrepreneurial
+70,73,75,Technology,Budget Conscious,Gauteng,Structured Learning,Long-term Growth
+82,71,88,Business,Balanced,Other Provinces,Hands-on Practical,Long-term Growth
+75,79,89,Business,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+90,83,71,Environment,Balanced,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+70,93,94,Mathematics,Budget Conscious,Western Cape,Structured Learning,Entrepreneurial
+75,84,70,Arts,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+67,88,80,Arts,Balanced,Gauteng,Flexible Learning,Long-term Growth
+63,90,80,Science,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+63,82,64,Technology,Budget Conscious,Gauteng,Structured Learning,Quick Employment
+84,79,79,Technology,Premium Investment,Anywhere in SA,Flexible Learning,Entrepreneurial
+62,82,62,Environment,Balanced,Western Cape,Hands-on Practical,Entrepreneurial
+91,75,92,Medicine,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+62,67,68,Business,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+86,80,68,Technology,Premium Investment,Other Provinces,Structured Learning,Entrepreneurial
+88,60,63,Environment,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+91,67,94,Education,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+78,88,76,Engineering,Budget Conscious,Gauteng,Structured Learning,Entrepreneurial
+80,91,93,Education,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+64,64,83,Law,Budget Conscious,Other Provinces,Structured Learning,Entrepreneurial
+77,81,91,Mathematics,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+87,93,60,Science,Premium Investment,Western Cape,Flexible Learning,Entrepreneurial
+81,60,67,Technology,Budget Conscious,Anywhere in SA,Flexible Learning,Long-term Growth
+80,85,82,Law,Balanced,Kwazulu-Natal,Structured Learning,Long-term Growth
+65,69,71,Social Sciences,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+60,89,71,Law,Budget Conscious,Western Cape,Flexible Learning,Quick Employment
+64,77,74,Environment,Premium Investment,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+71,76,78,Technology,Balanced,Kwazulu-Natal,Structured Learning,Quick Employment
+85,85,85,Engineering,Premium Investment,Kwazulu-Natal,Flexible Learning,Quick Employment
+93,67,88,Mathematics,Premium Investment,Western Cape,Hands-on Practical,Long-term Growth
+73,71,81,Environment,Budget Conscious,Western Cape,Flexible Learning,Long-term Growth
+85,86,80,Environment,Premium Investment,Other Provinces,Flexible Learning,Long-term Growth
+86,67,79,Science,Balanced,Other Provinces,Flexible Learning,Quick Employment
+68,84,88,Science,Premium Investment,Anywhere in SA,Hands-on Practical,Entrepreneurial
+85,63,63,Business,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+81,92,66,Business,Premium Investment,Western Cape,Flexible Learning,Long-term Growth
+89,60,87,Arts,Budget Conscious,Western Cape,Structured Learning,Long-term Growth
+76,78,87,Medicine,Balanced,Other Provinces,Structured Learning,Quick Employment
+85,90,63,Technology,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+95,75,81,Technology,Budget Conscious,Gauteng,Hands-on Practical,Entrepreneurial
+60,73,71,Sports,Budget Conscious,Other Provinces,Structured Learning,Long-term Growth
+67,64,62,Law,Budget Conscious,Western Cape,Flexible Learning,Quick Employment
+94,85,81,Technology,Budget Conscious,Other Provinces,Hands-on Practical,Entrepreneurial
+74,87,61,Technology,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+81,61,83,Medicine,Premium Investment,Western Cape,Flexible Learning,Quick Employment
+73,65,93,Social Sciences,Budget Conscious,Anywhere in SA,Flexible Learning,Long-term Growth
+85,68,86,Business,Budget Conscious,Western Cape,Structured Learning,Long-term Growth
+87,92,60,Business,Balanced,Other Provinces,Flexible Learning,Quick Employment
+82,84,67,Engineering,Balanced,Kwazulu-Natal,Structured Learning,Quick Employment
+73,72,82,Technology,Premium Investment,Gauteng,Structured Learning,Quick Employment
+83,68,65,Medicine,Balanced,Anywhere in SA,Flexible Learning,Long-term Growth
+61,72,81,Mathematics,Premium Investment,Other Provinces,Flexible Learning,Long-term Growth
+85,90,84,Business,Budget Conscious,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+73,70,77,Medicine,Budget Conscious,Other Provinces,Flexible Learning,Long-term Growth
+66,63,76,Education,Premium Investment,Anywhere in SA,Structured Learning,Quick Employment
+62,93,71,Social Sciences,Balanced,Gauteng,Flexible Learning,Long-term Growth
+82,63,65,Technology,Premium Investment,Other Provinces,Flexible Learning,Entrepreneurial
+77,78,85,Engineering,Balanced,Western Cape,Structured Learning,Entrepreneurial
+94,65,86,Law,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Quick Employment
+74,93,67,Business,Balanced,Other Provinces,Hands-on Practical,Quick Employment
+84,77,78,Education,Premium Investment,Kwazulu-Natal,Structured Learning,Entrepreneurial
+87,72,60,Mathematics,Premium Investment,Western Cape,Hands-on Practical,Entrepreneurial
+69,82,88,Medicine,Budget Conscious,Gauteng,Structured Learning,Entrepreneurial
+76,78,94,Science,Balanced,Gauteng,Flexible Learning,Quick Employment
+81,70,73,Environment,Balanced,Western Cape,Flexible Learning,Entrepreneurial
+85,60,94,Technology,Balanced,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+84,83,79,Technology,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+76,66,72,Education,Balanced,Western Cape,Hands-on Practical,Long-term Growth
+72,84,67,Medicine,Premium Investment,Anywhere in SA,Hands-on Practical,Long-term Growth
+79,80,79,Arts,Balanced,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+84,74,92,Technology,Budget Conscious,Gauteng,Flexible Learning,Long-term Growth
+63,60,85,Arts,Balanced,Western Cape,Hands-on Practical,Long-term Growth
+69,71,80,Mathematics,Balanced,Gauteng,Flexible Learning,Long-term Growth
+62,66,68,Science,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+77,74,83,Education,Balanced,Gauteng,Flexible Learning,Entrepreneurial
+95,80,76,Medicine,Premium Investment,Western Cape,Flexible Learning,Long-term Growth
+81,78,83,Medicine,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+93,88,80,Sports,Budget Conscious,Anywhere in SA,Flexible Learning,Quick Employment
+67,84,72,Mathematics,Premium Investment,Western Cape,Flexible Learning,Entrepreneurial
+78,92,70,Mathematics,Premium Investment,Other Provinces,Hands-on Practical,Quick Employment
+65,91,78,Social Sciences,Budget Conscious,Western Cape,Flexible Learning,Quick Employment
+85,94,70,Environment,Premium Investment,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+93,85,72,Business,Budget Conscious,Western Cape,Structured Learning,Long-term Growth
+65,70,60,Business,Balanced,Anywhere in SA,Hands-on Practical,Quick Employment
+92,94,78,Sports,Budget Conscious,Anywhere in SA,Hands-on Practical,Entrepreneurial
+81,67,71,Law,Premium Investment,Other Provinces,Hands-on Practical,Long-term Growth
+80,73,67,Engineering,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+65,69,67,Education,Premium Investment,Kwazulu-Natal,Hands-on Practical,Quick Employment
+65,61,71,Science,Balanced,Kwazulu-Natal,Structured Learning,Long-term Growth
+63,68,92,Medicine,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+89,62,85,Environment,Balanced,Anywhere in SA,Structured Learning,Entrepreneurial
+70,80,87,Arts,Premium Investment,Anywhere in SA,Hands-on Practical,Long-term Growth
+89,85,64,Education,Premium Investment,Western Cape,Hands-on Practical,Quick Employment
+90,67,67,Law,Balanced,Other Provinces,Structured Learning,Quick Employment
+83,61,84,Education,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+68,65,86,Law,Budget Conscious,Other Provinces,Hands-on Practical,Entrepreneurial
+62,87,82,Medicine,Premium Investment,Western Cape,Hands-on Practical,Long-term Growth
+90,88,89,Engineering,Balanced,Other Provinces,Flexible Learning,Long-term Growth
+95,85,82,Law,Balanced,Gauteng,Structured Learning,Long-term Growth
+83,84,79,Medicine,Budget Conscious,Western Cape,Hands-on Practical,Quick Employment
+90,71,77,Medicine,Budget Conscious,Gauteng,Structured Learning,Long-term Growth
+65,64,77,Engineering,Budget Conscious,Western Cape,Structured Learning,Quick Employment
+61,93,61,Business,Balanced,Other Provinces,Structured Learning,Long-term Growth
+79,74,63,Education,Budget Conscious,Gauteng,Hands-on Practical,Quick Employment
+87,95,89,Sports,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+70,74,92,Technology,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+63,82,95,Technology,Budget Conscious,Western Cape,Flexible Learning,Entrepreneurial
+74,65,77,Sports,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+65,80,78,Arts,Balanced,Other Provinces,Flexible Learning,Quick Employment
+89,82,87,Mathematics,Balanced,Gauteng,Structured Learning,Long-term Growth
+61,75,79,Arts,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+74,74,92,Mathematics,Budget Conscious,Other Provinces,Structured Learning,Entrepreneurial
+70,84,71,Sports,Premium Investment,Other Provinces,Hands-on Practical,Long-term Growth
+67,95,74,Technology,Balanced,Gauteng,Flexible Learning,Quick Employment
+85,70,61,Science,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+64,74,88,Technology,Balanced,Western Cape,Structured Learning,Quick Employment
+65,63,69,Arts,Premium Investment,Kwazulu-Natal,Hands-on Practical,Quick Employment
+85,80,61,Environment,Premium Investment,Kwazulu-Natal,Hands-on Practical,Quick Employment
+63,72,70,Sports,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+78,81,72,Arts,Premium Investment,Other Provinces,Hands-on Practical,Entrepreneurial
+79,78,69,Science,Budget Conscious,Gauteng,Flexible Learning,Quick Employment
+92,93,73,Education,Budget Conscious,Other Provinces,Flexible Learning,Long-term Growth
+79,73,77,Mathematics,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+71,63,68,Technology,Budget Conscious,Gauteng,Hands-on Practical,Entrepreneurial
+60,86,87,Engineering,Premium Investment,Anywhere in SA,Flexible Learning,Quick Employment
+85,88,62,Environment,Balanced,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+73,87,79,Medicine,Balanced,Other Provinces,Structured Learning,Entrepreneurial
+70,94,65,Science,Balanced,Other Provinces,Flexible Learning,Quick Employment
+95,67,86,Arts,Premium Investment,Anywhere in SA,Flexible Learning,Quick Employment
+72,75,61,Mathematics,Budget Conscious,Western Cape,Structured Learning,Long-term Growth
+62,95,88,Engineering,Balanced,Anywhere in SA,Structured Learning,Entrepreneurial
+92,89,62,Law,Premium Investment,Anywhere in SA,Hands-on Practical,Long-term Growth
+65,77,75,Business,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+69,61,89,Technology,Balanced,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+64,72,61,Business,Budget Conscious,Anywhere in SA,Hands-on Practical,Long-term Growth
+82,63,76,Science,Balanced,Western Cape,Structured Learning,Long-term Growth
+69,85,71,Law,Balanced,Gauteng,Hands-on Practical,Long-term Growth
+61,84,94,Law,Balanced,Anywhere in SA,Flexible Learning,Quick Employment
+72,89,60,Law,Budget Conscious,Anywhere in SA,Structured Learning,Quick Employment
+61,70,74,Medicine,Premium Investment,Western Cape,Flexible Learning,Quick Employment
+79,66,85,Science,Budget Conscious,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+60,90,80,Education,Balanced,Anywhere in SA,Structured Learning,Quick Employment
+68,69,90,Business,Budget Conscious,Anywhere in SA,Flexible Learning,Entrepreneurial
+76,72,84,Education,Premium Investment,Kwazulu-Natal,Structured Learning,Long-term Growth
+68,90,82,Engineering,Budget Conscious,Western Cape,Flexible Learning,Long-term Growth
+70,66,83,Social Sciences,Premium Investment,Anywhere in SA,Structured Learning,Quick Employment
+74,95,87,Environment,Premium Investment,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+83,79,80,Environment,Budget Conscious,Anywhere in SA,Flexible Learning,Quick Employment
+94,63,77,Education,Balanced,Gauteng,Structured Learning,Entrepreneurial
+89,66,95,Social Sciences,Premium Investment,Other Provinces,Flexible Learning,Long-term Growth
+90,60,94,Social Sciences,Budget Conscious,Gauteng,Flexible Learning,Quick Employment
+64,72,68,Technology,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+73,81,89,Engineering,Balanced,Western Cape,Structured Learning,Long-term Growth
+70,80,93,Science,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+68,81,91,Social Sciences,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+93,87,62,Arts,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+71,68,62,Sports,Balanced,Western Cape,Structured Learning,Long-term Growth
+94,85,87,Environment,Premium Investment,Gauteng,Hands-on Practical,Long-term Growth
+94,68,74,Arts,Budget Conscious,Kwazulu-Natal,Structured Learning,Entrepreneurial
+60,74,82,Engineering,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+81,69,70,Social Sciences,Premium Investment,Kwazulu-Natal,Flexible Learning,Long-term Growth
+88,83,91,Business,Balanced,Gauteng,Hands-on Practical,Quick Employment
+67,67,95,Environment,Budget Conscious,Gauteng,Structured Learning,Entrepreneurial
+70,83,92,Technology,Premium Investment,Anywhere in SA,Flexible Learning,Quick Employment
+73,75,83,Mathematics,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+89,85,93,Technology,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+94,86,87,Sports,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+80,63,66,Law,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+64,83,63,Mathematics,Budget Conscious,Anywhere in SA,Flexible Learning,Quick Employment
+78,78,60,Medicine,Premium Investment,Western Cape,Flexible Learning,Quick Employment
+73,95,60,Social Sciences,Balanced,Gauteng,Flexible Learning,Long-term Growth
+85,69,79,Engineering,Budget Conscious,Western Cape,Structured Learning,Quick Employment
+63,84,78,Environment,Premium Investment,Other Provinces,Flexible Learning,Entrepreneurial
+84,77,88,Medicine,Balanced,Other Provinces,Structured Learning,Entrepreneurial
+84,78,69,Engineering,Balanced,Other Provinces,Flexible Learning,Long-term Growth
+77,95,77,Sports,Premium Investment,Anywhere in SA,Flexible Learning,Entrepreneurial
+67,69,87,Education,Premium Investment,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+73,92,94,Social Sciences,Premium Investment,Western Cape,Hands-on Practical,Long-term Growth
+91,64,90,Science,Premium Investment,Western Cape,Hands-on Practical,Quick Employment
+92,94,86,Science,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+82,93,70,Social Sciences,Budget Conscious,Western Cape,Structured Learning,Quick Employment
+74,92,64,Mathematics,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+92,80,67,Law,Balanced,Western Cape,Flexible Learning,Entrepreneurial
+84,76,93,Law,Budget Conscious,Kwazulu-Natal,Flexible Learning,Long-term Growth
+76,81,71,Mathematics,Budget Conscious,Other Provinces,Flexible Learning,Entrepreneurial
+92,74,60,Science,Budget Conscious,Western Cape,Structured Learning,Entrepreneurial
+61,94,90,Business,Premium Investment,Anywhere in SA,Flexible Learning,Quick Employment
+73,87,63,Mathematics,Balanced,Gauteng,Flexible Learning,Entrepreneurial
+65,66,64,Environment,Balanced,Gauteng,Hands-on Practical,Long-term Growth
+65,91,89,Science,Balanced,Gauteng,Flexible Learning,Entrepreneurial
+62,70,83,Business,Balanced,Other Provinces,Flexible Learning,Entrepreneurial
+66,69,62,Sports,Budget Conscious,Western Cape,Flexible Learning,Quick Employment
+67,68,70,Medicine,Budget Conscious,Other Provinces,Structured Learning,Long-term Growth
+74,73,63,Business,Premium Investment,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+88,72,85,Medicine,Balanced,Anywhere in SA,Flexible Learning,Quick Employment
+92,84,86,Engineering,Budget Conscious,Anywhere in SA,Flexible Learning,Entrepreneurial
+89,61,86,Arts,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+86,94,65,Engineering,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+95,66,74,Science,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+88,80,89,Medicine,Premium Investment,Western Cape,Flexible Learning,Quick Employment
+92,77,94,Science,Budget Conscious,Kwazulu-Natal,Structured Learning,Entrepreneurial
+86,62,82,Mathematics,Budget Conscious,Kwazulu-Natal,Structured Learning,Quick Employment
+92,70,65,Social Sciences,Premium Investment,Kwazulu-Natal,Flexible Learning,Long-term Growth
+63,83,63,Environment,Balanced,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+81,78,77,Technology,Premium Investment,Gauteng,Structured Learning,Long-term Growth
+61,63,68,Science,Premium Investment,Anywhere in SA,Hands-on Practical,Long-term Growth
+69,85,88,Environment,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+64,91,72,Mathematics,Premium Investment,Kwazulu-Natal,Structured Learning,Quick Employment
+69,95,76,Business,Budget Conscious,Gauteng,Flexible Learning,Long-term Growth
+92,92,91,Mathematics,Balanced,Kwazulu-Natal,Hands-on Practical,Long-term Growth
+72,95,81,Sports,Premium Investment,Other Provinces,Flexible Learning,Entrepreneurial
+90,62,63,Engineering,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+95,68,64,Business,Balanced,Other Provinces,Structured Learning,Entrepreneurial
+83,67,72,Technology,Balanced,Western Cape,Flexible Learning,Entrepreneurial
+74,92,93,Medicine,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+88,65,81,Social Sciences,Budget Conscious,Western Cape,Flexible Learning,Entrepreneurial
+67,63,82,Environment,Premium Investment,Gauteng,Structured Learning,Quick Employment
+64,72,62,Social Sciences,Balanced,Other Provinces,Hands-on Practical,Long-term Growth
+88,61,93,Arts,Balanced,Kwazulu-Natal,Hands-on Practical,Quick Employment
+63,64,91,Mathematics,Budget Conscious,Kwazulu-Natal,Flexible Learning,Quick Employment
+71,86,80,Science,Premium Investment,Gauteng,Structured Learning,Entrepreneurial
+61,91,80,Medicine,Balanced,Kwazulu-Natal,Flexible Learning,Long-term Growth
+86,80,70,Arts,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+90,67,63,Mathematics,Balanced,Kwazulu-Natal,Structured Learning,Entrepreneurial
+95,67,60,Education,Budget Conscious,Other Provinces,Hands-on Practical,Entrepreneurial
+95,62,87,Science,Budget Conscious,Western Cape,Hands-on Practical,Long-term Growth
+85,62,83,Business,Premium Investment,Other Provinces,Structured Learning,Quick Employment
+86,81,94,Engineering,Balanced,Anywhere in SA,Structured Learning,Quick Employment
+64,65,72,Environment,Premium Investment,Anywhere in SA,Flexible Learning,Quick Employment
+79,61,93,Sports,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+70,82,70,Technology,Premium Investment,Gauteng,Hands-on Practical,Long-term Growth
+69,61,95,Technology,Balanced,Gauteng,Structured Learning,Long-term Growth
+65,76,76,Business,Premium Investment,Gauteng,Structured Learning,Quick Employment
+67,94,94,Law,Budget Conscious,Other Provinces,Flexible Learning,Entrepreneurial
+82,93,77,Technology,Balanced,Gauteng,Hands-on Practical,Quick Employment
+85,82,81,Environment,Balanced,Western Cape,Hands-on Practical,Long-term Growth
+71,89,83,Business,Budget Conscious,Anywhere in SA,Flexible Learning,Entrepreneurial
+85,67,78,Medicine,Premium Investment,Other Provinces,Structured Learning,Quick Employment
+72,81,80,Technology,Balanced,Anywhere in SA,Flexible Learning,Quick Employment
+77,95,67,Social Sciences,Balanced,Gauteng,Flexible Learning,Entrepreneurial
+84,64,87,Business,Premium Investment,Other Provinces,Flexible Learning,Long-term Growth
+92,72,64,Environment,Budget Conscious,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+71,88,76,Social Sciences,Premium Investment,Western Cape,Structured Learning,Quick Employment
+95,90,95,Science,Premium Investment,Gauteng,Flexible Learning,Quick Employment
+63,75,78,Science,Premium Investment,Gauteng,Structured Learning,Quick Employment
+64,89,86,Technology,Balanced,Western Cape,Flexible Learning,Quick Employment
+67,75,93,Social Sciences,Budget Conscious,Western Cape,Hands-on Practical,Long-term Growth
+87,71,70,Engineering,Budget Conscious,Kwazulu-Natal,Structured Learning,Long-term Growth
+90,76,71,Mathematics,Premium Investment,Gauteng,Hands-on Practical,Quick Employment
+68,75,80,Science,Balanced,Gauteng,Flexible Learning,Long-term Growth
+88,71,70,Engineering,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+73,67,87,Medicine,Balanced,Other Provinces,Flexible Learning,Long-term Growth
+81,79,64,Business,Balanced,Other Provinces,Structured Learning,Quick Employment
+70,62,76,Mathematics,Balanced,Anywhere in SA,Hands-on Practical,Entrepreneurial
+82,75,79,Arts,Balanced,Other Provinces,Structured Learning,Entrepreneurial
+60,89,71,Environment,Budget Conscious,Western Cape,Structured Learning,Entrepreneurial
+80,82,65,Sports,Balanced,Other Provinces,Flexible Learning,Quick Employment
+85,87,76,Business,Balanced,Other Provinces,Hands-on Practical,Long-term Growth
+95,64,78,Mathematics,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+82,79,85,Environment,Premium Investment,Kwazulu-Natal,Structured Learning,Quick Employment
+60,60,91,Mathematics,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+74,89,65,Social Sciences,Premium Investment,Other Provinces,Hands-on Practical,Entrepreneurial
+80,80,95,Medicine,Balanced,Kwazulu-Natal,Flexible Learning,Entrepreneurial
+68,79,70,Education,Premium Investment,Anywhere in SA,Hands-on Practical,Quick Employment
+68,65,92,Sports,Budget Conscious,Kwazulu-Natal,Hands-on Practical,Entrepreneurial
+69,81,83,Technology,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+85,77,82,Mathematics,Premium Investment,Western Cape,Structured Learning,Quick Employment
+94,67,74,Environment,Budget Conscious,Anywhere in SA,Flexible Learning,Quick Employment
+84,91,86,Environment,Budget Conscious,Western Cape,Structured Learning,Long-term Growth
+85,92,70,Social Sciences,Balanced,Western Cape,Structured Learning,Long-term Growth
+70,75,76,Engineering,Premium Investment,Anywhere in SA,Flexible Learning,Long-term Growth
+61,71,73,Business,Balanced,Gauteng,Structured Learning,Entrepreneurial
+66,93,86,Education,Premium Investment,Anywhere in SA,Structured Learning,Quick Employment
+77,73,77,Law,Premium Investment,Other Provinces,Flexible Learning,Entrepreneurial
+86,95,87,Technology,Balanced,Other Provinces,Flexible Learning,Long-term Growth
+93,92,63,Arts,Premium Investment,Gauteng,Flexible Learning,Entrepreneurial
+86,82,66,Law,Premium Investment,Western Cape,Structured Learning,Long-term Growth
+76,61,94,Business,Premium Investment,Gauteng,Hands-on Practical,Entrepreneurial
+83,80,68,Technology,Budget Conscious,Other Provinces,Structured Learning,Entrepreneurial
+84,61,67,Environment,Balanced,Gauteng,Hands-on Practical,Long-term Growth
+66,86,76,Arts,Budget Conscious,Anywhere in SA,Flexible Learning,Entrepreneurial
+65,68,76,Mathematics,Balanced,Gauteng,Hands-on Practical,Quick Employment
+83,60,92,Engineering,Balanced,Western Cape,Flexible Learning,Entrepreneurial
+92,70,91,Education,Premium Investment,Anywhere in SA,Flexible Learning,Entrepreneurial
+88,62,67,Mathematics,Balanced,Kwazulu-Natal,Hands-on Practical,Quick Employment
+81,82,78,Engineering,Budget Conscious,Other Provinces,Flexible Learning,Long-term Growth
+85,85,62,Medicine,Budget Conscious,Other Provinces,Hands-on Practical,Quick Employment
+87,63,64,Social Sciences,Budget Conscious,Gauteng,Flexible Learning,Entrepreneurial
+80,77,72,Technology,Balanced,Anywhere in SA,Structured Learning,Long-term Growth
+66,65,90,Mathematics,Budget Conscious,Kwazulu-Natal,Structured Learning,Entrepreneurial
+76,94,75,Engineering,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+79,81,91,Law,Budget Conscious,Other Provinces,Flexible Learning,Quick Employment
+79,74,81,Social Sciences,Budget Conscious,Anywhere in SA,Hands-on Practical,Quick Employment
+81,81,88,Engineering,Balanced,Kwazulu-Natal,Structured Learning,Long-term Growth
+87,71,81,Science,Budget Conscious,Gauteng,Hands-on Practical,Long-term Growth
+66,77,62,Medicine,Premium Investment,Western Cape,Flexible Learning,Long-term Growth
+60,94,69,Business,Balanced,Anywhere in SA,Flexible Learning,Entrepreneurial
+91,89,80,Mathematics,Balanced,Western Cape,Hands-on Practical,Quick Employment

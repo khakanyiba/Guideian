@@ -710,7 +710,7 @@ Welcome to Guideian - Your roadmap to a bright future!
                 title: 'Career Exploration Tools',
                 description: 'Helping you navigate your educational journey with confidence.',
                 buttonText: 'Try Now',
-                onTap: () => context.go('/coming-soon'),
+                onTap: () => context.go('/career-insights'),
               ),
             ],
           ),

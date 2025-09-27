@@ -1,0 +1,282 @@
+Quarter,Table,Category,Subcategory,Previous Qtr (Thousand),Current Qtr (Thousand),Qtr-to-qtr change (Thousand),Year-on-year change (Thousand),Qtr-to-qtr change (%),Year-on-year change (%),Unemployment Rate (%),Absorption Rate (%),Labour Force Participation Rate (%),Coefficient of Variation Previous Qtr (%),Coefficient of Variation Current Qtr (%),Year-on-year change (Thousand),Lower 95% (Thousand),Upper 95% (Thousand),P-value
+Q2 2022,Table A,Population,15–64 years,40033,40177,145,578,0.4,1.3,,,,
+Q2 2022,Table A,Labour Force,,23557,23920,364,1414,1.5,6.3,,,,
+Q2 2022,Table A,Employed,Total,14914,15562,648,620,4.3,4.1,,,,
+Q2 2022,Table A,Unemployed,,8643,8358,-285,794,-3.3,10.5,,,,
+Q2 2022,Table A,Not economically active,Total,16476,16257,-219,-836,-1.3,-4.9,,,,
+Q2 2022,Table A,Rates,Unemployment rate,,36.5,34.5,-2.0,0.9,34.5,,,
+Q2 2022,Table A,Rates,Employed/population ratio (absorption),,37.3,38.7,1.4,1.0,,38.7,,
+Q2 2022,Table A,Rates,Labour force participation rate,,58.8,59.5,0.7,2.7,,,59.5,,
+Q2 2022,Table E,Unemployment rate by province,South Africa,35.3,33.9,-1.4,-1.0,33.9,,,
+Q2 2022,Table E,Unemployment rate by province,Western Cape,25.8,27.7,1.9,0.2,27.7,,,
+Q2 2022,Table E,Unemployment rate by province,Eastern Cape,42.4,42.1,-0.3,-5.0,42.1,,,
+Q2 2022,Table E,Unemployment rate by province,Northern Cape,49.3,39.8,-9.5,-1.2,39.8,,,
+Q2 2022,Table E,Unemployment rate by province,Free State,39.4,35.0,-4.4,-3.1,35.0,,,
+Q2 2022,Table E,Unemployment rate by province,KwaZulu-Natal,42.1,41.0,-1.1,-1.1,41.0,,,
+Q2 2022,Table E,Unemployment rate by province,North West,42.1,42.6,0.5,2.3,42.6,,,
+Q2 2022,Table E,Unemployment rate by province,Gauteng,37.1,35.3,-1.8,-1.1,35.3,,,
+Q2 2022,Table E,Unemployment rate by province,Mpumalanga,37.2,37.5,0.3,0.0,37.5,,,
+Q2 2022,Table E,Unemployment rate by province,Limpopo,35.5,35.6,0.1,0.0,35.6,,,
+Q2 2022,Table 3.1B,Employment by industry and sex,Both sexes,0.8,0.8,154,-161,469,0.34,0.8,0.8,154,-161,469,0.34
+Q2 2022,Table 3.1B,Employment by industry and sex,Agriculture,5.1,5.8,10,-117,137,0.88,5.1,5.8,10,-117,137,0.88
+Q2 2022,Table 3.1B,Employment by industry and sex,Mining,6.4,9.4,-23,-105,59,0.58,6.4,9.4,-23,-105,59,0.58
+Q2 2022,Table 3.1B,Employment by industry and sex,Manufacturing,3.0,3.1,17,-116,149,0.80,3.0,3.1,17,-116,149,0.80
+Q2 2022,Table 3.1B,Employment by industry and sex,Utilities,11.4,12.1,25,-14,64,0.21,11.4,12.1,25,-14,64,0.21
+Q2 2022,Table 3.1B,Employment by industry and sex,Construction,3.4,3.5,55,-52,162,0.31,3.4,3.5,55,-52,162,0.31
+Q2 2022,Table 3.1B,Employment by industry and sex,Trade,2.1,2.2,-45,-245,156,0.66,2.1,2.2,-45,-245,156,0.66
+Q2 2022,Table 3.1B,Employment by industry and sex,Transport,3.9,3.5,51,-60,162,0.37,3.9,3.5,51,-60,162,0.37
+Q2 2022,Table 3.1B,Employment by industry and sex,Finance,2.1,2.9,79,-100,258,0.39,2.1,2.9,79,-100,258,0.39
+Q2 2022,Table 3.1B,Employment by industry and sex,Community and social services,1.9,2.0,45,-138,228,0.63,1.9,2.0,45,-138,228,0.63
+Q2 2022,Table 3.1B,Employment by industry and sex,Private households,3.3,3.7,-54,-156,48,0.30,3.3,3.7,-54,-156,48,0.30
+Q2 2022,Table 3.1B,Employment by industry and sex,Women,1.0,1.1,-48,-256,160,0.65,1.0,1.1,-48,-256,160,0.65
+Q2 2022,Table 3.1B,Employment by industry and sex,Agriculture (Women),8.4,10.5,-17,-75,41,0.57,8.4,10.5,-17,-75,41,0.57
+Q2 2022,Table 3.1B,Employment by industry and sex,Mining (Women),11.8,15.4,-17,-40,6,0.17,11.8,15.4,-17,-40,6,0.17
+Q2 2022,Table 3.1B,Employment by industry and sex,Manufacturing (Women),4.6,4.7,-35,-106,36,0.34,4.6,4.7,-35,-106,36,0.34
+Q2 2022,Table 3.1B,Employment by industry and sex,Utilities (Women),24.7,19.2,19,-2,40,0.07,24.7,19.2,19,-2,40,0.07
+Q2 2022,Table 3.1B,Employment by industry and sex,Construction (Women),10.6,9.7,10,-27,47,0.59,10.6,9.7,10,-27,47,0.59
+Q2 2022,Table 3.1B,Employment by industry and sex,Trade (Women),3.0,2.9,-83,-211,45,0.21,3.0,2.9,-83,-211,45,0.21
+Q2 2022,Table 3.1B,Employment by industry and sex,Transport (Women),8.5,8.6,-8,-53,37,0.73,8.5,8.6,-8,-53,37,0.73
+Q2 2022,Table 3.1B,Employment by industry and sex,Finance (Women),3.2,3.7,119,15,223,0.03,3.2,3.7,119,15,223,0.03
+Q2 2022,Table 3.1B,Employment by industry and sex,Community and social services (Women),2.2,2.4,-7,-155,141,0.92,2.2,2.4,-7,-155,141,0.92
+Q2 2022,Table 3.1B,Employment by industry and sex,Private households (Women),3.5,4.1,-31,-115,53,0.46,3.5,4.1,-31,-115,53,0.46
+Q2 2022,Table 3.1B,Employment by industry and sex,Men,0.9,0.9,202,-11,415,0.06,0.9,0.9,202,-11,415,0.06
+Q2 2022,Table 3.1B,Employment by industry and sex,Agriculture (Men),5.5,5.3,27,-64,118,0.57,5.5,5.3,27,-64,118,0.57
+Q2 2022,Table 3.1B,Employment by industry and sex,Mining (Men),6.3,10.3,-6,-83,71,0.87,6.3,10.3,-6,-83,71,0.87
+Q2 2022,Table 3.1B,Employment by industry and sex,Manufacturing (Men),3.5,3.5,51,-44,146,0.29,3.5,3.5,51,-44,146,0.29
+Q2 2022,Table 3.1B,Employment by industry and sex,Utilities (Men),13.1,14.0,6,-27,39,0.72,13.1,14.0,6,-27,39,0.72
+Q2 2022,Table 3.1B,Employment by industry and sex,Construction (Men),3.7,3.7,45,-54,144,0.37,3.7,3.7,45,-54,144,0.37
+Q2 2022,Table 3.1B,Employment by industry and sex,Trade (Men),2.8,3.0,38,-97,173,0.58,2.8,3.0,38,-97,173,0.58
+Q2 2022,Table 3.1B,Employment by industry and sex,Transport (Men),4.4,3.7,59,-43,161,0.26,4.4,3.7,59,-43,161,0.26
+Q2 2022,Table 3.1B,Employment by industry and sex,Finance (Men),2.5,3.3,-40,-173,93,0.55,2.5,3.3,-40,-173,93,0.55
+Q2 2022,Table 3.1B,Employment by industry and sex,Community and social services (Men),2.8,3.0,52,-45,149,0.29,2.8,3.0,52,-45,149,0.29
+Q2 2022,Table 3.1B,Employment by industry and sex,Private households (Men),7.1,6.7,-23,-75,29,0.39,7.1,6.7,-23,-75,29,0.39
+Q2 2023,Table A,Population,15–64 years,40604,40746,142,569,0.3,1.4,,,,
+Q2 2023,Table A,Labour Force,,24125,24268,143,712,0.6,3.0,,,,
+Q2 2023,Table A,Employed,Total,16192,16346,154,784,1.0,5.0,,,,
+Q2 2023,Table A,Unemployed,,7933,7921,-12,-73,-0.2,-0.9,,,,
+Q2 2023,Table A,Not economically active,Total,16479,16478,-1,-143,0.0,-0.9,,,,
+Q2 2023,Table A,Rates,Unemployment rate,,32.9,32.6,-0.3,-1.3,32.6,,,
+Q2 2023,Table A,Rates,Employed/population ratio (absorption),,39.9,40.1,0.2,1.4,,40.1,,
+Q2 2023,Table A,Rates,Labour force participation rate,,59.4,59.6,0.2,1.0,,,59.6,,
+Q2 2023,Table E,Unemployment rate by province,South Africa,32.9,32.6,-0.3,-1.3,32.6,,,
+Q2 2023,Table E,Unemployment rate by province,Western Cape,32.1,32.1,0.0,6.3,32.1,,,
+Q2 2023,Table E,Unemployment rate by province,Eastern Cape,47.6,47.6,0.0,0.0,47.6,,,
+Q2 2023,Table E,Unemployment rate by province,Northern Cape,39.7,39.7,0.0,-8.5,39.7,,,
+Q2 2023,Table E,Unemployment rate by province,Free State,44.2,44.2,0.0,6.0,44.2,,,
+Q2 2023,Table E,Unemployment rate by province,KwaZulu-Natal,44.7,44.7,0.0,-2.1,44.7,,,
+Q2 2023,Table E,Unemployment rate by province,North West,52.8,52.8,0.0,2.4,52.8,,,
+Q2 2023,Table E,Unemployment rate by province,Gauteng,39.9,39.9,0.0,4.4,39.9,,,
+Q2 2023,Table E,Unemployment rate by province,Mpumalanga,47.2,47.2,0.0,9.7,47.2,,,
+Q2 2023,Table E,Unemployment rate by province,Limpopo,46.5,46.5,0.0,11.0,46.5,,,
+Q2 2023,Table 3.1B,Employment by industry and sex,Both sexes,0.9,0.7,784,468,1100,0.00,0.9,0.7,784,468,1100,0.00
+Q2 2023,Table 3.1B,Employment by industry and sex,Agriculture,5.4,6.4,21,-119,161,0.77,5.4,6.4,21,-119,161,0.77
+Q2 2023,Table 3.1B,Employment by industry and sex,Mining,6.9,6.4,36,-36,108,0.32,6.9,6.4,36,-36,108,0.32
+Q2 2023,Table 3.1B,Employment by industry and sex,Manufacturing,3.8,3.0,51,-102,204,0.51,3.8,3.0,51,-102,204,0.51
+Q2 2023,Table 3.1B,Employment by industry and sex,Utilities,13.1,10.6,25,-14,64,0.21,13.1,10.6,25,-14,64,0.21
+Q2 2023,Table 3.1B,Employment by industry and sex,Construction,4.0,3.5,128,-6,262,0.06,4.0,3.5,128,-6,262,0.06
+Q2 2023,Table 3.1B,Employment by industry and sex,Trade,2.2,2.0,198,18,378,0.03,2.2,2.0,198,18,378,0.03
+Q2 2023,Table 3.1B,Employment by industry and sex,Transport,4.7,3.8,80,-42,202,0.20,4.7,3.8,80,-42,202,0.20
+Q2 2023,Table 3.1B,Employment by industry and sex,Finance,2.8,2.5,139,-61,339,0.17,2.8,2.5,139,-61,339,0.17
+Q2 2023,Table 3.1B,Employment by industry and sex,Community and social services,2.1,1.8,144,-46,334,0.14,2.1,1.8,144,-46,334,0.14
+Q2 2023,Table 3.1B,Employment by industry and sex,Private households,3.4,3.6,-30,-138,78,0.58,3.4,3.6,-30,-138,78,0.58
+Q2 2023,Table 3.1B,Employment by industry and sex,Women,1.3,1.1,240,14,466,0.04,1.3,1.1,240,14,466,0.04
+Q2 2023,Table 3.1B,Employment by industry and sex,Agriculture (Women),9.0,8.9,3,-48,54,0.91,9.0,8.9,3,-48,54,0.91
+Q2 2023,Table 3.1B,Employment by industry and sex,Mining (Women),15.3,13.5,-17,-43,9,0.23,15.3,13.5,-17,-43,9,0.23
+Q2 2023,Table 3.1B,Employment by industry and sex,Manufacturing (Women),5.5,5.4,-2,-82,78,0.96,5.5,5.4,-2,-82,78,0.96
+Q2 2023,Table 3.1B,Employment by industry and sex,Utilities (Women),31.4,19.5,15,-6,36,0.15,31.4,19.5,15,-6,36,0.15
+Q2 2023,Table 3.1B,Employment by industry and sex,Construction (Women),10.5,9.3,-11,-53,31,0.60,10.5,9.3,-11,-53,31,0.60
+Q2 2023,Table 3.1B,Employment by industry and sex,Trade (Women),3.2,3.0,82,-43,207,0.20,3.2,3.0,82,-43,207,0.20
+Q2 2023,Table 3.1B,Employment by industry and sex,Transport (Women),10.5,8.4,0,-42,42,1.00,10.5,8.4,0,-42,42,1.00
+Q2 2023,Table 3.1B,Employment by industry and sex,Finance (Women),3.3,3.2,-45,-148,58,0.39,3.3,3.2,-45,-148,58,0.39
+Q2 2023,Table 3.1B,Employment by industry and sex,Community and social services (Women),2.4,2.2,130,-30,290,0.11,2.4,2.2,130,-30,290,0.11
+Q2 2023,Table 3.1B,Employment by industry and sex,Private households (Women),3.9,4.0,-6,-119,107,0.91,3.9,4.0,-6,-119,107,0.91
+Q2 2023,Table 3.1B,Employment by industry and sex,Men,0.9,0.8,544,315,772,0.00,0.9,0.8,544,315,772,0.00
+Q2 2023,Table 3.1B,Employment by industry and sex,Agriculture (Men),5.6,6.1,18,-111,147,0.79,5.6,6.1,18,-111,147,0.79
+Q2 2023,Table 3.1B,Employment by industry and sex,Mining (Men),7.2,7.0,53,-19,125,0.15,7.2,7.0,53,-19,125,0.15
+Q2 2023,Table 3.1B,Employment by industry and sex,Manufacturing (Men),4.1,3.6,53,-47,153,0.30,4.1,3.6,53,-47,153,0.30
+Q2 2023,Table 3.1B,Employment by industry and sex,Utilities (Men),14.8,13.5,10,-19,39,0.49,14.8,13.5,10,-19,39,0.49
+Q2 2023,Table 3.1B,Employment by industry and sex,Construction (Men),3.9,3.7,139,18,260,0.02,3.9,3.7,139,18,260,0.02
+Q2 2023,Table 3.1B,Employment by industry and sex,Trade (Men),3.0,2.8,116,-3,235,0.06,3.0,2.8,116,-3,235,0.06
+Q2 2023,Table 3.1B,Employment by industry and sex,Transport (Men),5.0,4.1,80,-35,195,0.17,5.0,4.1,80,-35,195,0.17
+Q2 2023,Table 3.1B,Employment by industry and sex,Finance (Men),3.4,3.1,184,-9,377,0.06,3.4,3.1,184,-9,377,0.06
+Q2 2023,Table 3.1B,Employment by industry and sex,Community and social services (Men),3.2,2.9,14,-146,174,0.86,3.2,2.9,14,-146,174,0.86
+Q2 2023,Table 3.1B,Employment by industry and sex,Private households (Men),8.8,7.6,-24,-63,15,0.23,8.8,7.6,-24,-63,15,0.23
+Q4 2024,Table A,Population,15–64 years,41022,41561,130,539,0.3,1.3,,,,
+Q4 2024,Table A,Labour Force,,24957,25069,112,450,0.4,1.8,,,,
+Q4 2024,Table A,Employed,Total,16946,17078,132,355,0.8,2.1,,,,
+Q4 2024,Table A,Unemployed,,8011,7991,-20,96,-0.2,1.2,,,,
+Q4 2024,Table A,Not economically active,Total,16474,16492,18,89,0.1,0.5,,,,
+Q4 2024,Table A,Rates,Unemployment rate,,32.1,31.9,-0.2,-0.2,31.9,,,
+Q4 2024,Table A,Rates,Employed/population ratio (absorption),,40.9,41.1,0.2,0.3,,41.1,,
+Q4 2024,Table A,Rates,Labour force participation rate,,60.2,60.3,0.1,0.3,,,60.3,,
+Q4 2024,Table E,Unemployment rate by province,South Africa,32.1,31.9,-0.2,-0.2,31.9,,,
+Q4 2024,Table E,Unemployment rate by province,Western Cape,,25.6,,,25.6,,,
+Q4 2024,Table E,Unemployment rate by province,Eastern Cape,,47.6,,,47.6,,,
+Q4 2024,Table E,Unemployment rate by province,Northern Cape,,39.7,,,39.7,,,
+Q4 2024,Table E,Unemployment rate by province,Free State,,44.2,,,44.2,,,
+Q4 2024,Table E,Unemployment rate by province,KwaZulu-Natal,,44.7,,,44.7,,,
+Q4 2024,Table E,Unemployment rate by province,North West,,52.8,,,52.8,,,
+Q4 2024,Table E,Unemployment rate by province,Gauteng,,39.9,,,39.9,,,
+Q4 2024,Table E,Unemployment rate by province,Mpumalanga,,47.2,,,47.2,,,
+Q4 2024,Table E,Unemployment rate by province,Limpopo,,46.5,,,46.5,,,
+Q4 2024,Table 3.1B,Employment by industry and sex,Both sexes,0.7,0.8,355,52,658,0.02,0.7,0.8,355,52,658,0.02
+Q4 2024,Table 3.1B,Employment by industry and sex,Agriculture,4.2,5.1,4,-95,103,0.94,4.2,5.1,4,-95,103,0.94
+Q4 2024,Table 3.1B,Employment by industry and sex,Mining,5.8,8.1,20,-60,100,0.62,5.8,8.1,20,-60,100,0.62
+Q4 2024,Table 3.1B,Employment by industry and sex,Manufacturing,3.2,3.1,168,37,299,0.01,3.2,3.1,168,37,299,0.01
+Q4 2024,Table 3.1B,Employment by industry and sex,Utilities,10.9,12.1,-12,-49,25,0.53,10.9,12.1,-12,-49,25,0.53
+Q4 2024,Table 3.1B,Employment by industry and sex,Construction,3.4,3.6,37,-86,161,0.55,3.4,3.6,37,-86,161,0.55
+Q4 2024,Table 3.1B,Employment by industry and sex,Trade,1.8,2.2,59,-124,242,0.53,1.8,2.2,59,-124,242,0.53
+Q4 2024,Table 3.1B,Employment by industry and sex,Transport,3.6,4.0,41,-70,152,0.46,3.6,4.0,41,-70,152,0.46
+Q4 2024,Table 3.1B,Employment by industry and sex,Finance,2.4,2.6,-16,-210,178,0.87,2.4,2.6,-16,-210,178,0.87
+Q4 2024,Table 3.1B,Employment by industry and sex,Community and social services,1.9,2.0,46,-153,245,0.65,1.9,2.0,46,-153,245,0.65
+Q4 2024,Table 3.1B,Employment by industry and sex,Private households,3.4,3.7,12,-86,110,0.81,3.4,3.7,12,-86,110,0.81
+Q4 2024,Table 3.1B,Employment by industry and sex,Women,1.0,1.0,206,0,412,0.05,1.0,1.0,206,0,412,0.05
+Q4 2024,Table 3.1B,Employment by industry and sex,Agriculture (Women),7.0,7.9,4,-50,58,0.89,7.0,7.9,4,-50,58,0.89
+Q4 2024,Table 3.1B,Employment by industry and sex,Mining (Women),9.8,14.7,7,-23,37,0.66,9.8,14.7,7,-23,37,0.66
+Q4 2024,Table 3.1B,Employment by industry and sex,Manufacturing (Women),5.6,4.2,145,69,221,0.00,5.6,4.2,145,69,221,0.00
+Q4 2024,Table 3.1B,Employment by industry and sex,Utilities (Women),20.8,19.9,1,-16,18,0.95,20.8,19.9,1,-16,18,0.95
+Q4 2024,Table 3.1B,Employment by industry and sex,Construction (Women),10.4,9.4,6,-34,46,0.77,10.4,9.4,6,-34,46,0.77
+Q4 2024,Table 3.1B,Employment by industry and sex,Trade (Women),2.6,3.0,76,-42,194,0.21,2.6,3.0,76,-42,194,0.21
+Q4 2024,Table 3.1B,Employment by industry and sex,Transport (Women),8.0,8.6,-3,-50,44,0.92,8.0,8.6,-3,-50,44,0.92
+Q4 2024,Table 3.1B,Employment by industry and sex,Finance (Women),3.3,3.2,-45,-148,58,0.39,3.3,3.2,-45,-148,58,0.39
+Q4 2024,Table 3.1B,Employment by industry and sex,Community and social services (Women),2.4,2.2,130,-30,290,0.11,2.4,2.2,130,-30,290,0.11
+Q4 2024,Table 3.1B,Employment by industry and sex,Private households (Women),3.9,4.0,-6,-119,107,0.91,3.9,4.0,-6,-119,107,0.91
+Q4 2024,Table 3.1B,Employment by industry and sex,Men,0.9,0.9,149,-88,386,0.22,0.9,0.9,149,-88,386,0.22
+Q4 2024,Table 3.1B,Employment by industry and sex,Agriculture (Men),4.8,5.2,0,-97,97,1.00,4.8,5.2,0,-97,97,1.00
+Q4 2024,Table 3.1B,Employment by industry and sex,Mining (Men),6.3,8.8,13,-57,83,0.71,6.3,8.8,13,-57,83,0.71
+Q4 2024,Table 3.1B,Employment by industry and sex,Manufacturing (Men),3.9,3.9,23,-68,114,0.62,3.9,3.9,23,-68,114,0.62
+Q4 2024,Table 3.1B,Employment by industry and sex,Utilities (Men),12.2,13.3,-13,-42,16,0.38,12.2,13.3,-13,-42,16,0.38
+Q4 2024,Table 3.1B,Employment by industry and sex,Construction (Men),3.5,3.7,31,-84,146,0.60,3.5,3.7,31,-84,146,0.60
+Q4 2024,Table 3.1B,Employment by industry and sex,Trade (Men),2.5,2.9,-17,-164,130,0.83,2.5,2.9,-17,-164,130,0.83
+Q4 2024,Table 3.1B,Employment by industry and sex,Transport (Men),4.1,4.6,44,-60,148,0.41,4.1,4.6,44,-60,148,0.41
+Q4 2024,Table 3.1B,Employment by industry and sex,Finance (Men),3.1,3.4,29,-158,216,0.76,3.1,3.4,29,-158,216,0.76
+Q4 2024,Table 3.1B,Employment by industry and sex,Community and social services (Men),3.0,3.1,-84,-246,77,0.30,3.0,3.1,-84,-246,77,0.30
+Q4 2024,Table 3.1B,Employment by industry and sex,Private households (Men),8.4,8.0,18,-26,62,0.42,8.4,8.0,18,-26,62,0.42
+Q2 2025,Table A,Population,15–64 years,41691,41822,131,131,0.3,0.3,,,,
+Q2 2025,Table A,Labour Force,,25015,25174,159,159,0.6,0.6,,,,
+Q2 2025,Table A,Employed,Total,16787,16807,19,19,0.1,0.1,,,,
+Q2 2025,Table A,Unemployed,,8228,8367,140,140,1.7,1.7,,,,
+Q2 2025,Table A,Not economically active,Total,16676,16648,-28,-28,-0.2,-0.2,,,,
+Q2 2025,Table A,Rates,Unemployment rate,,32.9,33.2,0.3,0.3,33.2,,,
+Q2 2025,Table A,Rates,Employed/population ratio (absorption),,40.3,40.2,-0.1,-0.1,,40.2,,
+Q2 2025,Table A,Rates,Labour force participation rate,,60.0,60.2,0.2,0.2,,,60.2,,
+Q2 2025,Table E,Unemployment rate by province,South Africa,32.9,33.2,0.3,0.3,33.2,,,
+Q2 2025,Table E,Unemployment rate by province,Western Cape,25.8,27.7,1.9,1.9,27.7,,,
+Q2 2025,Table E,Unemployment rate by province,Eastern Cape,42.4,42.1,-0.3,-0.3,42.1,,,
+Q2 2025,Table E,Unemployment rate by province,Northern Cape,49.3,39.8,-9.5,-9.5,39.8,,,
+Q2 2025,Table E,Unemployment rate by province,Free State,39.4,35.0,-4.4,-4.4,35.0,,,
+Q2 2025,Table E,Unemployment rate by province,KwaZulu-Natal,42.1,41.0,-1.1,-1.1,41.0,,,
+Q2 2025,Table E,Unemployment rate by province,North West,42.1,42.6,0.5,0.5,42.6,,,
+Q2 2025,Table E,Unemployment rate by province,Gauteng,37.1,35.3,-1.8,-1.8,35.3,,,
+Q2 2025,Table E,Unemployment rate by province,Mpumalanga,37.2,37.5,0.3,0.3,37.5,,,
+Q2 2025,Table E,Unemployment rate by province,Limpopo,35.5,35.6,0.1,0.1,35.6,,,
+Q2 2025,Table 3.1B,Employment by industry and sex,Both sexes,0.8,0.8,154,-161,469,0.34,0.8,0.8,154,-161,469,0.34
+Q2 2025,Table 3.1B,Employment by industry and sex,Agriculture,5.8,5.1,10,-117,137,0.88,5.8,5.1,10,-117,137,0.88
+Q2 2025,Table 3.1B,Employment by industry and sex,Mining,9.4,6.4,-23,-105,59,0.58,9.4,6.4,-23,-105,59,0.58
+Q2 2025,Table 3.1B,Employment by industry and sex,Manufacturing,3.1,3.0,17,-116,149,0.80,3.1,3.0,17,-116,149,0.80
+Q2 2025,Table 3.1B,Employment by industry and sex,Utilities,12.1,11.4,25,-14,64,0.21,12.1,11.4,25,-14,64,0.21
+Q2 2025,Table 3.1B,Employment by industry and sex,Construction,3.5,3.4,55,-52,162,0.31,3.5,3.4,55,-52,162,0.31
+Q2 2025,Table 3.1B,Employment by industry and sex,Trade,2.2,2.1,-45,-245,156,0.66,2.2,2.1,-45,-245,156,0.66
+Q2 2025,Table 3.1B,Employment by industry and sex,Transport,3.5,3.9,51,-60,162,0.37,3.5,3.9,51,-60,162,0.37
+Q2 2025,Table 3.1B,Employment by industry and sex,Finance,2.9,2.1,79,-100,258,0.39,2.9,2.1,79,-100,258,0.39
+Q2 2025,Table 3.1B,Employment by industry and sex,Community and social services,2.0,1.9,45,-138,228,0.63,2.0,1.9,45,-138,228,0.63
+Q2 2025,Table 3.1B,Employment by industry and sex,Private households,3.7,3.3,-54,-156,48,0.30,3.7,3.3,-54,-156,48,0.30
+Q2 2025,Table 3.1B,Employment by industry and sex,Women,1.1,1.0,-48,-256,160,0.65,1.1,1.0,-48,-256,160,0.65
+Q2 2025,Table 3.1B,Employment by industry and sex,Agriculture (Women),10.5,8.4,-17,-75,41,0.57,10.5,8.4,-17,-75,41,0.57
+Q2 2025,Table 3.1B,Employment by industry and sex,Mining (Women),15.4,11.8,-17,-40,6,0.17,15.4,11.8,-17,-40,6,0.17
+Q2 2025,Table 3.1B,Employment by industry and sex,Manufacturing (Women),4.7,4.6,-35,-106,36,0.34,4.7,4.6,-35,-106,36,0.34
+Q2 2025,Table 3.1B,Employment by industry and sex,Utilities (Women),19.2,24.7,19,-2,40,0.07,19.2,24.7,19,-2,40,0.07
+Q2 2025,Table 3.1B,Employment by industry and sex,Construction (Women),9.7,10.6,10,-27,47,0.59,9.7,10.6,10,-27,47,0.59
+Q2 2025,Table 3.1B,Employment by industry and sex,Trade (Women),2.9,3.0,-83,-211,45,0.21,2.9,3.0,-83,-211,45,0.21
+Q2 2025,Table 3.1B,Employment by industry and sex,Transport (Women),8.6,8.5,-8,-53,37,0.73,8.6,8.5,-8,-53,37,0.73
+Q2 2025,Table 3.1B,Employment by industry and sex,Finance (Women),3.7,3.2,119,15,223,0.03,3.7,3.2,119,15,223,0.03
+Q2 2025,Table 3.1B,Employment by industry and sex,Community and social services (Women),2.4,2.2,-7,-155,141,0.92,2.4,2.2,-7,-155,141,0.92
+Q2 2025,Table 3.1B,Employment by industry and sex,Private households (Women),4.1,3.5,-31,-115,53,0.46,4.1,3.5,-31,-115,53,0.46
+Q2 2025,Table 3.1B,Employment by industry and sex,Men,0.9,0.9,202,-11,415,0.06,0.9,0.9,202,-11,415,0.06
+Q2 2025,Table 3.1B,Employment by industry and sex,Agriculture (Men),5.3,5.5,27,-64,118,0.57,5.3,5.5,27,-64,118,0.57
+Q2 2025,Table 3.1B,Employment by industry and sex,Mining (Men),10.3,6.3,-6,-83,71,0.87,10.3,6.3,-6,-83,71,0.87
+Q2 2025,Table 3.1B,Employment by industry and sex,Manufacturing (Men),3.5,3.5,51,-44,146,0.29,3.5,3.5,51,-44,146,0.29
+Q2 2025,Table 3.1B,Employment by industry and sex,Utilities (Men),14.0,13.1,6,-27,39,0.72,14.0,13.1,6,-27,39,0.72
+Q2 2025,Table 3.1B,Employment by industry and sex,Construction (Men),3.7,3.7,45,-54,144,0.37,3.7,3.7,45,-54,144,0.37
+Q2 2025,Table 3.1B,Employment by industry and sex,Trade (Men),3.0,2.8,38,-97,173,0.58,3.0,2.8,38,-97,173,0.58
+Q2 2025,Table 3.1B,Employment by industry and sex,Transport (Men),3.7,4.4,59,-43,161,0.26,3.7,4.4,59,-43,161,0.26
+Q2 2025,Table 3.1B,Employment by industry and sex,Finance (Men),3.3,2.5,-40,-173,93,0.55,3.3,2.5,-40,-173,93,0.55
+Q2 2025,Table 3.1B,Employment by industry and sex,Community and social services (Men),3.0,2.8,52,-45,149,0.29,3.0,2.8,52,-45,149,0.29
+Q2 2025,Table 3.1B,Employment by industry and sex,Private households (Men),6.7,7.1,-23,-75,29,0.39,6.7,7.1,-23,-75,29,0.39
+Q2 2025,Table 3.4B,Employment by province and sector,South Africa,0.8,0.8,154,-161,469,0.34,0.8,0.8,154,-161,469,0.34
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),1.1,1.3,2,-266,270,0.99,1.1,1.3,2,-266,270,0.99
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),2.6,2.7,197,-24,418,0.08,2.6,2.7,197,-24,418,0.08
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,5.1,5.8,10,-117,137,0.88,5.1,5.8,10,-117,137,0.88
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,3.3,3.7,-54,-156,48,0.30,3.3,3.7,-54,-156,48,0.30
+Q2 2025,Table 3.4B,Employment by province and sector,Western Cape,2.0,2.1,60,-50,170,0.28,2.0,2.1,60,-50,170,0.28
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),2.3,2.4,-6,-104,92,0.90,2.3,2.4,-6,-104,92,0.90
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),5.8,7.0,39,-24,102,0.23,5.8,7.0,39,-24,102,0.23
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,9.3,10.0,11,-15,37,0.40,9.3,10.0,11,-15,37,0.40
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,5.3,6.2,-23,-60,14,0.22,5.3,6.2,-23,-60,14,0.22
+Q2 2025,Table 3.4B,Employment by province and sector,Western Cape – Non-metro,3.7,3.6,65,-1,131,0.05,3.7,3.6,65,-1,131,0.05
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),4.5,4.8,64,13,115,0.01,4.5,4.8,64,13,115,0.01
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),8.1,8.7,17,-17,51,0.33,8.1,8.7,17,-17,51,0.33
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,9.4,8.9,16,7,25,0.00,9.4,8.9,16,7,25,0.00
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,10.1,8.9,-31,-50,-12,0.00,10.1,8.9,-31,-50,-12,0.00
+Q2 2025,Table 3.4B,Employment by province and sector,Western Cape – City of Cape Town,2.2,1.8,-5,-67,57,0.85,2.2,1.8,-5,-67,57,0.85
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),2.7,1.6,-30,-49,-11,0.00,2.7,1.6,-30,-49,-11,0.00
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),8.9,9.6,22,-36,80,0.46,8.9,9.6,22,-36,80,0.46
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,42.2,46.4,-5,-15,5,0.33,42.2,46.4,-5,-15,5,0.33
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,8.3,17.9,8,-35,51,0.72,8.3,17.9,8,-35,51,0.72
+Q2 2025,Table 3.4B,Employment by province and sector,Eastern Cape,3.4,2.6,107,-15,229,0.09,3.4,2.6,107,-15,229,0.09
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),3.2,3.5,53,-23,129,0.17,3.2,3.5,53,-23,129,0.17
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),7.0,6.1,38,-12,88,0.13,7.0,6.1,38,-12,88,0.13
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,16.4,21.1,-38,-75,-1,0.04,16.4,21.1,-38,-75,-1,0.04
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,16.7,9.1,54,21,87,0.00,16.7,9.1,54,21,87,0.00
+Q2 2025,Table 3.4B,Employment by province and sector,Eastern Cape – Non-metro,5.5,3.5,-1,-95,93,0.99,5.5,3.5,-1,-95,93,0.99
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),5.8,5.6,40,-31,111,0.27,5.8,5.6,40,-31,111,0.27
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),9.2,8.2,-12,-66,42,0.67,9.2,8.2,-12,-66,42,0.67
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,16.8,23.2,-42,-80,-4,0.03,16.8,23.2,-42,-80,-4,0.03
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,20.9,13.6,13,-23,49,0.47,20.9,13.6,13,-23,49,0.47
+Q2 2025,Table 3.4B,Employment by province and sector,Eastern Cape – Buffalo City,5.3,6.7,13,-25,51,0.51,5.3,6.7,13,-25,51,0.51
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),6.2,8.5,13,-24,50,0.49,6.2,8.5,13,-24,50,0.49
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),7.3,18.2,21,3,39,0.02,7.3,18.2,21,3,39,0.02
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,84.1,77.2,0,-8,8,1.00,84.1,77.2,0,-8,8,1.00
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,40.2,20.0,-20,-22,-18,0.00,40.2,20.0,-20,-22,-18,0.00
+Q2 2025,Table 3.4B,Employment by province and sector,Eastern Cape – Nelson Mandela Bay,3.3,4.6,95,40,150,0.00,3.3,4.6,95,40,150,0.00
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),3.9,5.0,0,-19,19,1.00,3.9,5.0,0,-19,19,1.00
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),16.2,7.3,29,21,37,0.00,16.2,7.3,29,21,37,0.00
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,106.8,51.5,4,-2,10,0.20,106.8,51.5,4,-2,10,0.20
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,28.3,12.3,62,5,119,0.03,28.3,12.3,62,5,119,0.03
+Q2 2025,Table 3.4B,Employment by province and sector,Northern Cape,6.1,6.3,-7,-28,14,0.51,6.1,6.3,-7,-28,14,0.51
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),8.0,9.1,-8,-21,5,0.23,8.0,9.1,-8,-21,5,0.23
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),8.6,15.1,1,-21,23,0.92,8.6,15.1,1,-21,23,0.92
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,18.4,12.9,0,-36,36,1.00,18.4,12.9,0,-36,36,1.00
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,20.1,22.6,0,-14,14,1.00,20.1,22.6,0,-14,14,1.00
+Q2 2025,Table 3.4B,Employment by province and sector,Free State,1.7,3.3,-17,-23,-11,0.00,1.7,3.3,-17,-23,-11,0.00
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),3.3,5.9,3,-21,27,0.79,3.3,5.9,3,-21,27,0.79
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),9.8,12.3,-14,-58,30,0.53,9.8,12.3,-14,-58,30,0.53
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,6.8,11.0,0,-17,17,1.00,6.8,11.0,0,-17,17,1.00
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,10.2,14.1,-6,-23,11,0.49,10.2,14.1,-6,-23,11,0.49
+Q2 2025,Table 3.4B,Employment by province and sector,Free State – Non-metro,1.9,4.4,-7,-41,27,0.68,1.9,4.4,-7,-41,27,0.68
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),4.0,6.9,-20,-38,-2,0.03,4.0,6.9,-20,-38,-2,0.03
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),13.6,10.9,-12,-42,18,0.43,13.6,10.9,-12,-42,18,0.43
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,6.6,11.4,0,-17,17,1.00,6.6,11.4,0,-17,17,1.00
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,10.5,15.1,24,-14,62,0.21,10.5,15.1,24,-14,62,0.21
+Q2 2025,Table 3.4B,Employment by province and sector,Free State – Mangaung,3.4,4.1,-10,-28,-10,0.00,3.4,4.1,-10,-28,-10,0.00
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),5.6,10.4,23,-5,51,0.11,5.6,10.4,23,-5,51,0.11
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),8.7,29.1,-2,-34,30,0.89,8.7,29.1,-2,-34,30,0.89
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,51.4,38.2,0,-2,2,1.00,51.4,38.2,0,-2,2,1.00
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,22.4,35.6,-57,-13,-101,0.01,22.4,35.6,-57,-13,-101,0.01
+Q2 2025,Table 3.4B,Employment by province and sector,KwaZulu-Natal,2.3,2.1,-140,-281,1,0.05,2.3,2.1,-140,-281,1,0.05
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),3.2,3.3,-50,-185,85,0.47,3.2,3.3,-50,-185,85,0.47
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),4.4,5.7,-43,-115,29,0.24,4.4,5.7,-43,-115,29,0.24
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,15.3,24.7,-33,-123,57,0.47,15.3,24.7,-33,-123,57,0.47
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,6.7,7.7,-14,-50,22,0.44,6.7,7.7,-14,-50,22,0.44
+Q2 2025,Table 3.4B,Employment by province and sector,KwaZulu-Natal – Non-metro,3.3,2.9,-87,-187,13,0.09,3.3,2.9,-87,-187,13,0.09
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),4.6,4.3,-2,-71,67,0.95,4.6,4.3,-2,-71,67,0.95
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),6.1,7.5,-52,-97,-7,0.02,6.1,7.5,-52,-97,-7,0.02
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,16.2,26.3,-31,-120,58,0.50,16.2,26.3,-31,-120,58,0.50
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,9.7,11.3,-2,-28,24,0.88,9.7,11.3,-2,-28,24,0.88
+Q2 2025,Table 3.4B,Employment by province and sector,KwaZulu-Natal – eThekwini,3.3,2.8,-53,-148,42,0.28,3.3,2.8,-53,-148,42,0.28
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),4.4,5.2,-48,-162,66,0.41,4.4,5.2,-48,-162,66,0.41
+Q2 2025,Table 3.4B,Employment by province and sector,Informal sector (Non-agricultural),5.9,8.9,9,-49,67,0.76,5.9,8.9,9,-49,67,0.76
+Q2 2025,Table 3.4B,Employment by province and sector,Agriculture,35.0,42.4,-2,-11,7,0.68,35.0,42.4,-2,-11,7,0.68
+Q2 2025,Table 3.4B,Employment by province and sector,Private households,9.5,10.3,-12,-38,14,0.36,9.5,10.3,-12,-38,14,0.36
+Q2 2025,Table 3.4B,Employment by province and sector,North West,4.3,3.6,8,-66,82,0.83,4.3,3.6,8,-66,82,0.83
+Q2 2025,Table 3.4B,Employment by province and sector,Formal sector (Non-agricultural),4.7,3.4,-11,-60,38,0.67,4
